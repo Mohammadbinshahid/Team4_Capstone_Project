@@ -135,7 +135,7 @@ _____
 **Features**:
 * **Flight Data Features**:
   * carrier_code
-    * **Description**:
+    * **Description**: This is the airline's identification code.
   * date(MM/DD/YYYY)
     * **Description**:
   * flight_number
@@ -168,11 +168,11 @@ _____
     * **Description**:
 
 * **Weather Data Features**:
- * 
+  * 
 
 **Targets**:
 * flight_delayed_prediction
- * **Description**:
+  * **Description**:
 
 **Key Libraries and Frameworks**:
 * [Coming Soon]
@@ -210,7 +210,7 @@ _____
 
 <a name="questions"></a>
 ### Questions
-
+If you have any questions regarding this project, please email [Coming Soon].
 _____
 
 <a name="badges"></a>
