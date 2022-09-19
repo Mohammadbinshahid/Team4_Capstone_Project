@@ -1,23 +1,55 @@
 # Team 4 Capstone Project: Flight Delay Predictions
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-## Table of Contents
-* [Installation](#installation)
-* [Usage](#usage)
-* [Features](#features)
-* [Testing](#testing)
-* [Credit](#credit)
-* [Contributions](#contributions)
-* [Questions](#questions)
-* [Badges](#badges)
-* [License](#license)
-
 <a name="description"></a>
 ### Description
 Hello! This is a flight delay predictor full-stack web application that allows users to detemrine whether or not their upcoming flight (within the week) will be delayed using a multitude of features (i.e. independent variables that specified in the [Machine Learning Model](#machine-learning-model) section below). The main feature is the weather for the upcoming week which is sourced from the OpenWeather API. The purpose of this web application is to allow both airlines and customers to better predict whether or not a flight will be cancelled days in advance so that disruption to flight and people's schedules are minimized, thus saving them time and resources that would normally be used for air travel preparations.
 
-<a name="team-and-roles"></a>
-### Team and Roles
+_____
+
+## Table of Contents
+* [Presentation](#presentation)
+* [Team, Roles, and Contributions](#team-and-roles-contributions)
+* [GitHub Repository Specifications](#github)
+* [Database Specifications](#database)
+* [Machine Learning Model Specifications](#machine-learning-model)
+* [Installation](#installation)
+* [Usage](#usage)
+* [Features](#features)
+* [Testing](#testing)
+* [Questions](#questions)
+* [Badges](#badges)
+* [License](#license)
+
+_____
+
+<a name="presentation"></a>
+### Presentation
+
+**Selected Topic**: Flight Delay Predictor
+
+**Rationale/Business Case**: The purpose of this web application is to allow both airlines and customers to better predict whether or not a flight will be cancelled days in advance so that disruption to flight and people's schedules are minimized, thus saving them time and resources that would normally be used for air travel preparations. Specifically,
+* Airlines can reschedule flights well in advance so that air travel preparation resources are only deployed when the flight is guaranteed to takeoff and flight terminals can be free of passengers when flights are projected to be delayed or cancelled; consequently, airlines save money by not prematurely deploying resources when flights have a high probability of being delayed and customer satisfaction increases due to advance notices of flight cancellations and delays.
+* Passengers can finalize their schedules well in advance knowing that their flight is guaranteed to takeoff on time; consequently, passengers' satisfaction with the airline increases and demand of airlines' customer services are decreased since flight delays and cancellations are practically non-existent.
+
+**Data Sources**: 
+* **Flight Data**: https://www.transtats.bts.gov/ONTIME/
+  * **Description**: This is the flight data source that we are using for training and testing our machine learning model.
+* **Weather Data**: https://openweathermap.org/forecast5
+  * **Description**: This is the weather forecast data sources that we are using for training and testing our machine learning model. We are using the "5-Day Weather Forecast" API for the weather data since it is the only free API provided by [OpenWeather](https://openweathermap.org/price).
+
+**Questions to Answer**:
+* 
+
+**Presentation Link**: [Coming Soon]
+
+<a name="web-app-link"></a>
+**Web Application Link**: [Coming Soon]
+
+_____
+
+<a name="team-roles-and-contributions"></a>
+### Team, Roles, and Contributions
 
 * AllenEapenAlex
   * **Role**: Exploratory Data Analyst
@@ -42,27 +74,7 @@ Hello! This is a flight delay predictor full-stack web application that allows u
   * **Tasks**:
     * Performed an exploratory data analysis on the flight dataset and exported charts;
 
-<a name="presentation"></a>
-### Presentation
-
-**Selected Topic**: Flight Delay Predictor
-
-**Rationale/Business Case**: The purpose of this web application is to allow both airlines and customers to better predict whether or not a flight will be cancelled days in advance so that disruption to flight and people's schedules are minimized, thus saving them time and resources that would normally be used for air travel preparations. Specifically,
-* Airlines can reschedule flights well in advance so that air travel preparation resources are only deployed when the flight is guaranteed to takeoff and flight terminals can be free of passengers when flights are projected to be delayed or cancelled; consequently, airlines save money by not prematurely deploying resources when flights have a high probability of being delayed and customer satisfaction increases due to advance notices of flight cancellations and delays.
-* Passengers can finalize their schedules well in advance knowing that their flight is guaranteed to takeoff on time; consequently, passengers' satisfaction with the airline increases and demand of airlines' customer services are decreased since flight delays and cancellations are practically non-existent.
-
-**Data Sources**: 
-* **Flight Data**: https://www.transtats.bts.gov/ONTIME/
-  * **Description**: This is the flight data source that we are using for training and testing our machine learning model.
-* **Weather Data**: https://openweathermap.org/forecast5
-  * **Description**: This is the weather forecast data sources that we are using for training and testing our machine learning model. We are using the "5-Day Weather Forecast" API for the weather data since it is the only free API provided by [OpenWeather](https://openweathermap.org/price).
-
-**Questions to Answer**:
-* 
-
-**Presentation Link**: [Coming Soon]
-
-**Web Application Link**: [Coming Soon]
+_____
 
 <a name="github"></a>
 ### GitHub
@@ -91,6 +103,8 @@ Hello! This is a flight delay predictor full-stack web application that allows u
   * Heroku
   * [Coming Soon]
 
+_____
+
 <a name="database"></a>
 ### Database
 
@@ -101,6 +115,8 @@ Hello! This is a flight delay predictor full-stack web application that allows u
 **Structure/Schema**:
 
 **Connection with Machine Learning Model**:
+
+_____
 
 <a name="machine-learning-model"></a>
 ### Machine Learning Model
@@ -152,3 +168,42 @@ Hello! This is a flight delay predictor full-stack web application that allows u
  * **Description**:
 
 **Key Methods**:
+
+_____
+
+<a name="installation"></a>
+### Installation
+No installation is required. Please visit the [deployment link](#web-app-link).
+
+_____
+
+<a name="usage"></a>
+### Usage
+Please visit the [deployment link](#web-app-link).
+
+_____
+
+<a name="features"></a>
+### Features
+[Coming Soon]
+
+_____
+
+<a name="testing"></a>
+### Testing
+Please visit the [deployment link](#web-app-link).
+
+_____
+
+<a name="questions"></a>
+### Questions
+
+_____
+
+<a name="badges"></a>
+### Badges
+
+_____
+
+<a name="license"></a>
+### License
