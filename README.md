@@ -1,8 +1,22 @@
 # Team 4 Capstone Project: Flight Delay Predictions
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
+## Table of Contents
+* [Installation](#installation)
+* [Usage](#usage)
+* [Features](#features)
+* [Testing](#testing)
+* [Credit](#credit)
+* [Contributions](#contributions)
+* [Questions](#questions)
+* [Badges](#badges)
+* [License](#license)
+
+<a name="description"></a>
 ### Description
 Hello! This is a flight delay predictor full-stack web application that allows users to detemrine whether or not their upcoming flight (within the week) will be delayed using a multitude of features (i.e. independent variables that specified in the [Machine Learning Model](#machine-learning-model) section below). The main feature is the weather for the upcoming week which is sourced from the OpenWeather API. The purpose of this web application is to allow both airlines and customers to better predict whether or not a flight will be cancelled days in advance so that disruption to flight and people's schedules are minimized, thus saving them time and resources that would normally be used for air travel preparations.
 
+<a name="team-and-roles"></a>
 ### Team and Roles
 
 * AllenEapenAlex
@@ -10,23 +24,25 @@ Hello! This is a flight delay predictor full-stack web application that allows u
  * **Tasks**:
   * Performed an exploratory data analysis on the flight dataset and exported charts;
 * AvinashMehra
- * **Role**: Database Maintainer
+ * **Role**: Database Engineer
  * **Tasks**: 
-  * Created the SQL database schema
+  * Created the SQL database schema;
 * JaspreetKhela
- * **Role**: Full-Stack Web Application Developer, Machine Learning Model Schema
+ * **Role**: Full-Stack Web Application Developer, Machine Learning Engineer
  * **Tasks**:
-  * Created the full-stack web application
-  * Created the schema for the machine learning model
+  * Created GutHub project board with issues;
+  * Created the full-stack web application;
+  * Created the schema for the machine learning model;
 * MohammadShahid
- * **Role**: Repository Maintenance
+ * **Role**: Repository Maintainer
  * **Tasks**:
-  * Created the GutHub repository and branches
+  * Created the GutHub repository and branches;
 * RowanBackhouse
- * **Role**: Exploratory Data Analysis
+ * **Role**: Exploratory Data Analyst
  * **Tasks**:
   * Performed an exploratory data analysis on the flight dataset and exported charts;
 
+<a name="presentation"></a>
 ### Presentation
 
 **Selected Topic**: Flight Delay Predictor
@@ -39,13 +55,14 @@ Hello! This is a flight delay predictor full-stack web application that allows u
 * https://www.transtats.bts.gov/ONTIME/
  * **Description**: This is the flight data source that we are using for training and testing our machine learning model.
 * https://openweathermap.org/forecast5
-* **Description**: This is the weather forecast data sources that we are using for training and testing our machine learning model.
+* **Description**: This is the weather forecast data sources that we are using for training and testing our machine learning model. We are using the "5-Day Weather Forecast" API for the weather data since it is the only free API provided by [OpenWeather](https://openweathermap.org/price).
 
 **Questions to Answer**:
 * 
 
 **Presentation Link**: [Will be included in a few weeks]
 
+<a name="github"></a>
 ### GitHub
 
 **Branches**:
@@ -71,6 +88,17 @@ Hello! This is a flight delay predictor full-stack web application that allows u
  * Sequelize ORM
  * Heroku
  * [Coming Soon]
+
+<a name="database"></a>
+### Database
+
+**Provisional Database**: MySQL with Sequelize ORM
+
+**Description**:
+
+**Structure/Schema**:
+
+**Connection with Machine Learning Model**:
 
 <a name="machine-learning-model"></a>
 ### Machine Learning Model
@@ -122,13 +150,3 @@ Hello! This is a flight delay predictor full-stack web application that allows u
  * **Description**:
 
 **Key Methods**:
-
-### Database
-
-**Provisional Database**: MySQL with Sequelize ORM
-
-**Description**:
-
-**Structure/Schema**:
-
-**Connection with Machine Learning Model**:
