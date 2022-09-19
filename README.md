@@ -56,7 +56,7 @@ _____
   * **Role**: Exploratory Data Analyst, Presenter
   * **Tasks**:
     * Performed an exploratory data analysis on the flight dataset and exported charts;
-* ****AvinashMehra**:
+* **AvinashMehra**:
   * **Role**: Database Engineer, Presenter
   * **Tasks**: 
     * Created the SQL database schema;
@@ -82,7 +82,7 @@ _____
 
 **Branches**:
 * **Main Branch**
-* **Team Members' Branches**:
+* **Team Members' Branches**: 
   * AllenEapenAlex
   * AvinashMehra
   * JaspreetKhela
