@@ -20,27 +20,27 @@ Hello! This is a flight delay predictor full-stack web application that allows u
 ### Team and Roles
 
 * AllenEapenAlex
- * **Role**: Exploratory Data Analyst
- * **Tasks**:
-  * Performed an exploratory data analysis on the flight dataset and exported charts;
+  * **Role**: Exploratory Data Analyst
+  * **Tasks**:
+    * Performed an exploratory data analysis on the flight dataset and exported charts;
 * AvinashMehra
- * **Role**: Database Engineer
- * **Tasks**: 
-  * Created the SQL database schema;
+  * **Role**: Database Engineer
+  * **Tasks**: 
+    * Created the SQL database schema;
 * JaspreetKhela
- * **Role**: Full-Stack Web Application Developer, Machine Learning Engineer
- * **Tasks**:
-  * Created GutHub project board with issues;
-  * Created the full-stack web application;
-  * Created the schema for the machine learning model;
+  * **Role**: Full-Stack Web Application Developer, Machine Learning Engineer
+  * **Tasks**:
+    * Created GutHub project board with issues;
+    * Created the full-stack web application;
+    * Created the schema for the machine learning model;
 * MohammadShahid
- * **Role**: Repository Maintainer
- * **Tasks**:
-  * Created the GutHub repository and branches;
+  * **Role**: Repository Maintainer
+  * **Tasks**:
+    * Created the GutHub repository and branches;
 * RowanBackhouse
- * **Role**: Exploratory Data Analyst
- * **Tasks**:
-  * Performed an exploratory data analysis on the flight dataset and exported charts;
+  * **Role**: Exploratory Data Analyst
+  * **Tasks**:
+    * Performed an exploratory data analysis on the flight dataset and exported charts;
 
 <a name="presentation"></a>
 ### Presentation
@@ -52,15 +52,17 @@ Hello! This is a flight delay predictor full-stack web application that allows u
 * Passengers can finalize their schedules well in advance knowing that their flight is guaranteed to takeoff on time; consequently, passengers' satisfaction with the airline increases and demand of airlines' customer services are decreased since flight delays and cancellations are practically non-existent.
 
 **Data Sources**: 
-* https://www.transtats.bts.gov/ONTIME/
- * **Description**: This is the flight data source that we are using for training and testing our machine learning model.
-* https://openweathermap.org/forecast5
-* **Description**: This is the weather forecast data sources that we are using for training and testing our machine learning model. We are using the "5-Day Weather Forecast" API for the weather data since it is the only free API provided by [OpenWeather](https://openweathermap.org/price).
+* **Flight Data**: https://www.transtats.bts.gov/ONTIME/
+  * **Description**: This is the flight data source that we are using for training and testing our machine learning model.
+* **Weather Data**: https://openweathermap.org/forecast5
+  * **Description**: This is the weather forecast data sources that we are using for training and testing our machine learning model. We are using the "5-Day Weather Forecast" API for the weather data since it is the only free API provided by [OpenWeather](https://openweathermap.org/price).
 
 **Questions to Answer**:
 * 
 
-**Presentation Link**: [Will be included in a few weeks]
+**Presentation Link**: [Coming Soon]
+
+**Web Application Link**: [Coming Soon]
 
 <a name="github"></a>
 ### GitHub
@@ -78,16 +80,16 @@ Hello! This is a flight delay predictor full-stack web application that allows u
 
 **Technologies**:
 * **Front-End**:
- * HTML
- * CSS
- * JavaScript
- * Handbars.js
+  * HTML
+  * CSS
+  * JavaScript
+  * Handbars.js
 * **Back-End**:
- * Node.js
- * MySQL
- * Sequelize ORM
- * Heroku
- * [Coming Soon]
+  * Node.js
+  * MySQL
+  * Sequelize ORM
+  * Heroku
+  * [Coming Soon]
 
 <a name="database"></a>
 ### Database
@@ -109,38 +111,38 @@ Hello! This is a flight delay predictor full-stack web application that allows u
 
 **Features**:
 * **Flight Data Features**:
- * carrier_code
-  * **Description**:
- * date(MM/DD/YYYY)
-  * **Description**:
- * flight_number
-  * **Description**:
- * destination_airport
-  * **Description**:
- * scheduled_departure_time
-  * **Description**:
- * actual_departure_time
-  * **Description**:
- * scheduled_elapsed_time_minutes
-  * **Description**:
- * actual_elapsed_time_minutes
-  * **Description**:
- * departure_delay_minutes
-  * **Description**:
- * wheel-off_time
-  * **Description**:
- * taxi-out_time_minutes
-  * **Description**:
- * delay_carrier_minutes
-  * **Description**:
- * delay_weather_minutes
-  * **Description**:
- * delay_national_aviation_system_minutes
-  * **Description**:
- * delay_security_minutes
-  * **Description**:
- * delay_late_aircrafts_arrival_minutes
-  * **Description**:
+  * carrier_code
+    * **Description**:
+  * date(MM/DD/YYYY)
+    * **Description**:
+  * flight_number
+    * **Description**:
+  * destination_airport
+    * **Description**:
+  * scheduled_departure_time
+    * **Description**:
+  * actual_departure_time
+    * **Description**:
+  * scheduled_elapsed_time_minutes
+    * **Description**:
+  * actual_elapsed_time_minutes
+    * **Description**:
+  * departure_delay_minutes
+    * **Description**:
+  * wheel-off_time
+    * **Description**:
+  * taxi-out_time_minutes
+    * **Description**:
+  * delay_carrier_minutes
+    * **Description**:
+  * delay_weather_minutes
+    * **Description**:
+  * delay_national_aviation_system_minutes
+    * **Description**:
+  * delay_security_minutes
+    * **Description**:
+  * delay_late_aircrafts_arrival_minutes
+    * **Description**:
 
 * **Weather Data Features**:
  * 
