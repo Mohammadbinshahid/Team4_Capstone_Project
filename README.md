@@ -52,25 +52,25 @@ _____
 <a name="team-roles-and-contributions"></a>
 ### Team, Roles, and Contributions
 
-* AllenEapenAlex
+* **AllenEapenAlex**:
   * **Role**: Exploratory Data Analyst, Presenter
   * **Tasks**:
     * Performed an exploratory data analysis on the flight dataset and exported charts;
-* AvinashMehra
+* ****AvinashMehra**:
   * **Role**: Database Engineer, Presenter
   * **Tasks**: 
     * Created the SQL database schema;
-* JaspreetKhela
+* **JaspreetKhela**:
   * **Role**: Full-Stack Web Application Developer, Machine Learning Engineer, Database Engineer, Presenter
   * **Tasks**:
     * Created GutHub project board with issues;
     * Created the full-stack web application;
     * Created the schema for the machine learning model;
-* MohammadShahid
+* **MohammadShahid**:
   * **Role**: Repository Maintainer, Presenter
   * **Tasks**:
     * Created the GutHub repository and branches;
-* RowanBackhouse
+* **RowanBackhouse**:
   * **Role**: Exploratory Data Analyst, Presenter
   * **Tasks**:
     * Performed an exploratory data analysis on the flight dataset and exported charts;
@@ -81,7 +81,7 @@ _____
 ### GitHub
 
 **Branches**:
-* Main Branch
+* **Main Branch**
 * **Team Members' Branches**:
   * AllenEapenAlex
   * AvinashMehra
@@ -94,16 +94,44 @@ _____
 **Technologies**:
 * **Front-End**:
   * HTML
+    * **Description**:
   * CSS
+    * **Description**:
   * JavaScript
+    * **Description**:
   * Handbars.js
+    * **Description**:
 * **Back-End**:
   * Node.js
+    * **Description**:
   * MySQL
+    * **Description**:
   * Sequelize ORM
+    * **Description**:
   * Heroku
+    * **Description**:
   * [Coming Soon]
+    * **Description**:
 
+**Folder Structure**:
+* **__tests__**:
+  * **Description**:
+* **config**:
+  * **Description**:
+* **controllers**:
+  * **Description**:
+* **db**:
+  * **Description**:
+* **model**:
+  * **Description**:
+* **public**:
+  * **Description**:
+* **seeds**:
+  * **Description**:
+* **utils**:
+  * **Description**:
+* **views**:
+  * **Description**:
 _____
 
 <a name="database"></a>
