@@ -17,6 +17,7 @@ _____
 * [Usage](#usage)
 * [Features](#features)
 * [Testing](#testing)
+* [Contributions](#contributions)
 * [Questions](#questions)
 * [Badges](#badges)
 * [License](#license)
@@ -52,25 +53,25 @@ _____
 ### Team, Roles, and Contributions
 
 * AllenEapenAlex
-  * **Role**: Exploratory Data Analyst
+  * **Role**: Exploratory Data Analyst, Presenter
   * **Tasks**:
     * Performed an exploratory data analysis on the flight dataset and exported charts;
 * AvinashMehra
-  * **Role**: Database Engineer
+  * **Role**: Database Engineer, Presenter
   * **Tasks**: 
     * Created the SQL database schema;
 * JaspreetKhela
-  * **Role**: Full-Stack Web Application Developer, Machine Learning Engineer
+  * **Role**: Full-Stack Web Application Developer, Machine Learning Engineer, Database Engineer, Presenter
   * **Tasks**:
     * Created GutHub project board with issues;
     * Created the full-stack web application;
     * Created the schema for the machine learning model;
 * MohammadShahid
-  * **Role**: Repository Maintainer
+  * **Role**: Repository Maintainer, Presenter
   * **Tasks**:
     * Created the GutHub repository and branches;
 * RowanBackhouse
-  * **Role**: Exploratory Data Analyst
+  * **Role**: Exploratory Data Analyst, Presenter
   * **Tasks**:
     * Performed an exploratory data analysis on the flight dataset and exported charts;
 
@@ -108,13 +109,19 @@ _____
 <a name="database"></a>
 ### Database
 
-**Provisional Database**: MySQL with Sequelize ORM
+**Provisional Database**: MySQL with Sequelize Object Relational Model
 
-**Description**:
+**Description**: The database contains the user, flight, and weather data tables.
 
 **Structure/Schema**:
+* **User Data Schema**:
+  * [Coming Soon]
+* **Flight Data Schema**:
+  * [Coming Soon]
+* **Weather Data Schema**:
+  * [Coming Soon]
 
-**Connection with Machine Learning Model**:
+**Connection with Machine Learning Model**: The classificaiton regression machine learning model will upadate the flight_delayed_prediction target field in the aforementioned table(s) to determine whether or not a flight is predicted to be delayed.
 
 _____
 
@@ -123,7 +130,7 @@ _____
 
 **Provisional Machine Learning Model**: Classification Regression Model using PySpark
 
-**Description**:
+**Description**: This web application uses the Classification Regression Machine Learning Model that is implemented by using PySpark since the flight_delayed_prediction target variable stores binary predictions (i.e. the flight is either "delayed" or "not_delayed"). This flight delay prediction model is based on the deep learning and [Levenberg-Marquart algorithm](https://journalofbigdata.springeropen.com/articles/10.1186/s40537-020-00380-z).
 
 **Features**:
 * **Flight Data Features**:
@@ -164,7 +171,7 @@ _____
  * 
 
 **Targets**:
-* flight_delayed
+* flight_delayed_prediction
  * **Description**:
 
 **Key Libraries and Frameworks**:
