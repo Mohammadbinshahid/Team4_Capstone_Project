@@ -3,6 +3,30 @@
 ### Description
 Hello! This is a flight delay predictor full-stack web application that allows users to detemrine whether or not their upcoming flight (within the week) will be delayed using a multitude of features (i.e. independent variables that specified in the [Machine Learning Model](#machine-learning-model) section below). The main feature is the weather for the upcoming week which is sourced from the OpenWeather API. The purpose of this web application is to allow both airlines and customers to better predict whether or not a flight will be cancelled days in advance so that disruption to flight and people's schedules are minimized, thus saving them time and resources that would normally be used for air travel preparations.
 
+### Team and Roles
+
+* AllenEapenAlex
+ * **Role**: Exploratory Data Analyst
+ * **Tasks**:
+  * Performed an exploratory data analysis on the flight dataset and exported charts;
+* AvinashMehra
+ * **Role**: Database Maintainer
+ * **Tasks**: 
+  * Created the SQL database schema
+* JaspreetKhela
+ * **Role**: Full-Stack Web Application Developer, Machine Learning Model Schema
+ * **Tasks**:
+  * Created the full-stack web application
+  * Created the schema for the machine learning model
+* MohammadShahid
+ * **Role**: Repository Maintenance
+ * **Tasks**:
+  * Created the GutHub repository and branches
+* RowanBackhouse
+ * **Role**: Exploratory Data Analysis
+ * **Tasks**:
+  * Performed an exploratory data analysis on the flight dataset and exported charts;
+
 ### Presentation
 
 **Selected Topic**: Flight Delay Predictor
@@ -11,8 +35,12 @@ Hello! This is a flight delay predictor full-stack web application that allows u
 * Airlines can reschedule flights well in advance so that air travel preparation resources are only deployed when the flight is guaranteed to takeoff and flight terminals can be free of passengers when flights are projected to be delayed or cancelled; consequently, airlines save money by not prematurely deploying resources when flights have a high probability of being delayed and customer satisfaction increases due to advance notices of flight cancellations and delays.
 * Passengers can finalize their schedules well in advance knowing that their flight is guaranteed to takeoff on time; consequently, passengers' satisfaction with the airline increases and demand of airlines' customer services are decreased since flight delays and cancellations are practically non-existent.
 
-**Data Source**: https://www.transtats.bts.gov/ONTIME/
-* **Description**: This is the flight data source that we will be using for training and testing our  
+**Data Sources**: 
+* https://www.transtats.bts.gov/ONTIME/
+ * **Description**: This is the flight data source that we are using for training and testing our machine learning model.
+* https://openweathermap.org/forecast5
+* **Description**: This is the weather forecast data sources that we are using for training and testing our machine learning model.
+
 **Questions to Answer**:
 * 
 
@@ -31,9 +59,18 @@ Hello! This is a flight delay predictor full-stack web application that allows u
 * **Feature Branches**:
   * [Coming Soon]
 
-
 **Technologies**:
-* [Coming Soon]
+* **Front-End**:
+ * HTML
+ * CSS
+ * JavaScript
+ * Handbars.js
+* **Back-End**:
+ * Node.js
+ * MySQL
+ * Sequelize ORM
+ * Heroku
+ * [Coming Soon]
 
 <a name="machine-learning-model"></a>
 ### Machine Learning Model
@@ -76,6 +113,7 @@ Hello! This is a flight delay predictor full-stack web application that allows u
   * **Description**:
  * delay_late_aircrafts_arrival_minutes
   * **Description**:
+
 * **Weather Data Features**:
  * 
 
