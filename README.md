@@ -1,7 +1,7 @@
 # Team 4 Capstone Project: Flight Delay Predictions
 
 ### Description
-Hello! This is a flight delay predictor full-stack web application that allows users to detemrine whether or not their upcoming flight (within the week) will be delayed using a multitude of features (i.e. independent variables that specified in the[Machine Learning Model](#machine-learning-model) section below). The main feature is the weather for the upcoming week which is sourced from the OpenWeather API. The purpose of this web application is to allow both airlines and customers to better predict whether or not a flight will be cancelled days in advance so that disruption to flight and people's schedules are minimized, thus saving them time and resources that would normally be used for air travel preparations.
+Hello! This is a flight delay predictor full-stack web application that allows users to detemrine whether or not their upcoming flight (within the week) will be delayed using a multitude of features (i.e. independent variables that specified in the [Machine Learning Model](#machine-learning-model) section below). The main feature is the weather for the upcoming week which is sourced from the OpenWeather API. The purpose of this web application is to allow both airlines and customers to better predict whether or not a flight will be cancelled days in advance so that disruption to flight and people's schedules are minimized, thus saving them time and resources that would normally be used for air travel preparations.
 
 ### Presentation
 
@@ -43,7 +43,22 @@ Hello! This is a flight delay predictor full-stack web application that allows u
 **Description**:
 
 **Features**:
-* 
+* carrier_code
+* date(MM/DD/YYYY)
+* flight_number
+* destination_airport
+* scheduled_departure_time
+* actual_departure_time
+* scheduled_elapsed_time_minutes
+* actual_elapsed_time_minutes
+* departure_delay_minutes
+* wheel-off_time
+* taxi-out_time_minutes
+* delay_carrier_minutes
+* delay_weather_minutes
+* delay_national_aviation_system_minutes
+* delay_security_minutes
+* delay_late_aircrafts_arrival_minutes* 
 
 **Targets**:
 * 
