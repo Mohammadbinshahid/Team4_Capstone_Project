@@ -11,8 +11,8 @@ Hello! This is a flight delay predictor full-stack web application that allows u
 * Airlines can reschedule flights well in advance so that air travel preparation resources are only deployed when the flight is guaranteed to takeoff and flight terminals can be free of passengers when flights are projected to be delayed or cancelled; consequently, airlines save money by not prematurely deploying resources when flights have a high probability of being delayed and customer satisfaction increases due to advance notices of flight cancellations and delays.
 * Passengers can finalize their schedules well in advance knowing that their flight is guaranteed to takeoff on time; consequently, passengers' satisfaction with the airline increases and demand of airlines' customer services are decreased since flight delays and cancellations are practically non-existent.
 
-**Data Source**: 
-* **Description**:
+**Data Source**: https://www.transtats.bts.gov/ONTIME/
+* **Description**: This is the flight data source that we will be using for training and testing our  
 **Questions to Answer**:
 * 
 
@@ -43,25 +43,45 @@ Hello! This is a flight delay predictor full-stack web application that allows u
 **Description**:
 
 **Features**:
-* carrier_code
-* date(MM/DD/YYYY)
-* flight_number
-* destination_airport
-* scheduled_departure_time
-* actual_departure_time
-* scheduled_elapsed_time_minutes
-* actual_elapsed_time_minutes
-* departure_delay_minutes
-* wheel-off_time
-* taxi-out_time_minutes
-* delay_carrier_minutes
-* delay_weather_minutes
-* delay_national_aviation_system_minutes
-* delay_security_minutes
-* delay_late_aircrafts_arrival_minutes* 
+* **Flight Data Features**:
+ * carrier_code
+  * **Description**:
+ * date(MM/DD/YYYY)
+  * **Description**:
+ * flight_number
+  * **Description**:
+ * destination_airport
+  * **Description**:
+ * scheduled_departure_time
+  * **Description**:
+ * actual_departure_time
+  * **Description**:
+ * scheduled_elapsed_time_minutes
+  * **Description**:
+ * actual_elapsed_time_minutes
+  * **Description**:
+ * departure_delay_minutes
+  * **Description**:
+ * wheel-off_time
+  * **Description**:
+ * taxi-out_time_minutes
+  * **Description**:
+ * delay_carrier_minutes
+  * **Description**:
+ * delay_weather_minutes
+  * **Description**:
+ * delay_national_aviation_system_minutes
+  * **Description**:
+ * delay_security_minutes
+  * **Description**:
+ * delay_late_aircrafts_arrival_minutes
+  * **Description**:
+* **Weather Data Features**:
+ * 
 
 **Targets**:
-* 
+* flight_delayed
+ * **Description**:
 
 **Key Methods**:
 
