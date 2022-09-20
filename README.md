@@ -3,7 +3,7 @@
 
 <a name="description"></a>
 ### Description
-Hello! This is a flight delay predictor full-stack web application that allows users to detemrine whether or not their upcoming flight (within the week) will be delayed or cancelled using a multitude of features (i.e. independent variables that specified in the [Machine Learning Model](#machine-learning-model) section below). The main feature is the weather for the upcoming week which is sourced from the OpenWeather API. The purpose of this web application is to allow both airlines and customers to better predict whether or not a flight will be delayed or cancelled days in advance so that disruption to flight and people's schedules are minimized, thus saving them time and resources that would normally be used for air travel preparations.
+Hello! This is a flight delay predictor full-stack web application that allows users to determine whether or not their upcoming flight (within the week) will be delayed or cancelled using a multitude of features (i.e. independent variables that specified in the [Machine Learning Model](#machine-learning-model) section below). The main feature is the weather for the upcoming week which is sourced from the OpenWeather API. The purpose of this web application is to allow both airlines and customers to better predict whether or not a flight will be delayed or cancelled days in advance so that disruption to flight and people's schedules are minimized, thus saving them time and resources that would normally be used for air travel preparations.
 
 _____
 
@@ -67,9 +67,10 @@ _____
     * Created the full-stack web application;
     * Created the schema for the machine learning model;
 * **MohammadShahid**:
-  * **Role**: Repository Maintainer, Presenter
+  * **Role**: Repository Maintainer, Exploratory Data Analyst, Presenter
   * **Tasks**:
     * Created the GutHub repository and branches;
+    * Performed an exploratory data analysis on the flight dataset and exported charts;
 * **RowanBackhouse**:
   * **Role**: Exploratory Data Analyst, Presenter
   * **Tasks**:
@@ -156,9 +157,9 @@ _____
 <a name="machine-learning-model"></a>
 ### Machine Learning Model
 
-**Provisional Machine Learning Model**: Classification Regression Model using PySpark
+**Provisional Machine Learning Model**: Supervised Classification Regression Model using PySpark
 
-**Description**: This web application uses the Classification Regression Machine Learning Model that is implemented by using PySpark since the flight_delayed_prediction target variable stores binary predictions (i.e. the flight is either "delayed" or "not_delayed"). This flight delay prediction model is based on the deep learning and [Levenberg-Marquart algorithm](https://journalofbigdata.springeropen.com/articles/10.1186/s40537-020-00380-z).
+**Description**: This web application uses the Supervised Classification Regression Machine Learning Model that is implemented by using PySpark since the flight_delayed_prediction target variable stores binary predictions (i.e. the flight is either "delayed" or "not_delayed"). This flight delay prediction model is based on the deep learning and [Levenberg-Marquart algorithm](https://journalofbigdata.springeropen.com/articles/10.1186/s40537-020-00380-z).
 
 **Features**:
 * **Flight Data Features**:
