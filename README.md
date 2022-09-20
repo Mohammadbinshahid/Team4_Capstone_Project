@@ -48,6 +48,8 @@ _____
 * Which days of the week have most flight delays? Are there more flight delays on weekends or week days?
 * What is the probability of a flight delay on a certain day of the week?
 
+**GitHub Project Board Link**:
+
 **Presentation Link**: https://docs.google.com/presentation/d/1cRceZIrM9SWz3dwcT1ai_D2vIFZ40tSatOfSH0Q2H6E/edit?usp=sharing
 
 <a name="web-app-link"></a>
