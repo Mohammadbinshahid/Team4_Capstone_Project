@@ -211,13 +211,13 @@ _____
       * **Description**:
     * destination_airport
       * **Description**:
+  * The following features were combined into a single column to yield a "delayed" or "not_delayed" value for a particular flight:
     * scheduled_departure_time
       * **Description**:
     * actual_departure_time
       * **Description**:
     * scheduled_elapsed_time_minutes
       * **Description**:
-  * The following features were combined into a single column to yield a "delayed" or "not_delayed" value for a particular flight:
     * actual_elapsed_time_minutes
       * **Description**:
     * departure_delay_minutes
