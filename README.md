@@ -112,7 +112,7 @@ _____
   * [Coming Soon]
 
 **Technologies**:
-This is a full-stack web application that primarily uses a Node.js backend with Express.js as the 
+This is a full-stack web application that primarily uses a Node.js with Express.js server platform, MySQL database, and Handebars.js templating engine. 
 
 * **Data Analysis**:
   * **Jupyter Notebook**:
