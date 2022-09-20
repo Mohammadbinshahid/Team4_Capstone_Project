@@ -61,9 +61,10 @@ _____
 ### Team, Roles, and Contributions
 
 * **[Allen Eapen Alex](https://github.com/AllenAx91)**:
-  * **Role**: Exploratory Data Analyst, Presenter
+  * **Role**: Exploratory Data Analyst, Machine Learning Engineer, Presenter
   * **Tasks**:
     * Performed an exploratory data analysis on the flight dataset and exported charts;
+    * Created a PySpark mock-up of the machine learning model;
     * Contributed to crafting the presentation;
 * **[Avinash Mehra](https://github.com/WhySoCodius)**:
   * **Role**: Database Engineer, Presenter
@@ -84,9 +85,10 @@ _____
     * Performed an exploratory data analysis on the flight dataset and exported charts;
     * Contributed to crafting the presentation;
 * **[Rowan Backhouse](https://github.com/roborowanb)**:
-  * **Role**: Exploratory Data Analyst, Presenter
+  * **Role**: Exploratory Data Analyst, Machine Learning Engineer, Presenter
   * **Tasks**:
     * Performed an exploratory data analysis on the flight dataset and exported charts;
+    * Created a PySpark mock-up of the machine learning model;
     * Contributed to crafting the presentation;
 
 _____
@@ -211,7 +213,7 @@ _____
       * **Description**:
     * destination_airport
       * **Description**:
-  * The following features were combined into a single column to yield a "delayed" or "not_delayed" value for a particular flight:
+  * The following features were combined into a single "Outcome" column to yield a "delayed" or "not_delayed" value for a particular flight:
     * scheduled_departure_time
       * **Description**:
     * actual_departure_time
@@ -238,13 +240,13 @@ _____
       * **Description**:
 
 * **Weather Data Features**:
-  * 
+  * [Coming Soon]
 
 **Targets**:
 * flight_delayed_prediction
   * **Description**:
 
-**PreProcessing Data**:
+**Preprocessing Data**:
 To preprocess the data for use in the machine learning model, we completed the following steps:
 1. We imported the raw data from the aforementioned datasets and APIs.
 2. We joined dataframes and retained the desired columns from the dataframes.
