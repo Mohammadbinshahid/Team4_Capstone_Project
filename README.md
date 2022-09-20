@@ -144,8 +144,8 @@ This is a full-stack web application that primarily uses a Node.js with Express.
     * **Description**: Sequelize was used as the Object Relational Mapper used to interface with the SQL database.
   * **Spark**:
     * **Description**: Spark was used as the library used for running machine learning models.
-  * **Scikit-Learn**:
-    * **Description**: Scikit-Learn was used as a Python library used for creating and testing machine learning models.
+  * **scikit-learn**:
+    * **Description**: scikit-learn was used as a Python library used for creating and testing machine learning models.
   * **Heroku**:
     * **Description**: Heroku was used as the hosting platform for the web application.
   * [Coming Soon]
@@ -240,16 +240,17 @@ _____
 * flight_delayed_prediction
   * **Description**:
 
-**PreProcess Data**:
-To preprocess the data for use in the machine learning models, we completed the following steps:
-1. W selected the desired columns from the database.
-2. We removed records with null values from the dataframe.
-3. We converted the date column to DateTime datatype.
+**PreProcessing Data**:
+To preprocess the data for use in the machine learning model, we completed the following steps:
+1. We imported the raw data from the aforementioned datasets and APIs.
+2. We joined dataframes and retained the desired columns from the dataframes.
+3. We removed records with null values from the dataframe.
+4. We converted the date column to DateTime datatype.
 
 **Key Libraries and Frameworks**:
 * [Coming Soon]
 
-**Sample JavaScript Spark Code**:
+**Sample JavaScript Spark and scikit-learn Code**:
 ```
 // Import the spark package
 var sparkSessionType = Java.type("org.apache.spark.sql.SparkSession")
@@ -302,7 +303,7 @@ _____
 No installation is required. Please visit the [deployment link](#web-app-link).
 
 For developers who wish to run the application locally, please follow these steps:
-* 
+* [Coming Soon]
 
 _____
 
@@ -318,8 +319,12 @@ The web application has the following features:
 * User account creation;
 * User commenting;
 * Dashboard with a form asking for a user's flight information;
-* Machine learning model to provide a recommendation to a user on whether or not his or her flight is likely to be delayed;
+* Machine learning model to provide a recommendation to a user on whether or not his or her flight is likely to be delayed; and
 * Weather widgets that provide the current weather conditions and a 5-day forecast.
+
+For future development, we hope to add the following features:
+* Create Android and iOS applications that leverage our data API endpoint;
+* [Coming Soon]
 
 _____
 
@@ -328,7 +333,7 @@ _____
 Please visit the [deployment link](#web-app-link).
 
 For developers who wish to use Jest to test the application locally, please follow these steps:
-* 
+* [Coming Soon]
 _____
 
 <a name="contributions"></a>
