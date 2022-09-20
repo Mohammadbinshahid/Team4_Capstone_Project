@@ -44,7 +44,7 @@ _____
 * Are delays connected to weather patterns?
 * Average Flight Delays (minutes) by Airline Carrier?
 * Are majority of the flight delays from LaGuardia Airport specific to one airline?
-* Are flight delays more prevalent in certain periods or months of the year? e.g. Chrismas / new year.
+* Are flight delays more prevalent in certain periods or months of the year? e.g. Christmas / New years.
 * Which days of the week have most flight delays? Are there more flight delays on weekends than week days?
 * What is the likelihood of a flight getting delayed on a certain day of the week
 
@@ -69,7 +69,7 @@ _____
 * **JaspreetKhela**:
   * **Role**: Full-Stack Web Application Developer, Machine Learning Engineer, Database Engineer, Presenter
   * **Tasks**:
-    * Created GutHub project board with issues;
+    * Created GitHub project board with issues;
     * Created the full-stack web application;
     * Created the schema for the machine learning model;
 * **MohammadShahid**:
