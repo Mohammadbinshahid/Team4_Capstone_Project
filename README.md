@@ -48,7 +48,7 @@ _____
 * Which days of the week have most flight delays? Are there more flight delays on weekends than week days?
 * What is the likelihood of a flight getting delayed on a certain day of the week
 
-**Presentation Link**: [Coming Soon]
+**Presentation Link**: https://docs.google.com/presentation/d/1cRceZIrM9SWz3dwcT1ai_D2vIFZ40tSatOfSH0Q2H6E/edit?usp=sharing
 
 <a name="web-app-link"></a>
 **Web Application Link**: [Coming Soon]
@@ -58,34 +58,47 @@ _____
 <a name="team-roles-and-contributions"></a>
 ### Team, Roles, and Contributions
 
-* **AllenEapenAlex**:
+* **[Allen Eapen Alex](https://github.com/AllenAx91)**:
   * **Role**: Exploratory Data Analyst, Presenter
   * **Tasks**:
-    * Performed an exploratory data analysis on the flight dataset and exported charts;
-* **AvinashMehra**:
+    * Performed an exploratory data analysis on the flight dataset and exported charts;\
+    * Contributed to crafting the presentation;
+* **[Avinash Mehra](https://github.com/WhySoCodius)**:
   * **Role**: Database Engineer, Presenter
   * **Tasks**: 
     * Created the SQL database schema;
-* **JaspreetKhela**:
+    * Contributed to crafting the presentation;
+* **[Jaspreet Khela](https://github.com/JaspreetKhela)**:
   * **Role**: Full-Stack Web Application Developer, Machine Learning Engineer, Database Engineer, Presenter
   * **Tasks**:
     * Created GitHub project board with issues;
-    * Created the full-stack web application;
-    * Created the schema for the machine learning model;
-* **MohammadShahid**:
+    * Created the the machine learning model;
+    * Created the full-stack web application running the machine learning model using Spark for JavaScript;
+    * Contributed to crafting the presentation;
+* **[Mohammad Shahid](https://github.com/Mohammadbinshahid)**:
   * **Role**: Repository Maintainer, Exploratory Data Analyst, Presenter
   * **Tasks**:
     * Created the GitHub repository and branches;
     * Performed an exploratory data analysis on the flight dataset and exported charts;
-* **RowanBackhouse**:
+    * Contributed to crafting the presentation;
+* **[Rowan Backhouse](https://github.com/roborowanb)**:
   * **Role**: Exploratory Data Analyst, Presenter
   * **Tasks**:
     * Performed an exploratory data analysis on the flight dataset and exported charts;
+    * Contributed to crafting the presentation;
 
 _____
 
 <a name="github"></a>
 ### GitHub
+**Communication Protocals**:
+* **Tools**: Communication for this project was primarily done through Slack and Zoom calls.
+  * Zoom calls were schedule for:
+    * Tuesday and Thursdays from 7:00 PM to 9:00 PM
+    * Monday at 7:00 PM
+* **Project Board**: A GitHub project board was created to document progress on tasks.
+* **Stuck Agreement**: If any developer was stuck on a problem for more than 3 hours, he was required to seek assistance from the project's other developers.
+* **Conflict Resolution**: Since there are five developers working on this project, a two-thirds majority is required in votes to make major changes to the application (i.e. to make major changes to the application's architecture, content, styling, etc). 
 
 **Branches**:
 * **Main Branch**
@@ -99,46 +112,50 @@ _____
   * [Coming Soon]
 
 **Technologies**:
-* **Front-End**:
-  * HTML
-    * **Description**:
-  * CSS
-    * **Description**:
-  * JavaScript
-    * **Description**:
-  * Handbars.js
-    * **Description**:
-* **Back-End**:
-  * Node.js
-    * **Description**:
-  * MySQL
-    * **Description**:
-  * Sequelize ORM
-    * **Description**:
-  * Heroku
-    * **Description**:
+This is a full-stack web application that primarily uses a Node.js backend with Express.js as the 
+
+* **Primary Front-End**:
+  * **HTML**:
+    * **Description**: HTML creates the webpage's structure.
+  * **CSS**:
+    * **Description**: CSS creates the webpage's styling.
+  * **JavaScript**:
+    * **Description**: JavaScript creates the webpage's functionality.
+  * **Handbars.js**:
+    * **Description**: Handlebar.js is a templating engine for dynamically modifying and serving HTML code.
+* **Primary Back-End**:
+  * **Node.js**:
+    * **Description**: Node.js is the back-end platform from which the other back-end techologies will be imported.
+  * **Express.js**:
+    * **Description**: Express.js is the back-end infrastruture that runs the server application.
+  * **MySQL**:
+    * **Description**: MySQL is the SQL database.
+  * **Sequelize ORM**:
+    * **Description**: Sequelize is the Object Relational Mapper used to interface with the SQL database.
+  * **Heroku**:
+    * **Description**: Heroku is the hosting platform for the web application.
   * [Coming Soon]
     * **Description**:
 
 **Folder Structure**:
 * **__tests__**:
-  * **Description**:
+  * **Description**: This is a folder for containing unit tests that can be run using the Jest npm package.
 * **config**:
-  * **Description**:
+  * **Description**: This folder contains configurations files for the web application.
 * **controllers**:
-  * **Description**:
+  * **Description**: This folder contains the code that controls the functionality of the web application.
 * **db**:
-  * **Description**:
+  * **Description**: This folder contains SQL database code.
 * **model**:
-  * **Description**:
+  * **Description**: This folder contains the SQL database's schema.
 * **public**:
-  * **Description**:
+  * **Description**: This folder contains the assets that will be used on the front-end (i.e. HTML, CSS, JavaScript, etc. code).
 * **seeds**:
-  * **Description**:
+  * **Description**: This folder contains the code that populates the SQL database.
 * **utils**:
-  * **Description**:
+  * **Description**: This folder contains ultility functions.
 * **views**:
-  * **Description**:
+  * **Description**: This folder contains HTML code that will be displayed to the end user.
 _____
 
 <a name="database"></a>
@@ -156,16 +173,16 @@ _____
 * **Weather Data Schema**:
   * [Coming Soon]
 
-**Connection with Machine Learning Model**: The classificaiton regression machine learning model will upadate the flight_delayed_prediction target field in the aforementioned table(s) to determine whether or not a flight is predicted to be delayed.
+**Connection with Machine Learning Model**: The supervised classificaiton regression machine learning model will update the flight_delayed_prediction target field in the aforementioned table(s) to determine whether or not a flight is predicted to be delayed or cancelled.
 
 _____
 
 <a name="machine-learning-model"></a>
 ### Machine Learning Model
 
-**Provisional Machine Learning Model**: Supervised Classification Regression Model using PySpark
+**Provisional Machine Learning Model**: Supervised Classification Regression Model using Spark for Python and JavaScript
 
-**Description**: This web application uses the Supervised Classification Regression Machine Learning Model that is implemented by using PySpark since the flight_delayed_prediction target variable stores binary predictions (i.e. the flight is either "delayed" or "not_delayed"). This flight delay prediction model is based on the deep learning and [Levenberg-Marquart algorithm](https://journalofbigdata.springeropen.com/articles/10.1186/s40537-020-00380-z).
+**Description**: This web application uses the Supervised Classification Regression Machine Learning Model that is implemented in Python for testing and JavaScript for deployment since the flight_delayed_prediction target variable stores binary predictions (i.e. the flight is either "delayed" or "not_delayed"). This flight delay prediction model is based on the deep learning and [Levenberg-Marquart algorithm](https://journalofbigdata.springeropen.com/articles/10.1186/s40537-020-00380-z).
 
 **Features**:
 * **Flight Data Features**:
@@ -211,11 +228,17 @@ _____
 
 **Key Libraries and Frameworks**:
 * [Coming Soon]
+
+**Sample Code**:
+
 _____
 
 <a name="installation"></a>
 ### Installation
 No installation is required. Please visit the [deployment link](#web-app-link).
+
+For developers who wish to run the application locally, please follow these steps:
+* 
 
 _____
 
@@ -227,7 +250,12 @@ _____
 
 <a name="features"></a>
 ### Features
-[Coming Soon]
+The web application has the following features:
+* User account creation;
+* User commenting;
+* Dashboard with a form asking for a user's flight information;
+* Machine learning model to provide a recommendation to a user on whether or not his or her flight is likely to be delayed;
+* Weather widgets that provide the current weather conditions and a 5-day forecast.
 
 _____
 
@@ -235,6 +263,8 @@ _____
 ### Testing
 Please visit the [deployment link](#web-app-link).
 
+For developers who wish to use Jest to test the application locally, please follow these steps:
+* 
 _____
 
 <a name="contributions"></a>
