@@ -96,9 +96,9 @@ _____
 **Communication Protocals**:
 * **Tools**: Communication for this project was primarily done through Slack and Zoom calls.
   * Zoom calls were scheduled for:
-    * Tuesday and Thursdays from 7:00 PM to 9:00 PM
-    * Monday at 7:00 PM
-* **Project Board**: A GitHub project board was created to document progress on tasks.
+    * Tuesdays and Thursdays from 7:00 PM to 9:00 PM
+    * Mondays at 7:00 PM
+* **Project Board**: A GitHub project board was created to document progress on tasks primarily using issues.
 * **Stuck Agreement**: If any developer was stuck on a problem for more than 3 hours, he was required to seek assistance from the project's other developers.
 * **Conflict Resolution**: Since there are five developers working on this project, a two-thirds majority is required in votes to make major changes to the application (i.e. to make major changes to the application's architecture, content, styling, etc). 
 
