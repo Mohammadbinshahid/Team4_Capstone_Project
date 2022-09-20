@@ -114,28 +114,40 @@ _____
 **Technologies**:
 This is a full-stack web application that primarily uses a Node.js backend with Express.js as the 
 
+* **Data Analysis**:
+  * **Jupyter Notebook**:
+    * **Description**: Jupyter Notebook was used to run the Exploratory Data Analysis code.
+  * **Numpy**:
+    * **Description**: Numpy was used for mathematical functions and attributes.
+  * **Pandas**:
+    * **Description**: Pandas was used for creating, modifying, and analyzing datasets in dataframes.
+  * **Matplotlib**:
+    * **Description**: Matplotlib was used for plotting analyzed data contained in arrays and dataframes.
+
 * **Primary Front-End**:
   * **HTML**:
-    * **Description**: HTML creates the webpage's structure.
+    * **Description**: HTML was used to create the webpage's structure.
   * **CSS**:
-    * **Description**: CSS creates the webpage's styling.
+    * **Description**: CSS was used to create the webpage's styling.
   * **JavaScript**:
-    * **Description**: JavaScript creates the webpage's functionality.
+    * **Description**: JavaScript was used to create the webpage's functionality.
   * **Handbars.js**:
-    * **Description**: Handlebar.js is a templating engine for dynamically modifying and serving (static) HTML code.
+    * **Description**: Handlebar.js was used as a templating engine for dynamically modifying and serving (static) HTML code.
 * **Primary Back-End**:
   * **Node.js**:
-    * **Description**: Node.js is the back-end platform from which the other back-end techologies will be imported.
+    * **Description**: Node.js is was used as the back-end platform from which the other back-end techologies will be imported.
   * **Express.js**:
-    * **Description**: Express.js is the back-end infrastruture that runs the server application.
+    * **Description**: Express.js was used as the back-end infrastruture that runs the server application.
   * **MySQL**:
-    * **Description**: MySQL is the SQL database.
+    * **Description**: MySQL was used as the SQL database.
   * **Sequelize ORM**:
-    * **Description**: Sequelize is the Object Relational Mapper used to interface with the SQL database.
+    * **Description**: Sequelize was used as the Object Relational Mapper used to interface with the SQL database.
   * **Spark**:
-    * **Description**: Spark is the library used for creating and using machine learning models.
+    * **Description**: Spark was used as the library used for running machine learning models.
+  * **Scikit-Learn**:
+    * **Description**: Scikit-Learn was used as a Python library used for creating and testing machine learning models.
   * **Heroku**:
-    * **Description**: Heroku is the hosting platform for the web application.
+    * **Description**: Heroku was used as the hosting platform for the web application.
   * [Coming Soon]
     * **Description**:
 
@@ -228,16 +240,24 @@ _____
 * flight_delayed_prediction
   * **Description**:
 
+**PreProcess Data**:
+To preprocess the data for use in the machine learning models, we completed the following steps:
+1. W selected the desired columns from the database.
+2. We removed records with null values from the dataframe.
+3. We converted the date column to DateTime datatype.
+
 **Key Libraries and Frameworks**:
 * [Coming Soon]
 
 **Sample JavaScript Spark Code**:
 ```
+// Import the spark package
 var sparkSessionType = Java.type("org.apache.spark.sql.SparkSession")
 
-var sparkSession = sparkSessionType.builder().master("local[*]").appName("example").getOrCreate()
+// Create a spark session
+var sparkSession = sparkSessionType.builder().master("local[*]").appName("flight_delay_predictor").getOrCreate()
 
-var data = sparkSession.read().format("csv").option("header","true").load("adult.csv")
+var data = sparkSession.read().format("csv").option("header","true").load("flights_data.csv")
 
 data.show()
 
@@ -248,6 +268,32 @@ http.createServer(function (request, response) {
 	    response.writeHead(200, {"Content-Type": "text/html"});
 	        response.end(data.schema().prettyJson());
 }).listen(8000, function() { console.log("Graal.js server running at http://127.0.0.1:8000/"); });
+
+// Import Scikit-Node package and save as "sklearn"
+sklearn = require(<package-directory>)
+
+// Define the features and target(s)
+y = df["Outcome"]
+X = df.drop(columns="Outcome")
+
+// Create the training and testing sets
+X_train, X_test, y_train, y_test = sklearn.model_selection.train_test_split(X,
+   y, random_state=1, stratify=y) 
+
+// Define the model
+classifier = sklearn.linear_model.LogisticRegression(solver='lbfgs',
+   max_iter=200,
+   random_state=1)
+   
+// Run the model on the dataframe
+classifier.fit(X_train, y_train)
+
+// Predict outcomes for test data
+y_pred = classifier.predict(X_test)
+
+// Calculate the accuracy score for the model
+console.log(sklearn.metrics.accuracy_score(y_test, y_pred))
+
 ```
 _____
 
