@@ -202,38 +202,40 @@ _____
 
 **Features**:
 * **Flight Data Features**:
-  * carrier_code
-    * **Description**: This is the airline's identification code.
-  * date(MM/DD/YYYY)
-    * **Description**:
-  * flight_number
-    * **Description**:
-  * destination_airport
-    * **Description**:
-  * scheduled_departure_time
-    * **Description**:
-  * actual_departure_time
-    * **Description**:
-  * scheduled_elapsed_time_minutes
-    * **Description**:
-  * actual_elapsed_time_minutes
-    * **Description**:
-  * departure_delay_minutes
-    * **Description**:
-  * wheel-off_time
-    * **Description**:
-  * taxi-out_time_minutes
-    * **Description**:
-  * delay_carrier_minutes
-    * **Description**:
-  * delay_weather_minutes
-    * **Description**:
-  * delay_national_aviation_system_minutes
-    * **Description**:
-  * delay_security_minutes
-    * **Description**:
-  * delay_late_aircrafts_arrival_minutes
-    * **Description**:
+  * The following features are those that the passenger and airline know well in advance; thus, these are the primary parameters used for predicting whether or not a flight will be delayed:
+    * carrier_code
+      * **Description**: This is the airline's identification code.
+    * date(MM/DD/YYYY)
+      * **Description**:
+    * flight_number
+      * **Description**:
+    * destination_airport
+      * **Description**:
+    * scheduled_departure_time
+      * **Description**:
+    * actual_departure_time
+      * **Description**:
+    * scheduled_elapsed_time_minutes
+      * **Description**:
+  * The following features were combined into a single column to yield a "delayed" or "not_delayed" value for a particular flight:
+    * actual_elapsed_time_minutes
+      * **Description**:
+    * departure_delay_minutes
+      * **Description**:
+    * wheel-off_time
+      * **Description**:
+    * taxi-out_time_minutes
+      * **Description**:
+    * delay_carrier_minutes
+      * **Description**:
+    * delay_weather_minutes
+      * **Description**:
+    * delay_national_aviation_system_minutes
+      * **Description**:
+    * delay_security_minutes
+      * **Description**:
+    * delay_late_aircrafts_arrival_minutes
+      * **Description**:
 
 * **Weather Data Features**:
   * 
