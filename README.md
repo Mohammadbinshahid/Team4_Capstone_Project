@@ -40,13 +40,13 @@ _____
   * **Description**: This is the weather forecast data sources that we are using for training and testing our machine learning model. We are using the "5-Day Weather Forecast" API for the weather data since it is the only free API provided by [OpenWeather](https://openweathermap.org/price).
 
 **Questions to Answer**:
-* What are the main reasons for flight delays?
-* Are delays connected to weather patterns?
-* Average Flight Delays (minutes) by Airline Carrier?
+* What are the primary reasons for flight delays?
+* Are flight delays connected to weather patterns?
+* What are the "Average Flight Delays (minutes)" by Airline Carrier?
 * Are majority of the flight delays from LaGuardia Airport specific to one airline?
-* Are flight delays more prevalent in certain periods or months of the year? e.g. Christmas / New years.
-* Which days of the week have most flight delays? Are there more flight delays on weekends than week days?
-* What is the likelihood of a flight getting delayed on a certain day of the week
+* Are flight delays more prevalent in certain periods of the year? e.g. Christmas, new years, etc.?
+* Which days of the week have most flight delays? Are there more flight delays on weekends or week days?
+* What is the probability of a flight delay on a certain day of the week?
 
 **Presentation Link**: https://docs.google.com/presentation/d/1cRceZIrM9SWz3dwcT1ai_D2vIFZ40tSatOfSH0Q2H6E/edit?usp=sharing
 
@@ -93,7 +93,7 @@ _____
 ### GitHub
 **Communication Protocals**:
 * **Tools**: Communication for this project was primarily done through Slack and Zoom calls.
-  * Zoom calls were schedule for:
+  * Zoom calls were scheduled for:
     * Tuesday and Thursdays from 7:00 PM to 9:00 PM
     * Monday at 7:00 PM
 * **Project Board**: A GitHub project board was created to document progress on tasks.
@@ -122,7 +122,7 @@ This is a full-stack web application that primarily uses a Node.js backend with 
   * **JavaScript**:
     * **Description**: JavaScript creates the webpage's functionality.
   * **Handbars.js**:
-    * **Description**: Handlebar.js is a templating engine for dynamically modifying and serving HTML code.
+    * **Description**: Handlebar.js is a templating engine for dynamically modifying and serving (static) HTML code.
 * **Primary Back-End**:
   * **Node.js**:
     * **Description**: Node.js is the back-end platform from which the other back-end techologies will be imported.
@@ -132,6 +132,8 @@ This is a full-stack web application that primarily uses a Node.js backend with 
     * **Description**: MySQL is the SQL database.
   * **Sequelize ORM**:
     * **Description**: Sequelize is the Object Relational Mapper used to interface with the SQL database.
+  * **Spark**:
+    * **Description**: Spark is the library used for creating and using machine learning models.
   * **Heroku**:
     * **Description**: Heroku is the hosting platform for the web application.
   * [Coming Soon]
@@ -165,7 +167,7 @@ _____
 
 **Description**: The database contains the user, flight, and weather data tables.
 
-**Structure/Schema**:
+**Structure/Schema/Entity Relationship Diagrams**:
 * **User Data Schema**:
   * [Coming Soon]
 * **Flight Data Schema**:
@@ -229,8 +231,24 @@ _____
 **Key Libraries and Frameworks**:
 * [Coming Soon]
 
-**Sample Code**:
+**Sample JavaScript Spark Code**:
+```
+var sparkSessionType = Java.type("org.apache.spark.sql.SparkSession")
 
+var sparkSession = sparkSessionType.builder().master("local[*]").appName("example").getOrCreate()
+
+var data = sparkSession.read().format("csv").option("header","true").load("adult.csv")
+
+data.show()
+
+// Publish data in browser using a local server.
+const http = require("http");
+
+http.createServer(function (request, response) {
+	    response.writeHead(200, {"Content-Type": "text/html"});
+	        response.end(data.schema().prettyJson());
+}).listen(8000, function() { console.log("Graal.js server running at http://127.0.0.1:8000/"); });
+```
 _____
 
 <a name="installation"></a>
