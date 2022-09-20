@@ -277,29 +277,27 @@ http.createServer(function (request, response) {
 }).listen(8000, function() { console.log("Graal.js server running at http://127.0.0.1:8000/"); });
 
 // Import Scikit-Node package and save as "sklearn"
-sklearn = require(<package-directory>)
+const sklearn = require(<package-directory>);
 
 // Define the features and target(s)
-y = df["Outcome"]
-X = df.drop(columns="Outcome")
+const y = df["Outcome"];
+const X = df.drop(columns="Outcome");
 
 // Create the training and testing sets
-X_train, X_test, y_train, y_test = sklearn.model_selection.train_test_split(X,
-   y, random_state=1, stratify=y) 
+const X_train, X_test, y_train, y_test = sklearn.model_selection.train_test_split(X,
+   y, random_state=1, stratify=y); 
 
 // Define the model
-classifier = sklearn.linear_model.LogisticRegression(solver='lbfgs',
-   max_iter=200,
-   random_state=1)
+const classifier = sklearn.linear_model.LogisticRegression(solver='lbfgs', max_iter=200, random_state=1);
    
 // Run the model on the dataframe
-classifier.fit(X_train, y_train)
+classifier.fit(X_train, y_train);
 
 // Predict outcomes for test data
-y_pred = classifier.predict(X_test)
+const y_pred = classifier.predict(X_test);
 
 // Calculate the accuracy score for the model
-console.log(sklearn.metrics.accuracy_score(y_test, y_pred))
+console.log(sklearn.metrics.accuracy_score(y_test, y_pred));
 
 ```
 _____
