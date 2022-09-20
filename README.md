@@ -65,34 +65,40 @@ _____
 ### Team, Roles, and Contributions
 
 * **[Allen Eapen Alex](https://github.com/AllenAx91)**:
-  * **Role**: Exploratory Data Analyst, Machine Learning Engineer, Presenter
+  * **Role**: Exploratory Data Analyst, Machine Learning Engineer, UX/UI Designer, Presenter
   * **Tasks**:
     * Performed an exploratory data analysis on the flight dataset and exported charts;
     * Created a PySpark mock-up of the machine learning model;
+    * Help design the UX/UI for the dashboard by creating a wireframe for the dashbaord;
     * Contributed to crafting the presentation;
 * **[Avinash Mehra](https://github.com/WhySoCodius)**:
-  * **Role**: Database Engineer, Presenter
+  * **Role**: Database Engineer, UX/UI Designer, Presenter
   * **Tasks**: 
     * Created the SQL database schema;
+    * Help design the UX/UI for the dashboard by creating a wireframe for the dashbaord;
     * Contributed to crafting the presentation;
 * **[Jaspreet Khela](https://github.com/JaspreetKhela)**:
-  * **Role**: Project Manager/Technical Lead, Full-Stack Web Application Developer, Machine Learning Engineer, Database Engineer, Presenter
+  * **Role**: Project Manager/Technical Lead, Full-Stack Web Application Developer, Machine Learning Engineer, Database Engineer, UX/UI Designer, Presenter
   * **Tasks**:
     * Created GitHub project board with issues;
     * Created the the machine learning model;
+    * Help design the UX/UI for the dashboard by creating a wireframe for the dashbaord;
+    * Use Bootstrap components to mock-up the dashboard based on a wireframe;
     * Created the full-stack web application running the machine learning model using Spark for JavaScript;
     * Contributed to crafting the presentation;
 * **[Mohammad Shahid](https://github.com/Mohammadbinshahid)**:
-  * **Role**: Repository Maintainer, Exploratory Data Analyst, Presenter
+  * **Role**: Repository Maintainer, Exploratory Data Analyst, UX/UI Designer, Presenter
   * **Tasks**:
     * Created the GitHub repository and branches;
     * Performed an exploratory data analysis on the flight dataset and exported charts;
+    * Help design the UX/UI for the dashboard by creating a wireframe for the dashbaord;
     * Contributed to crafting the presentation;
 * **[Rowan Backhouse](https://github.com/roborowanb)**:
-  * **Role**: Exploratory Data Analyst, Machine Learning Engineer, Presenter
+  * **Role**: Exploratory Data Analyst, Machine Learning Engineer, UX/UI Designer, Presenter
   * **Tasks**:
     * Performed an exploratory data analysis on the flight dataset and exported charts;
     * Created a PySpark mock-up of the machine learning model;
+    * Help design the UX/UI for the dashboard by creating a wireframe for the dashbaord;
     * Contributed to crafting the presentation;
 
 _____
