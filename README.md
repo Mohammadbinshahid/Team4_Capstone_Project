@@ -61,7 +61,7 @@ _____
 * **[Allen Eapen Alex](https://github.com/AllenAx91)**:
   * **Role**: Exploratory Data Analyst, Presenter
   * **Tasks**:
-    * Performed an exploratory data analysis on the flight dataset and exported charts;\
+    * Performed an exploratory data analysis on the flight dataset and exported charts;
     * Contributed to crafting the presentation;
 * **[Avinash Mehra](https://github.com/WhySoCodius)**:
   * **Role**: Database Engineer, Presenter
@@ -69,7 +69,7 @@ _____
     * Created the SQL database schema;
     * Contributed to crafting the presentation;
 * **[Jaspreet Khela](https://github.com/JaspreetKhela)**:
-  * **Role**: Full-Stack Web Application Developer, Machine Learning Engineer, Database Engineer, Presenter
+  * **Role**: Project Manager/Technical Lead, Full-Stack Web Application Developer, Machine Learning Engineer, Database Engineer, Presenter
   * **Tasks**:
     * Created GitHub project board with issues;
     * Created the the machine learning model;
