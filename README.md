@@ -40,7 +40,13 @@ _____
   * **Description**: This is the weather forecast data sources that we are using for training and testing our machine learning model. We are using the "5-Day Weather Forecast" API for the weather data since it is the only free API provided by [OpenWeather](https://openweathermap.org/price).
 
 **Questions to Answer**:
-* [Coming Soon]
+* What are the main reasons for flight delays?
+* Are delays connected to weather patterns?
+* Average Flight Delays (minutes) by Airline Carrier?
+* Are majority of the flight delays from LaGuardia Airport specific to one airline?
+* Are flight delays more prevalent in certain periods or months of the year? e.g. Chrismas / new year.
+* Which days of the week have most flight delays? Are there more flight delays on weekends than week days?
+* What is the likelihood of a flight getting delayed on a certain day of the week
 
 **Presentation Link**: [Coming Soon]
 
@@ -69,7 +75,7 @@ _____
 * **MohammadShahid**:
   * **Role**: Repository Maintainer, Exploratory Data Analyst, Presenter
   * **Tasks**:
-    * Created the GutHub repository and branches;
+    * Created the GitHub repository and branches;
     * Performed an exploratory data analysis on the flight dataset and exported charts;
 * **RowanBackhouse**:
   * **Role**: Exploratory Data Analyst, Presenter
