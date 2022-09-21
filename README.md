@@ -69,20 +69,20 @@ _____
   * **Tasks**:
     * Performed an exploratory data analysis on the flight dataset and exported charts;
     * Created a PySpark mock-up of the machine learning model for local testing;
-    * Contributed to designing the UX/UI for the dashboard by creating a wireframe for the dashboard and/or modified the client-side code;
+    * Contributed to designing the UX/UI for the dashboard by creating a wireframe for the dashboard and/or modifying the client-side code;
     * Contributed to crafting the presentation;
 * **[Avinash Mehra](https://github.com/WhySoCodius)**:
   * **Role**: Database Engineer, UX/UI Designer, Presenter
   * **Tasks**: 
     * Created the SQL database schema for the flight data;
-    * Contributed to designing the UX/UI for the dashboard by creating a wireframe for the dashboard and/or modified the client-side code;
+    * Contributed to designing the UX/UI for the dashboard by creating a wireframe for the dashboard and/or modifying the client-side code;
     * Contributed to crafting the presentation;
 * **[Jaspreet Khela](https://github.com/JaspreetKhela)**:
   * **Role**: Project Manager/Technical Lead, Full-Stack Web Application Developer, Machine Learning Engineer, Database Engineer, UX/UI Designer, Presenter
   * **Tasks**:
     * Created GitHub project board with issues;
     * Created the the machine learning model;
-    * Contributed to designing the UX/UI for the dashboard by creating a wireframe for the dashboard and/or modified the client-side code;
+    * Contributed to designing the UX/UI for the dashboard by creating a wireframe for the dashboard and/or modifying the client-side code;
     * Use Bootstrap components to mock-up the dashboard based on a wireframe;
     * Created the full-stack web application running the machine learning model using Spark for JavaScript;
     * Contributed to crafting the presentation;
@@ -91,7 +91,7 @@ _____
   * **Tasks**:
     * Created the GitHub repository and branches;
     * Performed an exploratory data analysis on the flight dataset and exported charts;
-    * Contributed to designing the UX/UI for the dashboard by creating a wireframe for the dashboard and/or modified the client-side code;
+    * Contributed to designing the UX/UI for the dashboard by creating a wireframe for the dashboard and/or modifying the client-side code;
     * Contributed to crafting the presentation;
 * **[Rowan Backhouse](https://github.com/roborowanb)**:
   * **Role**: Exploratory Data Analyst, Machine Learning Engineer, UX/UI Designer, Presenter
@@ -99,7 +99,7 @@ _____
     * Performed an exploratory data analysis on the flight dataset and exported charts;
     * Created the SQL database schema for the weather data;
     * Created a PySpark mock-up of the machine learning model for local testing;
-    * Contributed to designing the UX/UI for the dashboard by creating a wireframe for the dashboard and/or modified the client-side code;
+    * Contributed to designing the UX/UI for the dashboard by creating a wireframe for the dashboard and/or modifying the client-side code;
     * Contributed to crafting the presentation;
 
 _____
