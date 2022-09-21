@@ -150,7 +150,7 @@ This is a full-stack web application that primarily uses a Node.js with Express.
     * **Description**: Handlebar.js was used as a templating engine for dynamically modifying and serving (static) HTML code.
 * **Primary Back-End**:
   * **Node.js**:
-    * **Description**: Node.js is was used as the back-end platform from which the other back-end techologies will be imported.
+    * **Description**: Node.js is was used as the back-end platform from which the other back-end techologies were imported.
   * **Express.js**:
     * **Description**: Express.js was used as the back-end infrastruture that runs the server application.
   * **MySQL**:
@@ -274,7 +274,9 @@ To preprocess the data for use in the machine learning model, we completed the f
 5. 70% of the data in the DataFrame was used for training the machine learning model; the remaining data was used for testing the model.
 
 **Key Libraries and Frameworks**:
-* [Coming Soon]
+* PySpark
+* Spark for JavaScript
+* scikit-learn
 
 **Sample JavaScript Spark and scikit-learn Code**:
 ```
