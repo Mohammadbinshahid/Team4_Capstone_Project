@@ -31,7 +31,7 @@ _____
 
 **Rationale/Business Case**: The purpose of this web application is to allow both airlines and passengers to better predict whether or not a flight will be delayed or cancelled days in advance so that disruption to flight and passenger's schedules are minimized, thus saving them time and resources that would normally be used for air travel preparations. Specifically,
 * Airlines can reschedule flights well in advance so that air travel preparation resources are only deployed when the flight is (almost) guaranteed to takeoff on time and flight terminals can be free of passengers when flights are projected to be delayed or cancelled; consequently, airlines save money by not prematurely deploying resources when flights have a high probability of being delayed and customer satisfaction increases due to advance notices of flight delays and cancellations.
-* Passengers can finalize their schedules well in advance knowing that their flight is guaranteed to takeoff on time; consequently, passengers' satisfaction with the airline increases and demand for airlines' customer services are decreased since flight delays and cancellations are practically non-existent. This both increases the airline's reputation and decreases its service costs, the saving from which can be passed off to passengers.
+* Passengers can finalize their schedules well in advance knowing that their flight is (almost) guaranteed to takeoff on time; consequently, passengers' satisfaction with the airline increases and demand for airlines' customer services are decreased since flight delays and cancellations are practically non-existent. This both increases the airline's reputation and decreases its service costs, the saving from which can be passed off to passengers.
 
 **Data Sources**: 
 * **Flight Data**: https://www.transtats.bts.gov/ONTIME/
@@ -68,21 +68,21 @@ _____
   * **Role**: Exploratory Data Analyst, Machine Learning Engineer, UX/UI Designer, Presenter
   * **Tasks**:
     * Performed an exploratory data analysis on the flight dataset and exported charts;
-    * Created a PySpark mock-up of the machine learning model;
-    * Help design the UX/UI for the dashboard by creating a wireframe for the dashbaord;
+    * Created a PySpark mock-up of the machine learning model for local testing;
+    * Help design the UX/UI for the dashboard by creating a wireframe for the dashboard and/or modified the client-side code;
     * Contributed to crafting the presentation;
 * **[Avinash Mehra](https://github.com/WhySoCodius)**:
   * **Role**: Database Engineer, UX/UI Designer, Presenter
   * **Tasks**: 
-    * Created the SQL database schema;
-    * Help design the UX/UI for the dashboard by creating a wireframe for the dashbaord;
+    * Created the SQL database schema for the flight data;
+    * Help design the UX/UI for the dashboard by creating a wireframe for the dashboard and/or modified the client-side code;
     * Contributed to crafting the presentation;
 * **[Jaspreet Khela](https://github.com/JaspreetKhela)**:
   * **Role**: Project Manager/Technical Lead, Full-Stack Web Application Developer, Machine Learning Engineer, Database Engineer, UX/UI Designer, Presenter
   * **Tasks**:
     * Created GitHub project board with issues;
     * Created the the machine learning model;
-    * Help design the UX/UI for the dashboard by creating a wireframe for the dashbaord;
+    * Help design the UX/UI for the dashboard by creating a wireframe for the dashboard and/or modified the client-side code;
     * Use Bootstrap components to mock-up the dashboard based on a wireframe;
     * Created the full-stack web application running the machine learning model using Spark for JavaScript;
     * Contributed to crafting the presentation;
@@ -91,14 +91,15 @@ _____
   * **Tasks**:
     * Created the GitHub repository and branches;
     * Performed an exploratory data analysis on the flight dataset and exported charts;
-    * Help design the UX/UI for the dashboard by creating a wireframe for the dashbaord;
+    * Help design the UX/UI for the dashboard by creating a wireframe for the dashboard and/or modified the client-side code;
     * Contributed to crafting the presentation;
 * **[Rowan Backhouse](https://github.com/roborowanb)**:
   * **Role**: Exploratory Data Analyst, Machine Learning Engineer, UX/UI Designer, Presenter
   * **Tasks**:
     * Performed an exploratory data analysis on the flight dataset and exported charts;
-    * Created a PySpark mock-up of the machine learning model;
-    * Help design the UX/UI for the dashboard by creating a wireframe for the dashbaord;
+    * Created the SQL database schema for the weather data;
+    * Created a PySpark mock-up of the machine learning model for local testing;
+    * Help design the UX/UI for the dashboard by creating a wireframe for the dashboard and/or modified the client-side code;
     * Contributed to crafting the presentation;
 
 _____
@@ -134,9 +135,9 @@ This is a full-stack web application that primarily uses a Node.js with Express.
   * **Numpy**:
     * **Description**: Numpy was used for mathematical functions and attributes.
   * **Pandas**:
-    * **Description**: Pandas was used for creating, modifying, and analyzing datasets in dataframes.
+    * **Description**: Pandas was used for creating, modifying, and analyzing datasets in DataFrames.
   * **Matplotlib**:
-    * **Description**: Matplotlib was used for plotting analyzed data contained in arrays and dataframes.
+    * **Description**: Matplotlib was used for plotting analyzed data contained in arrays and DataFrames.
 
 * **Primary Front-End**:
   * **HTML**:
@@ -189,17 +190,25 @@ _____
 <a name="database"></a>
 ### Database
 
-**Provisional Database**: MySQL with Sequelize Object Relational Model
+**Provisional Database**: MySQL with Sequelize Object Relational Mapper
 
 **Description**: The database contains the user, flight, and weather data tables.
 
 **Structure/Schema/Entity Relationship Diagrams**:
-* **User Data Schema**:
-  * [Coming Soon]
-* **Flight Data Schema**:
-  * [Coming Soon]
-* **Weather Data Schema**:
-  * [Coming Soon]
+* **Data Sources**: This part of the SQL database stores data that will be used in the machine learning model.
+  * **Flight Data Schema**:
+    * [Coming Soon]
+  * **Weather Data Schema**:
+    * [Coming Soon]
+* **User Data**: This part of the SQL database stores data related to users' accounts.
+  * **User Data Schema**:
+    * [Coming Soon]
+  * **Post Schema**:
+    * [Coming Soon]
+  * **Comment Schema**:
+    * [Coming Soon]
+  * **Vote Schema**:
+    * [Coming Soon]
 
 **Connection with Machine Learning Model**: The supervised classificaiton regression machine learning model will update the flight_delayed_prediction target field in the aforementioned table(s) to determine whether or not a flight is predicted to be delayed or cancelled.
 
@@ -259,9 +268,10 @@ _____
 **Preprocessing Data**:
 To preprocess the data for use in the machine learning model, we completed the following steps:
 1. We imported the raw data from the aforementioned datasets and APIs.
-2. We joined dataframes and retained the desired columns from the dataframes.
-3. We removed records with null values from the dataframe.
+2. We joined DataFrames and retained the desired columns from the DataFrames.
+3. We removed records with null values from the DataFrame.
 4. We converted the date column to DateTime datatype.
+5. 70% of the data in the DataFrame was used for training the machine learning model; the remaining data was used for testing the model.
 
 **Key Libraries and Frameworks**:
 * [Coming Soon]
@@ -300,7 +310,7 @@ const X_train, X_test, y_train, y_test = sklearn.model_selection.train_test_spli
 // Define the model
 const classifier = sklearn.linear_model.LogisticRegression(solver='lbfgs', max_iter=200, random_state=1);
    
-// Run the model on the dataframe
+// Run the model on the DataFrame
 classifier.fit(X_train, y_train);
 
 // Predict outcomes for test data
