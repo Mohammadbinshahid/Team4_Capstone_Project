@@ -200,13 +200,22 @@ _____
 _____
 
 
+![DB_Schema](https://user-images.githubusercontent.com/80941606/191862502-5b7da043-85d1-4efa-abb3-b77d84c04fbe.png)
 
 **Image 1**: Analysis data schema.
 
 _____
-  * **Flight Data Table**:
+  * **Flight_Data Table**:
     * [Coming Soon]
-  * **Weather Data Table**:
+  * **Weekdays Table**:
+    * [Coming Soon]
+  * **Airports Table**:
+    * [Coming Soon]
+  * **Carriers Table**:
+    * [Coming Soon]
+  * **Cancellation_Codes**:
+    * [Coming Soon]
+  * **Weather_Data Table**:
     * [Coming Soon]
 * **User Data**: This part of the SQL database stores data related to users' accounts.
 _____
