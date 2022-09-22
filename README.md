@@ -203,9 +203,9 @@ _____
 **Image 1**: Analysis data schema.
 
 _____
-  * **Flight Data Schema**:
+  * **Flight Data Table**:
     * [Coming Soon]
-  * **Weather Data Schema**:
+  * **Weather Data Table**:
     * [Coming Soon]
 * **User Data**: This part of the SQL database stores data related to users' accounts.
 _____
@@ -216,22 +216,22 @@ _____
 **Image 2**: User data schema.
 
 _____
-  * **User Data Schema**:
+  * **User Data Table**:
     * id PK int
     * username string
     * email string UNIQUE
     * password string
-  * **Post Schema**:
+  * **Post Table**:
     * id int PK
     * title string
     * post_url string
     * user_id int FK >- User.id
-  * **Comment Schema**:
+  * **Comment Table**:
     * id int PK
     * comment_text string
     * user_id int FK >- User.id
     * post_id int FK >- Post.id
-  * **Vote Schema**:
+  * **Vote Table**:
     * id int PK
     * user_id int FK >- User.id
     * post_id int FK >- Post.id
