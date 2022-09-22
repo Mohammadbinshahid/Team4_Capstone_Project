@@ -96,7 +96,7 @@ _____
 * **[Rowan Backhouse](https://github.com/roborowanb)**:
   * **Role**: Exploratory Data Analyst, Machine Learning Engineer, UX/UI Designer, Presenter
   * **Tasks**:
-    * Performed an exploratory data analysis on the flight dataset;
+    * Performed an exploratory data analysis on the TicketMaster data set;
     * Connected with WeatherAPI database; 
     * Assisted with the SQL database schema for the weather data;
     * Contributed to crafting the presentation;
