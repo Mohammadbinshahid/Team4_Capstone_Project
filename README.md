@@ -221,6 +221,7 @@ _____
     * description VARCHAR 
   * **Weather_Data Table**:
     * [Coming Soon]
+
 * **User Data**: This part of the SQL database stores data related to users' accounts.
 _____
 
