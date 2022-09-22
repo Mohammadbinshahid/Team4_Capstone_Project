@@ -111,6 +111,7 @@ _____
   * Zoom calls were scheduled for:
     * Tuesdays and Thursdays from 7:00 PM to 9:00 PM
     * Mondays at 7:00 PM
+    * Adhoc working sessions at coordinated time over the weekend
 * **Project Board**: A GitHub project board was created to document progress on tasks primarily using issues.
 * **Stuck Agreement**: If any developer was stuck on a problem for more than 3 hours, he was required to seek assistance from the project's other developers.
 * **Conflict Resolution**: Since there are five developers working on this project, a two-thirds majority is required in votes to make major changes to the application (i.e. to make major changes to the application's architecture, content, styling, etc). 
