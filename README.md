@@ -196,18 +196,24 @@ _____
 
 **Structure/Schema/Entity Relationship Diagrams**:
 * **Data Sources**: This part of the SQL database stores data that will be used in the machine learning model.
+_____
+
+
+
+**Image 1**: Analysis data schema.
+
+_____
   * **Flight Data Schema**:
     * [Coming Soon]
   * **Weather Data Schema**:
     * [Coming Soon]
 * **User Data**: This part of the SQL database stores data related to users' accounts.
-
 _____
 
 
 ![QuickDBD-export](https://user-images.githubusercontent.com/80941606/191832150-11b793ab-b894-4cf8-8ff3-68bcf51aafc0.png)
 
-Image 2: User data schema.
+**Image 2**: User data schema.
 
 _____
   * **User Data Schema**:
