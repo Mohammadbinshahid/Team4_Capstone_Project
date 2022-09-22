@@ -53,7 +53,7 @@ _____
 
 **Screenshots**: [Coming Soon]
 
-**GitHub Project Board Link**:
+**GitHub Project Board Link**: https://github.com/users/Mohammadbinshahid/projects/2
 
 **Wireframes**: [Coming Soon]
 
@@ -201,14 +201,34 @@ _____
   * **Weather Data Schema**:
     * [Coming Soon]
 * **User Data**: This part of the SQL database stores data related to users' accounts.
+
+_____
+
+
+![QuickDBD-export](https://user-images.githubusercontent.com/80941606/191832150-11b793ab-b894-4cf8-8ff3-68bcf51aafc0.png)
+
+Image 2: User data schema.
+
+_____
   * **User Data Schema**:
-    * [Coming Soon]
+    * id PK int
+    * username string
+    * email string UNIQUE
+    * password string
   * **Post Schema**:
-    * [Coming Soon]
+    * id int PK
+    * title string
+    * post_url string
+    * user_id int FK >- User.id
   * **Comment Schema**:
-    * [Coming Soon]
+    * id int PK
+    * comment_text string
+    * user_id int FK >- User.id
+    * post_id int FK >- Post.id
   * **Vote Schema**:
-    * [Coming Soon]
+    * id int PK
+    * user_id int FK >- User.id
+    * post_id int FK >- Post.id
 
 **Connection with Machine Learning Model**: The supervised classificaiton regression machine learning model will update the flight_delayed_prediction target field in the aforementioned table(s) to determine whether or not a flight is predicted to be delayed or cancelled.
 
