@@ -206,15 +206,19 @@ _____
 
 _____
   * **Flight_Data Table**:
-    * [Coming Soon]
+    * ![Flight_Data_Table](/Resources/Flight_Data_Table.png)
   * **Weekdays Table**:
-    * [Coming Soon]
+    * code int FK - Flight_Data.DAY_OF_WEEK
+    * description VARCHAR 
   * **Airports Table**:
-    * [Coming Soon]
+    * code int 
+    * description VARCHAR 
   * **Carriers Table**:
-    * [Coming Soon]
+    * code int FK - Flight_Data.OP_UNIQUE_CARRIER
+    * description VARCHAR 
   * **Cancellation_Codes**:
-    * [Coming Soon]
+    * code int FK - Flight_Data.CANCELLATION_CODE
+    * description VARCHAR 
   * **Weather_Data Table**:
     * [Coming Soon]
 * **User Data**: This part of the SQL database stores data related to users' accounts.
