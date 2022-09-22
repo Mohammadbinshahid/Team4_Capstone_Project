@@ -106,7 +106,7 @@ _____
 
 <a name="github"></a>
 ### GitHub
-**Communication Protocals**:
+**Communication Protocols**:
 * **Tools**: Communication for this project was primarily done through Slack and Zoom calls.
   * Zoom calls were scheduled for:
     * Tuesdays and Thursdays from 7:00 PM to 9:00 PM
@@ -227,43 +227,43 @@ _____
     * carrier_code
       * **Description**: This is the airline's identification code.
     * date(MM/DD/YYYY)
-      * **Description**:
+      * **Description**: This is the date of departure of the flight.
     * flight_number
-      * **Description**:
+      * **Description**: This is the flight number of the plane.
     * destination_airport
-      * **Description**:
+      * **Description**: This is the destination airport of the flight.
   * The following features were combined into a single "Outcome" column to yield a "delayed" or "not_delayed" value for a particular flight:
     * scheduled_departure_time
-      * **Description**:
+      * **Description**: This is the time of departure of the flight.
     * actual_departure_time
-      * **Description**:
+      * **Description**: This is the actual departure time of the flight.
     * scheduled_elapsed_time_minutes
-      * **Description**:
+      * **Description**: This is the projected elapsed time of the flight.
     * actual_elapsed_time_minutes
-      * **Description**:
+      * **Description**: This is the actual elapsed time of the flight.
     * departure_delay_minutes
-      * **Description**:
+      * **Description**: This is the time delay of the flight from its scheduled departure time.
     * wheel-off_time
-      * **Description**:
+      * **Description**: This is the time of flight when the airplane is in the air.
     * taxi-out_time_minutes
-      * **Description**:
+      * **Description**: This is the taxi-out time.
     * delay_carrier_minutes
-      * **Description**:
+      * **Description**: This is the time delay caused by the carrier.
     * delay_weather_minutes
-      * **Description**:
+      * **Description**: This is the time delay caused by bad weather.
     * delay_national_aviation_system_minutes
-      * **Description**:
+      * **Description**: This is the time delay caused by national aviation system.
     * delay_security_minutes
-      * **Description**:
+      * **Description**: This is the time delay caused by security measures.
     * delay_late_aircrafts_arrival_minutes
-      * **Description**:
+      * **Description**: This is the time delay cause by late aircraft arrivals.
 
 * **Weather Data Features**:
   * [Coming Soon]
 
 **Targets**:
 * flight_delayed_prediction
-  * **Description**:
+  * **Description**: This is the classification outcome variable; its values are either "0" for "delayed" or "1" for "not_delayed".
 
 **Preprocessing Data**:
 To preprocess the data for use in the machine learning model, we completed the following steps:
