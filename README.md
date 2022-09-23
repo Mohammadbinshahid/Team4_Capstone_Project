@@ -78,8 +78,8 @@ _____
     * Contributed to designing the UX/UI for the dashboard by creating a wireframe for the dashboard and/or modifying the client-side code;
     * Contributed to crafting the presentation;
 * **[Jaspreet Khela](https://github.com/JaspreetKhela)**:
-  * **(Projected) Role**: Project Manager/Technical Lead, Full-Stack Web Application Developer, Machine Learning Engineer, Database Engineer, UX/UI Designer, Presenter
-  * **Tasks**:
+  * **Role**: Project Manager/Technical Lead, Full-Stack Web Application Developer, Machine Learning Engineer, Database Engineer, UX/UI Designer, Presenter
+  * **(Projected) Tasks**:
     * Created GitHub project board with issues;
     * Created the the machine learning model;
     * Contributed to designing the UX/UI for the dashboard by creating a wireframe for the dashboard and/or modifying the client-side code;
@@ -87,15 +87,15 @@ _____
     * Created the full-stack web application running the machine learning model using Spark for JavaScript;
     * Contributed to crafting the presentation;
 * **[Mohammad Shahid](https://github.com/Mohammadbinshahid)**:
-  * **(Projected) Role**: Repository Maintainer, Exploratory Data Analyst, UX/UI Designer, Presenter
-  * **Tasks**:
+  * **Role**: Repository Maintainer, Exploratory Data Analyst, UX/UI Designer, Presenter
+  * **(Projected) Tasks**:
     * Created the GitHub repository and branches;
     * Performed an exploratory data analysis on the flight dataset and exported charts;
     * Contributed to designing the UX/UI for the dashboard by creating a wireframe for the dashboard and/or modifying the client-side code;
     * Contributed to crafting the presentation;
 * **[Rowan Backhouse](https://github.com/roborowanb)**:
-  * **(Projected) Role**: Exploratory Data Analyst, Machine Learning Engineer, UX/UI Designer, Presenter
-  * **Tasks**:
+  * **Role**: Exploratory Data Analyst, Machine Learning Engineer, UX/UI Designer, Presenter
+  * **(Projected) Tasks**:
     * Performed an exploratory data analysis on the TicketMaster dataset;
     * Connected with WeatherAPI database; 
     * Assisted with the SQL database schema for the weather data;
