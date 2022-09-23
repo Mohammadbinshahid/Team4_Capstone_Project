@@ -66,19 +66,19 @@ _____
 
 * **[Allen Eapen Alex](https://github.com/AllenAx91)**:
   * **Role**: Exploratory Data Analyst, Machine Learning Engineer, UX/UI Designer, Presenter
-  * **Tasks**:
+  * **(Projected) Tasks**:
     * Performed an exploratory data analysis on the flight dataset and exported charts;
     * Created a PySpark mock-up of the machine learning model for local testing;
     * Contributed to designing the UX/UI for the dashboard by creating a wireframe for the dashboard and/or modifying the client-side code;
     * Contributed to crafting the presentation;
 * **[Avinash Mehra](https://github.com/WhySoCodius)**:
   * **Role**: Database Engineer, UX/UI Designer, Presenter
-  * **Tasks**: 
+  * **(Projected) Tasks**: 
     * Created the SQL database schema for the flight data;
     * Contributed to designing the UX/UI for the dashboard by creating a wireframe for the dashboard and/or modifying the client-side code;
     * Contributed to crafting the presentation;
 * **[Jaspreet Khela](https://github.com/JaspreetKhela)**:
-  * **Role**: Project Manager/Technical Lead, Full-Stack Web Application Developer, Machine Learning Engineer, Database Engineer, UX/UI Designer, Presenter
+  * **(Projected) Role**: Project Manager/Technical Lead, Full-Stack Web Application Developer, Machine Learning Engineer, Database Engineer, UX/UI Designer, Presenter
   * **Tasks**:
     * Created GitHub project board with issues;
     * Created the the machine learning model;
@@ -87,14 +87,14 @@ _____
     * Created the full-stack web application running the machine learning model using Spark for JavaScript;
     * Contributed to crafting the presentation;
 * **[Mohammad Shahid](https://github.com/Mohammadbinshahid)**:
-  * **Role**: Repository Maintainer, Exploratory Data Analyst, UX/UI Designer, Presenter
+  * **(Projected) Role**: Repository Maintainer, Exploratory Data Analyst, UX/UI Designer, Presenter
   * **Tasks**:
     * Created the GitHub repository and branches;
     * Performed an exploratory data analysis on the flight dataset and exported charts;
     * Contributed to designing the UX/UI for the dashboard by creating a wireframe for the dashboard and/or modifying the client-side code;
     * Contributed to crafting the presentation;
 * **[Rowan Backhouse](https://github.com/roborowanb)**:
-  * **Role**: Exploratory Data Analyst, Machine Learning Engineer, UX/UI Designer, Presenter
+  * **(Projected) Role**: Exploratory Data Analyst, Machine Learning Engineer, UX/UI Designer, Presenter
   * **Tasks**:
     * Performed an exploratory data analysis on the TicketMaster dataset;
     * Connected with WeatherAPI database; 
@@ -196,7 +196,6 @@ _____
 **Description**: The database contains the user, flight, and weather data tables.
 
 **Structure/Schema/Entity Relationship Diagrams**:
-* **Data Sources**: This part of the SQL database stores data that will be used in the machine learning model.
 _____
 
 
@@ -205,6 +204,8 @@ _____
 **Image 1**: Analysis data schema.
 
 _____
+
+* **Data Sources**: This part of the SQL database stores data that will be used in the machine learning model.
   * **Flight_Data Table**:
     * ![Flight_Data_Table](/Resources/Flight_Data_Table.png)
   * **Weekdays Table**:
@@ -221,8 +222,6 @@ _____
     * description VARCHAR 
   * **Weather_Data Table**:
     * [Coming Soon]
-
-* **User Data**: This part of the SQL database stores data related to users' accounts.
 _____
 
 
@@ -231,6 +230,8 @@ _____
 **Image 2**: User data schema.
 
 _____
+
+* **User Data**: This part of the SQL database stores data related to users' accounts.
   * **User Data Table**:
     * id PK int
     * username string
@@ -263,7 +264,7 @@ _____
 **Description**: This web application uses the Supervised Classification Regression Machine Learning Model that is implemented in Python for testing and JavaScript for deployment since the flight_delayed_prediction target variable stores binary predictions (i.e. the flight is either "delayed" or "not_delayed"). This flight delay prediction model is based on the deep learning and [Levenberg-Marquart algorithm](https://journalofbigdata.springeropen.com/articles/10.1186/s40537-020-00380-z).
 
 **Features**:
-* **Flight Data Features**:
+* **Flight Data Features**: These are the primary features that were extracted from the original flight data DataFrame.
   * The following features are those that the passenger and airline know well in advance; thus, these are the primary parameters used for predicting whether or not a flight will be delayed:
     * carrier_code
       * **Description**: This is the airline's identification code.
