@@ -391,7 +391,8 @@ The web application has the following features:
 * Weather widgets that provide the current weather conditions and a 5-day forecast.
 
 For future development, we hope to add the following features:
-* Create Android and iOS applications that leverage our data API endpoint;
+* Convert the website to a Progressive Web Application so that users can use our application - both online and offline - like a native application on their mobile device;
+* Create Android and iOS applications that expand our native application's capabilities (by leveraging mobile devices' native APIs);
 * [Coming Soon]
 
 _____
