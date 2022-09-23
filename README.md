@@ -42,7 +42,7 @@ _____
 **Questions to Answer**:
 * What are the primary reasons for flight delays?
 * Are flight delays connected to weather patterns?
-* What are the "Average Flight Delays (minutes)" by Airline Carrier?
+* What are the "Average Flight Delays (minutes)" by airline carrier?
 * Are majority of the flight delays from LaGuardia Airport specific to one airline?
 * Are flight delays more prevalent in certain periods of the year? e.g. Christmas, new years, etc.?
 * Which days of the week have most flight delays? Are there more flight delays on weekends or week days?
@@ -94,13 +94,12 @@ _____
     * Contributed to designing the UX/UI for the dashboard by creating a wireframe for the dashboard and/or modifying the client-side code;
     * Contributed to crafting the presentation;
 * **[Rowan Backhouse](https://github.com/roborowanb)**:
-  * **Role**: Exploratory Data Analyst, Machine Learning Engineer, UX/UI Designer, Presenter
+  * **Role**: Exploratory Data Analyst, UX/UI Designer, Presenter
   * **(Projected) Tasks**:
     * Performed an exploratory data analysis on the TicketMaster dataset;
-    * Connected with WeatherAPI database; 
-    * Assisted with the SQL database schema for the weather data;
-    * Contributed to crafting the presentation;
+    * Assisted with the creation of the SQL database schema for the flight and weather data;
     * Contributed to designing the UX/UI for the dashboard by creating a wireframe for the dashboard and/or modifying the client-side code;
+    * Contributed to crafting the presentation;
     
 _____
 
