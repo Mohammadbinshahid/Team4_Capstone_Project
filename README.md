@@ -9,7 +9,7 @@ _____
 
 ## Table of Contents
 * [Presentation](#presentation)
-* [Team, Roles, and Contributions](#team-and-roles-contributions)
+* [Team, Roles, and Contributions](#team-roles-and-contributions)
 * [GitHub Repository Specifications](#github)
 * [Database Specifications](#database)
 * [Machine Learning Model Specifications](#machine-learning-model)
