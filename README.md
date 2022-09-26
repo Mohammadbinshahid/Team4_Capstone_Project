@@ -13,6 +13,7 @@ _____
 * [GitHub Repository Specifications](#github)
 * [Database Specifications](#database)
 * [Machine Learning Model Specifications](#machine-learning-model)
+* [Dashboard Specifications](#dashboard)
 * [Installation](#installation)
 * [Usage](#usage)
 * [Features](#features)
@@ -48,14 +49,18 @@ _____
 * Which days of the week have most flight delays? Are there more flight delays on weekends or week days?
 * What is the probability of a flight delay on a certain day of the week?
 
+**Description of the Data Exploration Phase of the Project**:
+* [Coming Soon]
+
+**Description of the Analysis Phase of the Project**:
+* [Coming Soon]
+
 <a name="web-app-link"></a>
 **Web Application Link**: [Coming Soon]
 
 **Screenshots**: [Coming Soon]
 
 **GitHub Project Board Link**: https://github.com/users/Mohammadbinshahid/projects/2
-
-**Wireframes**: [Coming Soon]
 
 **Presentation Link**: https://docs.google.com/presentation/d/1cRceZIrM9SWz3dwcT1ai_D2vIFZ40tSatOfSH0Q2H6E/edit?usp=sharing
 
@@ -72,11 +77,13 @@ _____
     * Contributed to designing the UX/UI for the dashboard by creating a wireframe for the dashboard and/or modifying the client-side code;
     * Contributed to crafting the presentation;
 * **[Avinash Mehra](https://github.com/WhySoCodius)**:
-  * **Role**: Database Engineer, UX/UI Designer, Presenter
+  * **Role**: Exploratory Data Analyst, Database Engineer, UX/UI Designer, Presenter
   * **(Projected) Tasks**: 
+    * Performed an exploratory data analysis on the flight dataset and exported charts;
     * Created the SQL database schema for the flight data;
     * Contributed to designing the UX/UI for the dashboard by creating a wireframe for the dashboard and/or modifying the client-side code;
     * Contributed to crafting the presentation;
+    * Lead presenter;
 * **[Jaspreet Khela](https://github.com/JaspreetKhela)**:
   * **Role**: Project Manager/Technical Lead, Full-Stack Web Application Developer, Machine Learning Engineer, Database Engineer, UX/UI Designer, Presenter
   * **(Projected) Tasks**:
@@ -98,6 +105,7 @@ _____
   * **(Projected) Tasks**:
     * Performed an exploratory data analysis on the TicketMaster dataset;
     * Assisted with the creation of the SQL database schema for the flight and weather data;
+    * Created the wireframe for the website;
     * Contributed to designing the UX/UI for the dashboard by creating a wireframe for the dashboard and/or modifying the client-side code;
     * Contributed to crafting the presentation;
     
@@ -117,6 +125,8 @@ _____
 
 **Branches**:
 * **Main Branch**
+  * Contains code necessary to perform exploratory analysis;
+  * Contains code necessary to complete the machine learning portion of the project;
 * **Team Members' Branches**: 
   * AllenEapenAlex
   * AvinashMehra
@@ -124,7 +134,11 @@ _____
   * MohammadShahid
   * RowanBackhouse
 * **Feature Branches**:
-  * [Coming Soon]
+  * feature/rowan/interactive_data_tool(s)
+  * feature/mohammed/interactive_data_tool(s)
+  * feature/allen/pyspark_machine_learning_model
+  * feature/avinash/analysis_diagrams
+  * feature/jaspreet/web_app
 
 **Technologies**:
 This is a full-stack web application that primarily uses a Node.js with Express.js server platform, MySQL database, and Handebars.js templating engine. 
@@ -253,6 +267,13 @@ _____
 
 **Connection with Machine Learning Model**: The supervised classificaiton regression machine learning model will update the flight_delayed_prediction target field in the aforementioned table(s) to determine whether or not a flight is predicted to be delayed or cancelled.
 
+**Database Features**:
+* Database stores static data for use during the project;
+* Database interfaces with the project in some format (e.g., scraping updates the database, or database connects to the model);
+* Includes at least two tables (or collections, if using MongoDB);
+* Includes at least one join using the database language (not including any joins in Pandas)
+* Includes at least one connection string (using SQLAlchemy or PyMongo)
+
 _____
 
 <a name="machine-learning-model"></a>
@@ -267,37 +288,53 @@ _____
   * The following features are those that the passenger and airline know well in advance; thus, these are the primary parameters used for predicting whether or not a flight will be delayed:
     * carrier_code
       * **Description**: This is the airline's identification code.
+      * **Rationale**:
     * date(MM/DD/YYYY)
       * **Description**: This is the date of departure of the flight.
+      * **Rationale**:
     * flight_number
       * **Description**: This is the flight number of the plane.
+      * **Rationale**:
     * destination_airport
       * **Description**: This is the destination airport of the flight.
+      * **Rationale**:
   * The following features were combined into a single "Outcome" column to yield a "delayed" or "not_delayed" value for a particular flight:
     * scheduled_departure_time
       * **Description**: This is the time of departure of the flight.
+      * **Rationale**:
     * actual_departure_time
       * **Description**: This is the actual departure time of the flight.
+      * **Rationale**:
     * scheduled_elapsed_time_minutes
       * **Description**: This is the projected elapsed time of the flight.
+      * **Rationale**:
     * actual_elapsed_time_minutes
       * **Description**: This is the actual elapsed time of the flight.
+      * **Rationale**:
     * departure_delay_minutes
       * **Description**: This is the time delay of the flight from its scheduled departure time.
+      * **Rationale**:
     * wheel-off_time
       * **Description**: This is the time of flight when the airplane is in the air.
+      * **Rationale**:
     * taxi-out_time_minutes
       * **Description**: This is the taxi-out time.
+      * **Rationale**:
     * delay_carrier_minutes
       * **Description**: This is the time delay caused by the carrier.
+      * **Rationale**:
     * delay_weather_minutes
       * **Description**: This is the time delay caused by bad weather.
+      * **Rationale**:
     * delay_national_aviation_system_minutes
       * **Description**: This is the time delay caused by national aviation system.
+      * **Rationale**:
     * delay_security_minutes
       * **Description**: This is the time delay caused by security measures.
+      * **Rationale**:
     * delay_late_aircrafts_arrival_minutes
       * **Description**: This is the time delay cause by late aircraft arrivals.
+      * **Rationale**:
 
 * **Weather Data Features**:
   * [Coming Soon]
@@ -306,7 +343,7 @@ _____
 * flight_delayed_prediction
   * **Description**: This is the classification outcome variable; its values are either "0" for "delayed" or "1" for "not_delayed".
 
-**Preprocessing Data**:
+**Preliminary Data Preprocessing**:
 To preprocess the data for use in the machine learning model, we completed the following steps:
 1. We imported the raw data from the aforementioned datasets and APIs.
 2. We joined DataFrames and retained the desired columns from the DataFrames.
@@ -363,6 +400,34 @@ const y_pred = classifier.predict(X_test);
 console.log(sklearn.metrics.accuracy_score(y_test, y_pred));
 
 ```
+
+**Machine Learning Model Benefits**:
+* [Coming Soon]
+
+**Machine Learning Model Limitations**:
+* [Coming Soon]
+
+_____
+
+<a name="Dashboard"></a>
+### Dashboard
+
+**Story Board**: Please refer to the [Google Slides](#) for our storyboard.
+
+**Interactive Components**:
+* [Coming Soon]
+  * **Description**:
+  * **Rationale**:
+
+**Tools**:
+* Balsamiq was used for wireframing;
+* HTML was used for structuring the webpage and displaying dashboard;
+* CSS was used for styling the dashboard;
+* JavaScript was used for adding functionality to the dashboard;
+* Bootstap was used for incorporating pre-built mobile-responsive components into the dashboard;
+
+**Wireframe(s)**: [Coming Soon]
+
 _____
 
 <a name="installation"></a>
