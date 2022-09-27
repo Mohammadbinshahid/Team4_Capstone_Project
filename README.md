@@ -7,6 +7,10 @@ Hello! This is a flight delay predictor full-stack web application that allows u
 
 _____
 
+![matthew-smith-OiiThC8Wf68-unsplash](https://user-images.githubusercontent.com/80941606/192616390-4d16df7c-e264-4b9c-b3b6-62e97ff4d5c8.jpg)
+
+_____
+
 ## Table of Contents
 * [Presentation](#presentation)
 * [Team, Roles, and Contributions](#team-roles-and-contributions)
