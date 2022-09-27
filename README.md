@@ -57,8 +57,7 @@ _____
 
 **Wireframes**: [Coming Soon]
 
-**Presentation Link**: https://docs.google.com/presentation/d/1cRceZIrM9SWz3dwcT1ai_D2vIFZ40tSatOfSH0Q2H6E/edit?usp=sharing
-
+**Presentation Link**: https://docs.google.com/presentation/d/1d9vr3jMhRY1ceHiKuWwPbF1X4R5g_oyU/edit?usp=sharing&ouid=103479401653776129615&rtpof=true&sd=true
 _____
 
 <a name="team-roles-and-contributions"></a>
