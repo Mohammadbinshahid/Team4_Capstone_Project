@@ -62,7 +62,7 @@ _____
 
 **GitHub Project Board Link**: https://github.com/users/Mohammadbinshahid/projects/2
 
-**Presentation Link**: https://docs.google.com/presentation/d/1cRceZIrM9SWz3dwcT1ai_D2vIFZ40tSatOfSH0Q2H6E/edit?usp=sharing
+**(Google Slides) Presentation Link**: https://docs.google.com/presentation/d/1cRceZIrM9SWz3dwcT1ai_D2vIFZ40tSatOfSH0Q2H6E/edit?usp=sharing
 
 _____
 
@@ -118,7 +118,7 @@ _____
   * Zoom calls were scheduled for:
     * Tuesdays and Thursdays from 7:00 PM to 9:00 PM
     * Mondays at 7:00 PM
-    * Adhoc working sessions at coordinated time
+    * Adhoc working sessions at coordinated times
 * **Project Board**: A GitHub project board was created to document progress on tasks primarily using issues.
 * **Stuck Agreement**: If any developer was stuck on a problem for more than 3 hours, he was required to seek assistance from the project's other developers.
 * **Conflict Resolution**: Since there are five developers working on this project, a two-thirds majority is required in votes to make major changes to the application (i.e. to make major changes to the application's architecture, content, styling, etc). 
@@ -220,7 +220,7 @@ _____
 
 * **Data Sources**: This part of the SQL database stores data that will be used in the machine learning model.
   * **Flight_Data Table**:
-    * ![Flight_Data_Table](/Resources/Flight_Data_Table.png)
+    * ![Flight_Data_Table](/proof_of_concept_designs/database_design/flight_data_table.png)
   * **Weekdays Table**:
     * code int FK - Flight_Data.DAY_OF_WEEK
     * description VARCHAR 
@@ -412,10 +412,16 @@ _____
 <a name="Dashboard"></a>
 ### Dashboard
 
-**Story Board**: Please refer to the [Google Slides](#) for our storyboard.
+**Story Board**: Please refer to our [Google Slides Presentation](https://docs.google.com/presentation/d/1cRceZIrM9SWz3dwcT1ai_D2vIFZ40tSatOfSH0Q2H6E/edit?usp=sharing) for details about our project.
 
 **Interactive Components**:
-* [Coming Soon]
+* **Flight Data Form**:
+  * **Description**:
+  * **Rationale**:
+* **Historical Flight Data Diagrams**:
+  * **Description**:
+  * **Rationale**:
+* **Community Foru**:
   * **Description**:
   * **Rationale**:
 
