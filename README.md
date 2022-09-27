@@ -3,7 +3,7 @@
 
 <a name="description"></a>
 ### Description
-Hello! This is a flight delay predictor full-stack web application that allows users to determine whether or not their upcoming flight (within the week) will be delayed or cancelled using a multitude of features (i.e. independent variables that specified in the [Machine Learning Model](#machine-learning-model) section below). The main feature is the weather for the upcoming week which is sourced from the OpenWeather API. The purpose of this web application is to allow both airlines and customers to better predict whether or not a flight will be delayed or cancelled days in advance so that disruption to flight and people's schedules are minimized, thus saving them time and resources that would normally be used for air travel preparations.
+Hello! This is a flight delay predictor full-stack web application that allows users to determine whether or not their upcoming flight (within the week) will be delayed or cancelled using a multitude of features (i.e. independent variables that specified in the [Machine Learning Model](#machine-learning-model) section below). The main feature is the weather for the upcoming week which is sourced from the OpenWeather API. The purpose of this web application is to allow both airlines and customers to better predict whether or not a flight will be delayed or cancelled days in advance in an effort to minimize disruptions to flight and people's schedules, thus saving them time and resources that would normally be used for air travel preparations.
 
 _____
 
@@ -30,9 +30,9 @@ _____
 
 **Selected Topic**: Flight Delay Predictor
 
-**Rationale/Business Case**: The purpose of this web application is to allow both airlines and passengers to better predict whether or not a flight will be delayed or cancelled days in advance so that disruption to flight and passenger's schedules are minimized, thus saving them time and resources that would normally be used for air travel preparations. Specifically,
+**Rationale/Business Case**: The purpose of this web application is to allow both airlines and customers to better predict whether or not a flight will be delayed or cancelled days in advance in an effort to minimize disruptions to flight and people's schedules, thus saving them time and resources that would normally be used for air travel preparations. Specifically,
 * Airlines can reschedule flights well in advance so that air travel preparation resources are only deployed when the flight is (almost) guaranteed to takeoff on time and flight terminals can be free of passengers when flights are projected to be delayed or cancelled; consequently, airlines save money by not prematurely deploying resources when flights have a high probability of being delayed and customer satisfaction increases due to advance notices of flight delays and cancellations.
-* Passengers can finalize their schedules well in advance knowing that their flight is (almost) guaranteed to takeoff on time; consequently, passengers' satisfaction with the airline increases and demand for airlines' customer services are decreased since flight delays and cancellations are practically non-existent. This both increases the airline's reputation and decreases its service costs, the saving from which can be passed off to passengers.
+* Passengers can finalize their schedules well in advance knowing that their flight is (almost) guaranteed to takeoff on time; consequently, passengers' satisfaction with the airline increases and demand for airlines' customer services decreases since flight delays and cancellations are practically non-existent. This both increases the airline's reputation and decreases its service costs, the saving from which can be passed off to passengers.
 
 **Data Sources**: 
 * **Flight Data**: https://www.transtats.bts.gov/ONTIME/
@@ -42,11 +42,8 @@ _____
 
 **Questions to Answer**:
 * What are the primary reasons for flight delays?
-* Are flight delays connected to weather patterns?
-* What are the "Average Flight Delays (minutes)" by airline carrier?
-* Are majority of the flight delays from LaGuardia Airport specific to one airline?
-* Are flight delays more prevalent in certain periods of the year? e.g. Christmas, new years, etc.?
-* Which days of the week have most flight delays? Are there more flight delays on weekends or week days?
+* Are flight delays connected to weather events?
+* Are flight delays more prevalent in certain periods of the year?
 * What is the probability of a flight delay on a certain day of the week?
 
 **Description of the Data Exploration Phase of the Project**:
