@@ -1,0 +1,24 @@
+{{> post-info post}}
+
+{{!-- If a user is logged in and clicks on a post, then show the post and a form for adding a comment to the post --}}
+{{#if loggedIn}}
+{{!-- Form for adding a comment to a post --}}
+<form class="comment-form">
+  <div class="form-group">
+    <label for="add-comment">Add Comment:</label>
+    <textarea name="comment-body" id="add-comment"></textarea>
+  </div>
+  <div>
+    <button type="submit" class="btn btn-primary">Add Comment</button>
+    <button type="button" class="upvote-btn btn btn-success">Upvote</button>
+  </div>
+</form>
+{{/if}}
+
+{{> comments post.comments}}
+
+{{!-- Load the scripts for adding a comment to a post or upvoting a post if the user is logged in --}}
+{{#if loggedIn}}
+<script src="/javascript/comment.js"></script>
+<script src="/javascript/upvote.js"></script>
+{{/if}}

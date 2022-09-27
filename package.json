@@ -1,0 +1,32 @@
+{
+  "name": "tech-blog",
+  "version": "1.0.0",
+  "description": "This is a full-stack blog application for tech-related content.",
+  "main": "server.js",
+  "scripts": {
+    "test": "jest",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JaspreetKhela/tech-blog.git"
+  },
+  "author": "Jaspreet Khela",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JaspreetKhela/tech-blog/issues"
+  },
+  "homepage": "https://github.com/JaspreetKhela/tech-blog#readme",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "connect-session-sequelize": "^7.1.2",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "express-handlebars": "^5.3.3",
+    "express-session": "^1.17.2",
+    "handlebars": "^4.7.7",
+    "jest": "^27.2.0",
+    "mysql2": "^2.3.0",
+    "sequelize": "^6.6.5"
+  }
+}
