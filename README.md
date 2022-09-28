@@ -63,7 +63,7 @@ _____
 
 **GitHub Project Board Link**: https://github.com/users/Mohammadbinshahid/projects/2
 
-**(Google Slides) Presentation Link**: https://docs.google.com/presentation/d/1cRceZIrM9SWz3dwcT1ai_D2vIFZ40tSatOfSH0Q2H6E/edit?usp=sharing
+**(Google Slides) Presentation Link**: https://docs.google.com/presentation/d/1d9vr3jMhRY1ceHiKuWwPbF1X4R5g_oyU/edit#slide=id.p1
 
 _____
 
@@ -413,7 +413,7 @@ _____
 <a name="Dashboard"></a>
 ### Dashboard
 
-**Story Board**: Please refer to our [Google Slides Presentation](https://docs.google.com/presentation/d/1cRceZIrM9SWz3dwcT1ai_D2vIFZ40tSatOfSH0Q2H6E/edit?usp=sharing) for details about our project.
+**Story Board**: Please refer to our [Google Slides Presentation](https://docs.google.com/presentation/d/1d9vr3jMhRY1ceHiKuWwPbF1X4R5g_oyU/edit#slide=id.p1) for details about our project.
 
 **Interactive Components**:
 * **Flight Data Form**:
