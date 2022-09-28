@@ -1,0 +1,8 @@
+{{!-- Ordered list for displaying posts on the homepage --}}
+<ol class="post-list">
+  {{#each posts as |post|}}
+  <li>
+    {{> post-info post }}
+  </li>
+  {{/each}}
+</ol>
