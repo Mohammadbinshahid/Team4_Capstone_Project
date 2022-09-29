@@ -209,6 +209,8 @@ _____
 
 **Description**: The database contains the user, flight, and weather data tables.
 
+**Raw Data**: [allmonths_fight_data.csv](https://github.com/Mohammadbinshahid/Team4_Capstone_Project/blob/main/proof_of_concept_designs/data/allmonths_flight_data.csv)
+
 **Structure/Schema/Entity Relationship Diagrams**:
 _____
 
@@ -269,11 +271,17 @@ _____
 **Connection with Machine Learning Model**: The supervised classificaiton regression machine learning model will update the flight_delayed_prediction target field in the aforementioned table(s) to determine whether or not a flight is predicted to be delayed or cancelled.
 
 **Database Features**:
-* Database stores static data for use during the project;
-* Database interfaces with the project in some format (e.g., scraping updates the database, or database connects to the model);
-* Includes at least two tables (or collections, if using MongoDB);
+* Database stores static data for use during the project as specificed in the allmonths_fight_data.csv data file;
+* Database interfaces with the project in some format;
+  * For proof-of-concept purposes, we created a PostgreSQL database that is hosted on AWS which interfaces with pgAdmin locally:
+  * For our deployed application, we will be using a MySQL database that is hosted on Heroku and uses Sequelize as the Object Relational Mapper to perform CRUD operations on the database.
+* Includes at least two tables;
+  * The database includes the ten tables specified in the schemas above.
 * Includes at least one join using the database language (not including any joins in Pandas)
-* Includes at least one connection string (using SQLAlchemy or PyMongo)
+  * We are joining the flight data with its related tables using the following join statements:
+    * [Coming Soon]
+* Includes at least one connection string (using SQLAlchemy or PyMongo):
+  * Our connection string is: ``` ```
 
 _____
 
