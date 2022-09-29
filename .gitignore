@@ -26,6 +26,11 @@ share/python-wheels/
 .installed.cfg
 *.egg
 MANIFEST
+.Rhistory
+db/Resouces/Detailed_Statistics_Departures.csv
+db/Resouces/Monthly Data/
+
+.DS_Store
 
 # PyInstaller
 #  Usually these files are written by a python script from a template
