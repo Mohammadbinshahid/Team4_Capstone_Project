@@ -51,7 +51,7 @@ _____
 * What is the probability of a flight delay on a certain day of the week?
 
 **Description of the Data Exploration Phase of the Project**:
-* [Coming Soon]
+* Our data exploration began with an entirely different abstract as we worked with ticket master data to make a machine learning regression to predict the price or "fair value" of tickets leading up to an event. Unfortunately, the free API only provided a price range of all the tickets available as oppose to the actual price of individual tickets, and therefore, there was not enough data to drive meaningful insight from a machine learning model using that data set. Fortunately, the team was working in parallel to drive EDA on an airport data set. With the team now fully committed to flight data, the data source was revised to a data set that provided more features, including the reasons behind the flight delays. With meaningful data now at our fingertips, we created 4 visuals using 4 different chart types. 
 
 **Description of the Analysis Phase of the Project**:
 * [Coming Soon]
