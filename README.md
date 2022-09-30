@@ -51,10 +51,12 @@ _____
 * What is the probability of a flight delay on a certain day of the week?
 
 **Description of the Data Exploration Phase of the Project**:
-* [Coming Soon]
+* Our data exploration began with an entirely different abstract as we worked with ticket master data to make a machine learning regression to predict the price or "fair value" of tickets leading up to an event. Unfortunately, the free API only provided a price range of all the tickets available as oppose to the actual price of individual tickets, and therefore, there was not enough data to drive meaningful insight from a machine learning model using that data set. Fortunately, the team was working in parallel to drive EDA on an airport data set. With the team now fully committed to flight data, the data source was revised to a data set that provided more features, including the reasons behind the flight delays. With meaningful data now at our fingertips, we created [4 visuals](https://public.tableau.com/app/profile/rowan.backhouse/viz/Aircraftdashboard/FlightDelays?publish=yes) using 4 different chart types. 
 
 **Description of the Analysis Phase of the Project**:
-* [Coming Soon]
+* We analyzed the dataset from Jan to May, which includes information for up to 307,490 various domestic flights in the US in 2022 and the reasons behind was their cancellation, diversion, and delay. 
+- Per the Analysis ~40% of the flight scheduled were delayed, maximum flights delayed was upto 34 hours from the scheduled time.
+- Standard deviation of the delay during arrival and departure was ~ 1 hours.
 
 <a name="web-app-link"></a>
 **Web Application Link**: [Coming Soon]
@@ -209,6 +211,8 @@ _____
 
 **Description**: The database contains the user, flight, and weather data tables.
 
+**Raw Data**: [allmonths_fight_data.csv](https://github.com/Mohammadbinshahid/Team4_Capstone_Project/blob/main/proof_of_concept_designs/data/allmonths_flight_data.csv)
+
 **Structure/Schema/Entity Relationship Diagrams**:
 _____
 
@@ -269,11 +273,17 @@ _____
 **Connection with Machine Learning Model**: The supervised classificaiton regression machine learning model will update the flight_delayed_prediction target field in the aforementioned table(s) to determine whether or not a flight is predicted to be delayed or cancelled.
 
 **Database Features**:
-* Database stores static data for use during the project;
-* Database interfaces with the project in some format (e.g., scraping updates the database, or database connects to the model);
-* Includes at least two tables (or collections, if using MongoDB);
+* Database stores static data for use during the project as specificed in the allmonths_fight_data.csv data file;
+* Database interfaces with the project in some format;
+  * For proof-of-concept purposes, we created a PostgreSQL database that is hosted on AWS which interfaces with pgAdmin locally:
+  * For our deployed application, we will be using a MySQL database that is hosted on Heroku and uses Sequelize as the Object Relational Mapper to perform CRUD operations on the database.
+* Includes at least two tables;
+  * The database includes the ten tables specified in the schemas above.
 * Includes at least one join using the database language (not including any joins in Pandas)
-* Includes at least one connection string (using SQLAlchemy or PyMongo)
+  * We are joining the flight data with its related tables using the following join statements:
+    * [Coming Soon]
+* Includes at least one connection string (using SQLAlchemy or PyMongo):
+  * Our connection string is: ``` ```
 
 _____
 
@@ -433,8 +443,11 @@ _____
 * JavaScript was used for adding functionality to the dashboard;
 * Bootstap was used for incorporating pre-built mobile-responsive components into the dashboard;
 
-**Wireframe(s)**: [Coming Soon]
+**Wireframe(s)**: 
 
+
+
+![alt text](proof_of_concept_designs/wireframe(s)/rowan/rowan_flight_delays_wireframe.png)
 _____
 
 <a name="installation"></a>
