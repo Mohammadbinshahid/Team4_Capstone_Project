@@ -49,12 +49,12 @@ _____
 * What is the probability of a flight delay on a certain day of the week?
 
 **Description of the Data Exploration Phase of the Project**:
-* Our data exploration began with an entirely different abstract as we worked with ticket master data to make a machine learning regression to predict the price or "fair value" of tickets leading up to an event. Unfortunately, the free API only provided a price range of all the tickets available as oppose to the actual price of individual tickets, and therefore, there was not enough data to drive meaningful insight from a machine learning model using that data set. Fortunately, the team was working in parallel to drive EDA on an airport data set. With the team now fully committed to flight data, the data source was revised to a data set that provided more features, including the reasons behind the flight delays. With meaningful data now at our fingertips, we created [4 visuals](https://public.tableau.com/app/profile/rowan.backhouse/viz/Aircraftdashboard/FlightDelays?publish=yes) using 4 different chart types. 
+* Our data exploration began with an entirely different abstract as we worked with ticket master data to make a machine learning model that would predict the price or 'fair value' of tickets leading up to an event. Unfortunately, the free API only provided a price range of all the tickets available as opposed to the actual price of individual tickets and, therefore, did not provide enough data to derive meaningful insights from a machine learning model using that dataset. Fortunately, the team was working in parallel to perform exploratory data analysis on a flight delays dataset. With the team now fully committed to the flight delays dataset, a few flight delays-related datasets were combined to provide for more features, including the reasoning behind the flight delays. With meaningful data now at our fingertips, we created [4 visuals](https://public.tableau.com/app/profile/rowan.backhouse/viz/Aircraftdashboard/FlightDelays?publish=yes) using 4 different chart types. 
 
 **Description of the Analysis Phase of the Project**:
-* We analyzed the dataset from Jan to May, which includes information for up to 307,490 various domestic flights in the US in 2022 and the reasons behind was their cancellation, diversion, and delay. 
-- Per the Analysis ~40% of the flight scheduled were delayed, maximum flights delayed was upto 34 hours from the scheduled time.
-- Standard deviation of the delay during arrival and departure was ~ 1 hours.
+* We analyzed the dataset from January to May, which includes information for up to 307,490 various domestic flights in the US in 2022 and the reasoning behind their cancellations, diversions, or delays. 
+- Per the analysis, ~ 40% of the flights scheduled were delayed and the maximum number of hours that the flights were delayed was up to 34 hours from the scheduled flight's departure time.
+- The standard deviation of the delay during arrival and departure was ~ 1 hour.
 
 <a name="web-app-link"></a>
 **Web Application Link**: [Coming Soon]
@@ -342,7 +342,7 @@ _____
 
 **Features**:
 * **Flight Data Features**: These are the primary features that were extracted from the original flight data DataFrame.
-  * The following features are those that the passenger and airline know well in advance; thus, these are the primary parameters used for predicting whether or not a flight will be delayed:	
+  * The following features are those that a passenger and an airline know well in advance; thus, these are the primary parameters used for predicting whether or not a flight will be delayed:	
     * YEAR
       * **Description**: Year(s) with data pertaining to Flight arrival and departure delays.
       * **Rationale**:	At the moment, we only have data from 2022 with room to expand to years prior to the selected year.
@@ -355,24 +355,31 @@ _____
     * FL_DATE
       * **Description**: This is the flight date.
       * **Rationale**: Delays attributed to certain dates that could signify public holidays. 
-    * OP_UNIQUE_CARRIER
-      * **Description**: This is the airline's identification code.
-      * **Rationale**: Airline identifier which could indicate airline-wise flight delay pattern.
-    * TAIL_NUM
-      * **Description**: This is the aircrafts's identification code.
-      * **Rationale**: This could potentially be associated with the age of the aircraft on there after the time required for maintenance prior to departure.
-    * OP_CARRIER_FL_NUM
-      * **Description**: This is the flight number of the plane for a certain route.
-      * **Rationale**: Flight numbers can be associated with the time of the day. This feature can be dropped in future iterations based on the acceptance criteria of the Machine learning model.
     * ORIGIN
       * **Description**: This is the flight's origin [IATA airport code](https://en.wikipedia.org/wiki/IATA_airport_code#:~:text=An%20IATA%20airport%20code%2C%20also,Air%20Transport%20Association%20(IATA).).
       * **Rationale**: Flight delays can be attributed to the operational efficiency of the origin airport.
     * DEST
       * **Description**: This is the destination airport of the flight.
       * **Rationale**: Flight delays can be attributed to the operational efficiency of the destination airport.
+    * OP_UNIQUE_CARRIER
+      * **Description**: This is the airline's identification code.
+      * **Rationale**: Airline identifier which could indicate airline-wise flight delay pattern.
+    * TAIL_NUM
+      * **Description**: This is the aircrafts's identification code.
+      * **Rationale**: This could potentially be associated with the age of the aircraft on there after the time required for maintenance prior to departure.
     * CRS_DEP_TIME
       * **Description**: This is the scheduled departure time of the flight.
       * **Rationale**: This feature can be dropped in future iterations based on the acceptance criteria of the Machine learning model.
+    * CRS_ELAPSED_TIME
+      * **Description**: This is the scheduled flight time.
+      * **Rationale**: This feature can be dropped in future iterations based on the acceptance criteria of the Machine learning model.
+    * CRS_ARR_TIME
+      * **Description**: This is the scheduled arrival time of the flight.
+      * **Rationale**: This feature can be dropped in future iterations based on the acceptance criteria of the Machine learning model.
+  * These are the remaining features:
+    * OP_CARRIER_FL_NUM
+      * **Description**: This is the flight number of the plane for a certain route.
+      * **Rationale**: Flight numbers can be associated with the time of the day. This feature can be dropped in future iterations based on the acceptance criteria of the Machine learning model.
     * DEP_TIME
       * **Description**: This is the actual departure time of the flight.
       * **Rationale**: This feature can be dropped in future iterations based on the acceptance criteria of the Machine learning model.
@@ -384,19 +391,16 @@ _____
       * **Rationale**: This feature can be dropped in future iterations based on the acceptance criteria of the Machine learning model.
     * TAXI_OUT
       * **Description**: The taxi time of the flight from departure from the gate to wheels off.
-      * **Rationale**: This feature can indicate the delays caused due to the distance from gate to the take-off runway 
+      * **Rationale**: This feature can indicate the delays caused due to the distance from gate to the take-off runway.
     * WHEELS_OFF
       * **Description**: The time when the aircraft wheels are off the runway.
-      * **Rationale**: This feature can indicate the delays based on the actual take-off time since taxi-out 
+      * **Rationale**: This feature can indicate the delays based on the actual take-off time since taxi-out.
     * WHEELS_ON
       * **Description**: The time when the aircraft wheels are on the runway / touch-down of aircraft.
-      * **Rationale**: This feature can indicate the delays caused due to the distance from gate to the arrival runway
+      * **Rationale**: This feature can indicate the delays caused due to the distance from gate to the arrival runway.
     * TAXI_IN
       * **Description**: The time when the aircraft has arrived at the destination airport gate.
-      * **Rationale**: This feature can indicate the delays based on the actual arrival time since Wheels-on 
-    * CRS_ARR_TIME
-      * **Description**: This is the scheduled arrival time of the flight.
-      * **Rationale**: This feature can be dropped in future iterations based on the acceptance criteria of the Machine learning model.
+      * **Rationale**: This feature can indicate the delays based on the actual arrival time since wheels-on.
     * ARR_TIME
       * **Description**: This is the actual arrival time of the flight.
       * **Rationale**: This feature can be dropped in future iterations based on the acceptance criteria of the Machine learning model.
@@ -406,18 +410,15 @@ _____
     * CANCELLED
       * **Description**: Cancelled filghts in binary.
       * **Rationale**: This feature can be dropped in future iterations based on the acceptance criteria of the Machine learning model.
-    * CRS_ELAPSED_TIME
-      * **Description**: This is the scheduled flight time.
-      * **Rationale**: This feature can be dropped in future iterations based on the acceptance criteria of the Machine learning model.
     * ACTUAL_ELAPSED_TIME
       * **Description**: This is the actual flight time.
       * **Rationale**: This feature can be dropped in future iterations based on the acceptance criteria of the Machine learning model.
     * AIR_TIME
       * **Description**: Time between wheel off and wheel on
-      * **Rationale**: This feature could show differences in air time based on the day and how it could affect on-time arrival and departures
+      * **Rationale**: This feature could show differences in air time based on the day and how it could affect on-time arrival and departures.
     * DISTANCE
       * **Description**: The distance between airports in miles
-      * **Rationale**: This feature can show how distances can be an attribute to delays
+      * **Rationale**: This feature can show how distances can be an attributed to delays.
 
 **Targets**: The first phase of our models have been trained only to indicate arrival delays. The next phase would involve improving the arrival delay predicting model and will attempt to predict departure delays. 
 
