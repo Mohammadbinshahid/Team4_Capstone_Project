@@ -76,14 +76,15 @@ _____
   * **Role**: Exploratory Data Analyst, Machine Learning Engineer, UX/UI Designer, Presenter
   * **(Projected) Tasks**:
     * Performed an exploratory data analysis on the flight dataset and exported charts;
-    * Created a PySpark mock-up of the machine learning model for local testing;
+    * Created a Python mock-up of the machine learning model for local testing;
+    * Created the SQL database schema for the flight data, all airports, cancellation reason, all carriers;
     * Contributed to designing the UX/UI for the dashboard by creating a wireframe for the dashboard and/or modifying the client-side code;
     * Contributed to crafting the presentation;
 * **[Avinash Mehra](https://github.com/WhySoCodius)**:
   * **Role**: Exploratory Data Analyst, Database Engineer, UX/UI Designer, Presenter
   * **(Projected) Tasks**: 
     * Performed an exploratory data analysis on the flight dataset and exported charts;
-    * Created the SQL database schema for the flight data;
+    * Created the SQL database schema for the flight data, all airports, cancellation reason, all carriers;
     * Contributed to designing the UX/UI for the dashboard by creating a wireframe for the dashboard and/or modifying the client-side code;
     * Contributed to crafting the presentation;
     * Lead presenter;
@@ -137,9 +138,9 @@ _____
   * MohammadShahid
   * RowanBackhouse
 * **Feature Branches**:
-  * feature/rowan/interactive_data_tool(s)
-  * feature/mohammed/interactive_data_tool(s)
-  * feature/allen/pyspark_machine_learning_model
+  * feature/rowan/interactive_data_tools
+  * feature/mohammed/interactive_data_tools
+  * feature/allen/pyspark_machine_learning_models
   * feature/avinash/analysis_diagrams
   * feature/jaspreet/web_app
 
