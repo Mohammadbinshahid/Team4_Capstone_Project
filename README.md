@@ -312,7 +312,8 @@ _____
 
 * Includes at least one connection string (using SQLAlchemy or PyMongo):
   * Our MySQL database is controlled by the Sequelize Object Relational Mapper which is written in JavaScript. Consequently, the connection string for our production database is: 
-  ```// Import the sequelize npm package
+```
+// Import the sequelize npm package
 const Sequelize = require('sequelize');
 
 // Create a connection to our database
