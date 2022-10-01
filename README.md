@@ -306,6 +306,10 @@ _____
 		INNER JOIN all_carriers
 		ON Flight_Data.OP_UNIQUE_CARRIER = all_carriers.code;
   ```
+![DB_Join](https://user-images.githubusercontent.com/80941606/191862502-5b7da043-85d1-4efa-abb3-b77d84c04fbe.png)
+
+**Image 1**: Outcome of Join.
+
 * Includes at least one connection string (using SQLAlchemy or PyMongo):
   * Our connection string is: ``` ```
 
