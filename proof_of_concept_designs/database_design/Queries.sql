@@ -1,3 +1,9 @@
+-- CODE TO DISPLAY
+SELECT * FROM flight_data;
+SELECT * FROM all_airports;
+SELECT * FROM cancellation_reason;
+SELECT * FROM all_carriers
+
 -- Creating tables for Flight_Data
 CREATE TABLE Flight_Data (
     YEAR VARCHAR ,
@@ -60,6 +66,33 @@ CREATE TABLE Cancellation_reason (
     PRIMARY KEY (Code),
     UNIQUE (Code)
 );
+
+-- JOINING ALL AIRPORTS WITH FILGHT DATA 
+-- TO IDENTIFY AIRPORT NAME BASED ON AIRORT CODE
+SELECT Flight_Data.ORIGIN,
+all_airports.code, all_airports.description
+FROM Flight_Data
+INNER JOIN all_airports
+ON Flight_Data.ORIGIN = all_airports.code;
+
+-- JOINING FILGHT DATA  WITH CANCELLATION REASON
+-- TO IDENTIFY WEATHER DESCRIPTION  BASED ON CANCELLATION CODE
+SELECT Flight_Data.CANCELLATION_CODE,
+cancellation_reason.code, cancellation_reason.description
+FROM Flight_Data
+INNER JOIN cancellation_reason
+ON Flight_Data.CANCELLATION_CODE = cancellation_reason.code;
+
+-- JOINING FILGHT DATA WITH CARRIER DATA 
+-- TO IDENTIFY AIRLINE NAME BASED ON CARRIER CODE
+SELECT Flight_Data.OP_UNIQUE_CARRIER,
+all_carriers.code, all_carriers.description
+FROM Flight_Data
+INNER JOIN all_carriers
+ON Flight_Data.OP_UNIQUE_CARRIER = all_carriers.code;
+
+-- TESTING - COUNT OF CANCELLED FLIGHTS
+SELECT COUNT(*) FROM Flight_Data WHERE CANCELLED = '1.0';
 
 
 # Modify this code to update the DB schema diagram.
