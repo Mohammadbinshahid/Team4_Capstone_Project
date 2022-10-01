@@ -272,13 +272,13 @@ _____
 **Connection with Machine Learning Model**: The supervised classificaiton regression machine learning model will update the ARR_DELAY target field in the aforementioned table(s) to determine whether or not a flight is predicted to be delayed or cancelled.
 
 **Database Features**:
-* Database stores static data for use during the project as specificed in the [AllMonths_RAW.csv](https://github.com/Mohammadbinshahid/Team4_Capstone_Project/blob/main/proof_of_concept_designs/data/outdated/monthly_data/AllMonths_RAW.csv) data file;
-* Database interfaces with the project in some format;
-  * For proof-of-concept purposes, we created a PostgreSQL database that which interfaces with pgAdmin locally:
+* Our database stores static data for use during the project as specificed in the [AllMonths_RAW.csv](https://github.com/Mohammadbinshahid/Team4_Capstone_Project/blob/main/proof_of_concept_designs/data/outdated/monthly_data/AllMonths_RAW.csv) data file;
+* Our database interfaces with the project in some format;
+  * For proof-of-concept purposes, we created a PostgreSQL database that interfaces with pgAdmin locally:
   * For our deployed application, we will be using a MySQL database that is hosted on Heroku and uses Sequelize as the Object Relational Mapper to perform CRUD operations on the database.
 * Includes at least two tables;
-  * The database includes the ten tables specified in the schemas above.
-* Includes at least one join using the database language (not including any joins in Pandas)
+  * Our database includes the ten tables specified in the schemas above.
+* Our database includes at least one join statement using the database language (not including any joins in Pandas)
   * The SQL Query used for creating the aforementioned primary tables and __*joining*__ three tables can be found here: [Queries.sql](https://github.com/Mohammadbinshahid/Team4_Capstone_Project/blob/main/proof_of_concept_designs/database_design/Queries.sql)
   * We are joining the flight data with its related tables using the following join statements:
   ```
