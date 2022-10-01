@@ -210,7 +210,7 @@ _____
 
 **Description**: The database contains the user, flight, and weather data tables.
 
-**Raw Data**: [allmonths_fight_data.csv](https://github.com/Mohammadbinshahid/Team4_Capstone_Project/blob/main/proof_of_concept_designs/data/allmonths_flight_data.csv)
+**Raw Data**: [AllMonths_RAW.csv](https://github.com/Mohammadbinshahid/Team4_Capstone_Project/blob/main/proof_of_concept_designs/data/outdated/monthly_data/AllMonths_RAW.csv)
 
 **Structure/Schema/Entity Relationship Diagrams**:
 _____
@@ -269,18 +269,43 @@ _____
     * user_id int FK >- User.id
     * post_id int FK >- Post.id
 
-**Connection with Machine Learning Model**: The supervised classificaiton regression machine learning model will update the flight_delayed_prediction target field in the aforementioned table(s) to determine whether or not a flight is predicted to be delayed or cancelled.
+**Connection with Machine Learning Model**: The supervised classificaiton regression machine learning model will update the ARR_DELAY target field in the aforementioned table(s) to determine whether or not a flight is predicted to be delayed or cancelled.
 
 **Database Features**:
-* Database stores static data for use during the project as specificed in the allmonths_fight_data.csv data file;
+* Database stores static data for use during the project as specificed in the [AllMonths_RAW.csv](https://github.com/Mohammadbinshahid/Team4_Capstone_Project/blob/main/proof_of_concept_designs/data/outdated/monthly_data/AllMonths_RAW.csv) data file;
 * Database interfaces with the project in some format;
-  * For proof-of-concept purposes, we created a PostgreSQL database that is hosted on AWS which interfaces with pgAdmin locally:
+  * For proof-of-concept purposes, we created a PostgreSQL database that which interfaces with pgAdmin locally:
   * For our deployed application, we will be using a MySQL database that is hosted on Heroku and uses Sequelize as the Object Relational Mapper to perform CRUD operations on the database.
 * Includes at least two tables;
   * The database includes the ten tables specified in the schemas above.
 * Includes at least one join using the database language (not including any joins in Pandas)
+  * The SQL Query used for creating the aforementioned primary tables and __*joining*__ three tables can be found here: [Queries.sql](https://github.com/Mohammadbinshahid/Team4_Capstone_Project/blob/main/proof_of_concept_designs/database_design/Queries.sql)
   * We are joining the flight data with its related tables using the following join statements:
-    * [Coming Soon]
+  ```
+		-- JOINING ALL AIRPORTS WITH FILGHT DATA 
+		-- TO IDENTIFY AIRPORT NAME BASED ON AIRORT CODE
+		SELECT Flight_Data.ORIGIN,
+		all_airports.code, all_airports.description
+		FROM Flight_Data
+		INNER JOIN all_airports
+		ON Flight_Data.ORIGIN = all_airports.code;
+
+		-- JOINING FILGHT DATA  WITH CANCELLATION REASON
+		-- TO IDENTIFY WEATHER DESCRIPTION  BASED ON CANCELLATION CODE
+		SELECT Flight_Data.CANCELLATION_CODE,
+		cancellation_reason.code, cancellation_reason.description
+		FROM Flight_Data
+		INNER JOIN cancellation_reason
+		ON Flight_Data.CANCELLATION_CODE = cancellation_reason.code;
+
+		-- JOINING FILGHT DATA WITH CARRIER DATA 
+		-- TO IDENTIFY AIRLINE NAME BASED ON CARRIER CODE
+		SELECT Flight_Data.OP_UNIQUE_CARRIER,
+		all_carriers.code, all_carriers.description
+		FROM Flight_Data
+		INNER JOIN all_carriers
+		ON Flight_Data.OP_UNIQUE_CARRIER = all_carriers.code;
+  ```
 * Includes at least one connection string (using SQLAlchemy or PyMongo):
   * Our connection string is: ``` ```
 
