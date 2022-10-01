@@ -63,7 +63,7 @@ _____
 
 **GitHub Project Board Link**: https://github.com/users/Mohammadbinshahid/projects/2
 
-**(Google Slides) Presentation Link**: https://docs.google.com/presentation/d/1d9vr3jMhRY1ceHiKuWwPbF1X4R5g_oyU/edit#slide=id.p1
+**(Google Slides) Presentation Link**: https://docs.google.com/presentation/d/1d9vr3jMhRY1ceHiKuWwPbF1X4R5g_oyU/edit?usp=sharing&ouid=103862841931365976162&rtpof=true&sd=true
 
 _____
 
@@ -311,7 +311,22 @@ _____
 **Image 3**: Outcome of Join.
 
 * Includes at least one connection string (using SQLAlchemy or PyMongo):
-  * Our connection string is: ``` ```
+  * Our MySQL database is controlled by the Sequelize Object Relational Mapper which is written in JavaScript. Consequently, the connection string for our production database is: 
+  ```// Import the sequelize npm package
+const Sequelize = require('sequelize');
+
+// Create a connection to our database
+const sequelize = process.env.JAWSDB_URL
+  ? new Sequelize(process.env.JAWSDB_URL)
+  : new Sequelize(process.env.DB_NAME, process.env.DB_USER, process.env.DB_PW, {
+      host: 'localhost',
+      dialect: 'mysql',
+      port: 3306
+    });
+    
+// Export sequelize
+module.exports = sequelize;
+```
 
 _____
 
@@ -326,9 +341,7 @@ _____
 
 **Features**:
 * **Flight Data Features**: These are the primary features that were extracted from the original flight data DataFrame.
-  * The following features are those that the passenger and airline know well in advance; thus, these are the primary parameters used for predicting whether or not a flight will be delayed:
-
-	
+  * The following features are those that the passenger and airline know well in advance; thus, these are the primary parameters used for predicting whether or not a flight will be delayed:	
     * YEAR
       * **Description**: Year(s) with data pertaining to Flight arrival and departure delays.
       * **Rationale**:	At the moment, we only have data from 2022 with room to expand to years prior to the selected year.
@@ -474,10 +487,14 @@ console.log(sklearn.metrics.accuracy_score(y_test, y_pred));
 ```
 
 **Machine Learning Model Benefits**:
+* The classification model provides a user-friendly (binary) outcome that allows both airlines and customers to make quick and informed decisions;
+* The supervised nature of our machine learning model allows it to process training datasets more quickly than if the model was unsupervised (where the model would have to find categorical patterns on its own, thus increasing the use of the server's processing resources); and
 * The current accuracy is at 71% with room for improvement.
 
 **Machine Learning Model Limitations**:
-* Time consuming and therefore the data set was limited to 10000 rows in this phase of development.
+* The machine learning model only provides binary outcomes, so airlines and customers do not know by how long a flight may be delayed;
+* The supervised nature of our machine learning model may miss out on other important data correlations amongst the data fields; and
+* Running the machine learning model is time consuming and therefore the data set was limited to 10,000 rows in this phase of development, which may reduce the accuracy of the model.
 
 _____
 
@@ -488,14 +505,17 @@ _____
 
 **Interactive Components**:
 * **Flight Data Form**:
-  * **Description**:
-  * **Rationale**:
+  * **Description**: A user can input known flight data to recieve a prediction as to whether or not his or her flight is delayed.
+  * **Rationale**: This allows a user to decide well in advance whether or not he or she should rebook his or her flight at a later date.
 * **Historical Flight Data Diagrams**:
-  * **Description**:
-  * **Rationale**:
+  * **Description**: A user can view interactive Tableau charts to better understand which data features most contribute to flight delays.
+  * **Rationale**: This allows a user to make better decisions when booking flights in an effort to minimize flight delays.
+* **Raw Data Table**:
+  * **Description**: A user can view the raw historical flight data in a table format for performing their own exploratory data analysis using filters.
+  * **Rationale**: This allows a user to find tailored answers to his or her search queries that are not obtainable from the Tableau charts alone. 
 * **Community Foru**:
-  * **Description**:
-  * **Rationale**:
+  * **Description**: A user can discuss flight delay-related things with other users.
+  * **Rationale**: This allows users to share informal flight delay insights that are not obtainable from the dataset.
 
 **Tools**:
 * Balsamiq was used for wireframing;
