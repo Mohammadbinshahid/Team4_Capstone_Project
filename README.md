@@ -41,8 +41,6 @@ _____
 **Data Sources**: 
 * **Flight Data**: https://www.transtats.bts.gov/ONTIME/
   * **Description**: This is the flight data source that we are using for training and testing our machine learning model.
-* **Weather Data**: https://openweathermap.org/forecast5
-  * **Description**: This is the weather forecast data sources that we are using for training and testing our machine learning model. We are using the "5-Day Weather Forecast" API for the weather data since it is the only free API provided by [OpenWeather](https://openweathermap.org/price).
 
 **Questions to Answer**:
 * What are the primary reasons for flight delays?
@@ -295,65 +293,98 @@ _____
 
 **Description**: This web application uses the Supervised Classification Regression Machine Learning Model that is implemented in Python for testing and JavaScript for deployment since the flight_delayed_prediction target variable stores binary predictions (i.e. the flight is either "delayed" or "not_delayed"). This flight delay prediction model is based on the deep learning and [Levenberg-Marquart algorithm](https://journalofbigdata.springeropen.com/articles/10.1186/s40537-020-00380-z).
 
+**Code**: For the priliminary machine learning model [click here](https://github.com/Mohammadbinshahid/Team4_Capstone_Project/blob/main/proof_of_concept_designs/Machine_learning/ML.ipynb). This file is for presenting the model without a web-app. The final code will be incorporated into the web-app as indicated in the Sample JavaScript section which is yet to be finalized. 
+
 **Features**:
 * **Flight Data Features**: These are the primary features that were extracted from the original flight data DataFrame.
   * The following features are those that the passenger and airline know well in advance; thus, these are the primary parameters used for predicting whether or not a flight will be delayed:
-    * carrier_code
+
+	
+    * YEAR
+      * **Description**: Year(s) with data pertaining to Flight arrival and departure delays.
+      * **Rationale**:	At the moment, we only have data from 2022 with room to expand to years prior to the selected year.
+    * MONTH
+      * **Description**: Months with data pertaining to Flight arrival and departure delays.
+      * **Rationale**:	Flight data for the Months Jan - Jun, with room to expand the data with more months. The Month can be associated with the season and typical weather at that time.
+    * DAY_OF_WEEK
+      * **Description**: Day of the week with data pertaining to Flight arrival and departure delays.
+      * **Rationale**: The day of the week could indicate how busy the airport is. 
+    * FL_DATE
+      * **Description**: This is the flight date.
+      * **Rationale**: Delays attributed to certain dates that could signify public holidays. 
+    * OP_UNIQUE_CARRIER
       * **Description**: This is the airline's identification code.
-      * **Rationale**:
-    * date(MM/DD/YYYY)
-      * **Description**: This is the date of departure of the flight.
-      * **Rationale**:
-    * flight_number
-      * **Description**: This is the flight number of the plane.
-      * **Rationale**:
-    * destination_airport
+      * **Rationale**: Airline identifier which could indicate airline-wise flight delay pattern.
+    * TAIL_NUM
+      * **Description**: This is the aircrafts's identification code.
+      * **Rationale**: This could potentially be associated with the age of the aircraft on there after the time required for maintenance prior to departure.
+    * OP_CARRIER_FL_NUM
+      * **Description**: This is the flight number of the plane for a certain route.
+      * **Rationale**: Flight numbers can be associated with the time of the day. This feature can be dropped in future iterations based on the acceptance criteria of the Machine learning model.
+    * ORIGIN
+      * **Description**: This is the flight's origin [IATA airport code](https://en.wikipedia.org/wiki/IATA_airport_code#:~:text=An%20IATA%20airport%20code%2C%20also,Air%20Transport%20Association%20(IATA).).
+      * **Rationale**: Flight delays can be attributed to the operational efficiency of the origin airport.
+    * DEST
       * **Description**: This is the destination airport of the flight.
-      * **Rationale**:
-  * The following features were combined into a single "Outcome" column to yield a "delayed" or "not_delayed" value for a particular flight:
-    * scheduled_departure_time
-      * **Description**: This is the time of departure of the flight.
-      * **Rationale**:
-    * actual_departure_time
+      * **Rationale**: Flight delays can be attributed to the operational efficiency of the destination airport.
+    * CRS_DEP_TIME
+      * **Description**: This is the scheduled departure time of the flight.
+      * **Rationale**: This feature can be dropped in future iterations based on the acceptance criteria of the Machine learning model.
+    * DEP_TIME
       * **Description**: This is the actual departure time of the flight.
-      * **Rationale**:
-    * scheduled_elapsed_time_minutes
-      * **Description**: This is the projected elapsed time of the flight.
-      * **Rationale**:
-    * actual_elapsed_time_minutes
-      * **Description**: This is the actual elapsed time of the flight.
-      * **Rationale**:
-    * departure_delay_minutes
-      * **Description**: This is the time delay of the flight from its scheduled departure time.
-      * **Rationale**:
-    * wheel-off_time
-      * **Description**: This is the time of flight when the airplane is in the air.
-      * **Rationale**:
-    * taxi-out_time_minutes
-      * **Description**: This is the taxi-out time.
-      * **Rationale**:
-    * delay_carrier_minutes
-      * **Description**: This is the time delay caused by the carrier.
-      * **Rationale**:
-    * delay_weather_minutes
-      * **Description**: This is the time delay caused by bad weather.
-      * **Rationale**:
-    * delay_national_aviation_system_minutes
-      * **Description**: This is the time delay caused by national aviation system.
-      * **Rationale**:
-    * delay_security_minutes
-      * **Description**: This is the time delay caused by security measures.
-      * **Rationale**:
-    * delay_late_aircrafts_arrival_minutes
-      * **Description**: This is the time delay cause by late aircraft arrivals.
-      * **Rationale**:
+      * **Rationale**: This feature can be dropped in future iterations based on the acceptance criteria of the Machine learning model.
+    * DEP_DELAY
+      * **Description**: This is the departure delay time of the flight.
+      * **Rationale**: At the moment, we are predicting only arrival delays. Future iterations will show Machine Learning models for both arrival and departure delays. 
+    * DEP_DEL15
+      * **Description**: This is the departure delay indicator of the flight, 15 minutes or more.
+      * **Rationale**: This feature can be dropped in future iterations based on the acceptance criteria of the Machine learning model.
+    * TAXI_OUT
+      * **Description**: The taxi time of the flight from departure from the gate to wheels off.
+      * **Rationale**: This feature can indicate the delays caused due to the distance from gate to the take-off runway 
+    * WHEELS_OFF
+      * **Description**: The time when the aircraft wheels are off the runway.
+      * **Rationale**: This feature can indicate the delays based on the actual take-off time since taxi-out 
+    * WHEELS_ON
+      * **Description**: The time when the aircraft wheels are on the runway / touch-down of aircraft.
+      * **Rationale**: This feature can indicate the delays caused due to the distance from gate to the arrival runway
+    * TAXI_IN
+      * **Description**: The time when the aircraft has arrived at the destination airport gate.
+      * **Rationale**: This feature can indicate the delays based on the actual arrival time since Wheels-on 
+    * CRS_ARR_TIME
+      * **Description**: This is the scheduled arrival time of the flight.
+      * **Rationale**: This feature can be dropped in future iterations based on the acceptance criteria of the Machine learning model.
+    * ARR_TIME
+      * **Description**: This is the actual arrival time of the flight.
+      * **Rationale**: This feature can be dropped in future iterations based on the acceptance criteria of the Machine learning model.
+    * ARR_DEL15
+      * **Description**: This is the arival delay indicator of the flight, 15 minutes or more.
+      * **Rationale**: This feature can be dropped in future iterations based on the acceptance criteria of the Machine learning model.
+    * CANCELLED
+      * **Description**: Cancelled filghts in binary.
+      * **Rationale**: This feature can be dropped in future iterations based on the acceptance criteria of the Machine learning model.
+    * CRS_ELAPSED_TIME
+      * **Description**: This is the scheduled flight time.
+      * **Rationale**: This feature can be dropped in future iterations based on the acceptance criteria of the Machine learning model.
+    * ACTUAL_ELAPSED_TIME
+      * **Description**: This is the actual flight time.
+      * **Rationale**: This feature can be dropped in future iterations based on the acceptance criteria of the Machine learning model.
+    * AIR_TIME
+      * **Description**: Time between wheel off and wheel on
+      * **Rationale**: This feature could show differences in air time based on the day and how it could affect on-time arrival and departures
+    * DISTANCE
+      * **Description**: The distance between airports in miles
+      * **Rationale**: This feature can show how distances can be an attribute to delays
 
-* **Weather Data Features**:
-  * [Coming Soon]
+**Targets**: The first phase of our models have been trained only to indicate arrival delays. The next phase would involve improving the arrival delay predicting model and will attempt to predict departure delays. 
 
-**Targets**:
-* flight_delayed_prediction
-  * **Description**: This is the classification outcome variable; its values are either "0" for "delayed" or "1" for "not_delayed".
+* ARR_DELAY
+  * **Description**: This is the classification outcome variable; its values are:
+	  * Early: > 30 mins
+	  * Early: < 30 mins
+	  * Late: < 30 mins
+	  * Late: < 5 hours
+	  * Late: > 5 hours
 
 **Preliminary Data Preprocessing**:
 To preprocess the data for use in the machine learning model, we completed the following steps:
@@ -414,10 +445,10 @@ console.log(sklearn.metrics.accuracy_score(y_test, y_pred));
 ```
 
 **Machine Learning Model Benefits**:
-* [Coming Soon]
+* The current accuracy is at 71% with remove for improvement
 
 **Machine Learning Model Limitations**:
-* [Coming Soon]
+* Time consuming and therefore the data set was limited to 10000 rows for the sake of the presentation
 
 _____
 
