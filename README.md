@@ -445,10 +445,10 @@ console.log(sklearn.metrics.accuracy_score(y_test, y_pred));
 ```
 
 **Machine Learning Model Benefits**:
-* The current accuracy is at 71% with remove for improvement
+* The current accuracy is at 71% with room for improvement.
 
 **Machine Learning Model Limitations**:
-* Time consuming and therefore the data set was limited to 10000 rows for the sake of the presentation
+* Time consuming and therefore the data set was limited to 10000 rows in this phase of development.
 
 _____
 
