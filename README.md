@@ -26,6 +26,7 @@ _____
 * [Questions](#questions)
 * [Badges](#badges)
 * [License](#license)
+* [Communication Protocols](#communication)
 
 _____
 
@@ -55,6 +56,69 @@ _____
 * We analyzed the dataset from January to May, which includes information for up to 307,490 various domestic flights in the US in 2022 and the reasoning behind their cancellations, diversions, or delays. 
 - Per the analysis, ~ 40% of the flights scheduled were delayed and the maximum number of hours that the flights were delayed was up to 34 hours from the scheduled flight's departure time.
 - The standard deviation of the delay during arrival and departure was ~ 1 hour.
+
+**Technologies**:
+This is a full-stack web application that primarily uses a Node.js with Express.js server platform, MySQL database, and Handebars.js templating engine. 
+
+* **Data Analysis**:
+  * **Jupyter Notebook**:
+    * **Description**: Jupyter Notebook was used to run the Exploratory Data Analysis code.
+  * **Numpy**:
+    * **Description**: Numpy was used for mathematical functions and attributes.
+  * **Pandas**:
+    * **Description**: Pandas was used for creating, modifying, and analyzing datasets in DataFrames.
+  * **Matplotlib**:
+    * **Description**: Matplotlib was used for plotting analyzed data contained in arrays and DataFrames.
+
+* **Data Science**:
+  * Machine Learning Algorithm: Classification Regression Machine Learning Model based on the [Levenberg-Marquart algorithm](https://journalofbigdata.springeropen.com/articles/10.1186/s40537-020-00380-z).
+
+* **Primary Front-End**:
+  * **HTML**:
+    * **Description**: HTML was used to create the webpage's structure.
+  * **CSS**:
+    * **Description**: CSS was used to create the webpage's styling.
+  * **JavaScript**:
+    * **Description**: JavaScript was used to create the webpage's functionality.
+  * **Handbars.js**:
+    * **Description**: Handlebar.js was used as a templating engine for dynamically modifying and serving (static) HTML code.
+* **Primary Back-End**:
+  * **Node.js**:
+    * **Description**: Node.js is was used as the back-end platform from which the other back-end techologies were imported.
+  * **Express.js**:
+    * **Description**: Express.js was used as the back-end infrastruture that runs the server application.
+  * **MySQL**:
+    * **Description**: MySQL was used as the SQL database.
+  * **Sequelize ORM**:
+    * **Description**: Sequelize was used as the Object Relational Mapper used to interface with the SQL database.
+  * **Spark**:
+    * **Description**: Spark was used as the library used for running machine learning models.
+  * **scikit-learn**:
+    * **Description**: scikit-learn was used as a Python library used for creating and testing machine learning models.
+  * **Heroku**:
+    * **Description**: Heroku was used as the hosting platform for the web application.
+  * [Coming Soon]
+    * **Description**:
+
+**Folder Structure**:
+* **__tests__**:
+  * **Description**: This is a folder for containing unit tests that can be run using the Jest npm package.
+* **config**:
+  * **Description**: This folder contains configurations files for the web application.
+* **controllers**:
+  * **Description**: This folder contains the code that controls the functionality of the web application.
+* **db**:
+  * **Description**: This folder contains SQL database code.
+* **model**:
+  * **Description**: This folder contains the SQL database's schema.
+* **public**:
+  * **Description**: This folder contains the assets that will be used on the front-end (i.e. HTML, CSS, JavaScript, etc. code).
+* **seeds**:
+  * **Description**: This folder contains the code that populates the SQL database.
+* **utils**:
+  * **Description**: This folder contains ultility functions.
+* **views**:
+  * **Description**: This folder contains HTML code that will be displayed to the end user.
 
 <a name="web-app-link"></a>
 **Web Application Link**: [Coming Soon]
@@ -115,15 +179,6 @@ _____
 
 <a name="github"></a>
 ### GitHub
-**Communication Protocols**:
-* **Tools**: Communication for this project was primarily done through Slack and Zoom calls.
-  * Zoom calls were scheduled for:
-    * Tuesdays and Thursdays from 7:00 PM to 9:00 PM
-    * Mondays at 7:00 PM
-    * Adhoc working sessions at coordinated times
-* **Project Board**: A GitHub project board was created to document progress on tasks primarily using issues.
-* **Stuck Agreement**: If any developer was stuck on a problem for more than 3 hours, he was required to seek assistance from the project's other developers.
-* **Conflict Resolution**: Since there are five developers working on this project, a two-thirds majority is required in votes to make major changes to the application (i.e. to make major changes to the application's architecture, content, styling, etc). 
 
 **Branches**:
 * **Main Branch**
@@ -141,66 +196,6 @@ _____
   * feature/allen/pyspark_machine_learning_models
   * feature/avinash/analysis_diagrams
   * feature/jaspreet/web_app
-
-**Technologies**:
-This is a full-stack web application that primarily uses a Node.js with Express.js server platform, MySQL database, and Handebars.js templating engine. 
-
-* **Data Analysis**:
-  * **Jupyter Notebook**:
-    * **Description**: Jupyter Notebook was used to run the Exploratory Data Analysis code.
-  * **Numpy**:
-    * **Description**: Numpy was used for mathematical functions and attributes.
-  * **Pandas**:
-    * **Description**: Pandas was used for creating, modifying, and analyzing datasets in DataFrames.
-  * **Matplotlib**:
-    * **Description**: Matplotlib was used for plotting analyzed data contained in arrays and DataFrames.
-
-* **Primary Front-End**:
-  * **HTML**:
-    * **Description**: HTML was used to create the webpage's structure.
-  * **CSS**:
-    * **Description**: CSS was used to create the webpage's styling.
-  * **JavaScript**:
-    * **Description**: JavaScript was used to create the webpage's functionality.
-  * **Handbars.js**:
-    * **Description**: Handlebar.js was used as a templating engine for dynamically modifying and serving (static) HTML code.
-* **Primary Back-End**:
-  * **Node.js**:
-    * **Description**: Node.js is was used as the back-end platform from which the other back-end techologies were imported.
-  * **Express.js**:
-    * **Description**: Express.js was used as the back-end infrastruture that runs the server application.
-  * **MySQL**:
-    * **Description**: MySQL was used as the SQL database.
-  * **Sequelize ORM**:
-    * **Description**: Sequelize was used as the Object Relational Mapper used to interface with the SQL database.
-  * **Spark**:
-    * **Description**: Spark was used as the library used for running machine learning models.
-  * **scikit-learn**:
-    * **Description**: scikit-learn was used as a Python library used for creating and testing machine learning models.
-  * **Heroku**:
-    * **Description**: Heroku was used as the hosting platform for the web application.
-  * [Coming Soon]
-    * **Description**:
-
-**Folder Structure**:
-* **__tests__**:
-  * **Description**: This is a folder for containing unit tests that can be run using the Jest npm package.
-* **config**:
-  * **Description**: This folder contains configurations files for the web application.
-* **controllers**:
-  * **Description**: This folder contains the code that controls the functionality of the web application.
-* **db**:
-  * **Description**: This folder contains SQL database code.
-* **model**:
-  * **Description**: This folder contains the SQL database's schema.
-* **public**:
-  * **Description**: This folder contains the assets that will be used on the front-end (i.e. HTML, CSS, JavaScript, etc. code).
-* **seeds**:
-  * **Description**: This folder contains the code that populates the SQL database.
-* **utils**:
-  * **Description**: This folder contains ultility functions.
-* **views**:
-  * **Description**: This folder contains HTML code that will be displayed to the end user.
 _____
 
 <a name="database"></a>
@@ -338,7 +333,13 @@ _____
 
 **Description**: This web application uses the Supervised Classification Regression Machine Learning Model that is implemented in Python for testing and JavaScript for deployment since the flight_delayed_prediction target variable stores binary predictions (i.e. the flight is either "delayed" or "not_delayed"). This flight delay prediction model is based on the deep learning and [Levenberg-Marquart algorithm](https://journalofbigdata.springeropen.com/articles/10.1186/s40537-020-00380-z).
 
-**Code**: For the priliminary machine learning model [click here](https://github.com/Mohammadbinshahid/Team4_Capstone_Project/blob/main/proof_of_concept_designs/Machine_learning/ML.ipynb). This file is for presenting the model without a web-app. The final code will be incorporated into the web-app as indicated in the Sample JavaScript section which is yet to be finalized. 
+**Data Preprocessing**:
+To preprocess the data for use in the machine learning model, we completed the following steps:
+1. We imported the raw data from the aforementioned datasets and APIs.
+2. We joined DataFrames and retained the desired columns from the DataFrames.
+3. We removed records with null values from the DataFrame.
+4. We converted the date column to DateTime datatype.
+5. 70% of the data in the DataFrame was used for training the machine learning model; the remaining data was used for testing the model.
 
 **Features**:
 * **Flight Data Features**: These are the primary features that were extracted from the original flight data DataFrame.
@@ -430,18 +431,12 @@ _____
 	  * Late: < 5 hours
 	  * Late: > 5 hours
 
-**Preliminary Data Preprocessing**:
-To preprocess the data for use in the machine learning model, we completed the following steps:
-1. We imported the raw data from the aforementioned datasets and APIs.
-2. We joined DataFrames and retained the desired columns from the DataFrames.
-3. We removed records with null values from the DataFrame.
-4. We converted the date column to DateTime datatype.
-5. 70% of the data in the DataFrame was used for training the machine learning model; the remaining data was used for testing the model.
-
 **Key Libraries and Frameworks**:
 * PySpark
 * Spark for JavaScript
 * scikit-learn
+
+**Code**: For the priliminary machine learning model [click here](https://github.com/Mohammadbinshahid/Team4_Capstone_Project/blob/main/proof_of_concept_designs/Machine_learning/ML.ipynb). This file is for presenting the model without a web-app. The final code will be incorporated into the web-app as indicated in the Sample JavaScript section which is yet to be finalized. 
 
 **Sample JavaScript Spark and scikit-learn Code**:
 ```
@@ -488,6 +483,12 @@ console.log(sklearn.metrics.accuracy_score(y_test, y_pred));
 
 ```
 
+**Model Training Progress**:
+  * [Coming Soon]
+
+**Model Accuracy Score**:
+  * [Coming Soon]
+
 **Machine Learning Model Benefits**:
 * The classification model provides a user-friendly (binary) outcome that allows both airlines and customers to make quick and informed decisions;
 * The supervised nature of our machine learning model allows it to process training datasets more quickly than if the model was unsupervised (where the model would have to find categorical patterns on its own, thus increasing the use of the server's processing resources); and
@@ -505,6 +506,10 @@ _____
 
 **Story Board**: Please refer to our [Google Slides Presentation](https://docs.google.com/presentation/d/1d9vr3jMhRY1ceHiKuWwPbF1X4R5g_oyU/edit#slide=id.p1) for details about our project.
 
+**Initial Analysis Images**:
+  * [Image 1]:
+    * **Description**:
+
 **Interactive Components**:
 * **Flight Data Form**:
   * **Description**: A user can input known flight data to recieve a prediction as to whether or not his or her flight is delayed.
@@ -519,6 +524,8 @@ _____
   * **Description**: A user can discuss flight delay-related things with other users.
   * **Rationale**: This allows users to share informal flight delay insights that are not obtainable from the dataset.
 
+**Machine Learning Output Data and Images**:
+
 **Tools**:
 * Balsamiq was used for wireframing;
 * HTML was used for structuring the webpage and displaying dashboard;
@@ -526,10 +533,7 @@ _____
 * JavaScript was used for adding functionality to the dashboard;
 * Bootstap was used for incorporating pre-built mobile-responsive components into the dashboard;
 
-**Wireframe(s)**: 
-
-
-
+**Wireframe(s)**:
 ![alt text](proof_of_concept_designs/wireframe(s)/rowan/rowan_flight_delays_wireframe.png)
 _____
 
@@ -591,3 +595,17 @@ _____
 <a name="license"></a>
 ### License
 MIT License
+
+_____
+<a name="communication"></a>
+### Communication Protocols
+
+**Communication Protocols**:
+* **Tools**: Communication for this project was primarily done through Slack and Zoom calls.
+  * Zoom calls were scheduled for:
+    * Tuesdays and Thursdays from 7:00 PM to 9:00 PM
+    * Mondays at 7:00 PM
+    * Adhoc working sessions at coordinated times
+* **Project Board**: A GitHub project board was created to document progress on tasks primarily using issues.
+* **Stuck Agreement**: If any developer was stuck on a problem for more than 3 hours, he was required to seek assistance from the project's other developers.
+* **Conflict Resolution**: Since there are five developers working on this project, a two-thirds majority is required in votes to make major changes to the application (i.e. to make major changes to the application's architecture, content, styling, etc)
