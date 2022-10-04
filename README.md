@@ -344,9 +344,15 @@ To preprocess the data for use in the machine learning model, we completed the f
 **Features**:
 * **Flight Data Features**: These are the primary features that were extracted from the original flight data DataFrame.
   * The following features are those that a passenger and an airline know well in advance; thus, these are the primary parameters used for predicting whether or not a flight will be delayed:	     
-    * FL_DATE
-      * **Description**: This is the flight date.
-      * **Rationale**: Delays attributed to certain dates that could signify public holidays. 
+    * YEAR
+      * **Description**: Year(s) with data pertaining to Flight arrival and departure delays.
+      * **Rationale**:	At the moment, we only have data from 2022 with room to expand to years prior to the selected year.
+    * MONTH
+      * **Description**: Months with data pertaining to Flight arrival and departure delays.
+      * **Rationale**:	Flight data for the Months Jan - Jun, with room to expand the data with more months. The Month can be associated with the season and typical weather at that time.
+    * DAY_OF_WEEK
+      * **Description**: Day of the week with data pertaining to Flight arrival and departure delays.
+      * **Rationale**: The day of the week could indicate how busy the airport is. 
     * ORIGIN
       * **Description**: This is the flight's origin [IATA airport code](https://en.wikipedia.org/wiki/IATA_airport_code#:~:text=An%20IATA%20airport%20code%2C%20also,Air%20Transport%20Association%20(IATA).).
       * **Rationale**: Flight delays can be attributed to the operational efficiency of the origin airport.
@@ -366,15 +372,6 @@ To preprocess the data for use in the machine learning model, we completed the f
       * **Description**: This is the scheduled arrival time of the flight.
       * **Rationale**: This feature can be dropped in future iterations based on the acceptance criteria of the Machine learning model.
   * These are the remaining features:
-    * YEAR
-      * **Description**: Year(s) with data pertaining to Flight arrival and departure delays.
-      * **Rationale**:	At the moment, we only have data from 2022 with room to expand to years prior to the selected year.
-    * MONTH
-      * **Description**: Months with data pertaining to Flight arrival and departure delays.
-      * **Rationale**:	Flight data for the Months Jan - Jun, with room to expand the data with more months. The Month can be associated with the season and typical weather at that time.
-    * DAY_OF_WEEK
-      * **Description**: Day of the week with data pertaining to Flight arrival and departure delays.
-      * **Rationale**: The day of the week could indicate how busy the airport is.
     * TAIL_NUM
       * **Description**: This is the aircrafts's identification code.
       * **Rationale**: This could potentially be associated with the age of the aircraft on there after the time required for maintenance prior to departure.
@@ -520,7 +517,7 @@ _____
 * **Raw Data Table**:
   * **Description**: A user can view the raw historical flight data in a table format for performing their own exploratory data analysis using filters.
   * **Rationale**: This allows a user to find tailored answers to his or her search queries that are not obtainable from the Tableau charts alone. 
-* **Community Foru**:
+* **Community Forum**:
   * **Description**: A user can discuss flight delay-related things with other users.
   * **Rationale**: This allows users to share informal flight delay insights that are not obtainable from the dataset.
 
