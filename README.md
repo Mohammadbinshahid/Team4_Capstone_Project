@@ -57,6 +57,7 @@ _____
 - Per the analysis, ~ 40% of the flights scheduled were delayed and the maximum number of hours that the flights were delayed was up to 34 hours from the scheduled flight's departure time.
 - The standard deviation of the delay during arrival and departure was ~ 1 hour.
 
+![Catplot_ARR_DELAY](/proof_of_concept_designs/presentation_resources/images/Catplot_ARR_DELAY.png)
 **Technologies**:
 This is a full-stack web application that primarily uses a Node.js with Express.js server platform, MySQL database, and Handebars.js templating engine. 
 
