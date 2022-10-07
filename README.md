@@ -505,8 +505,10 @@ _____
 **Story Board**: Please refer to our [Google Slides Presentation](https://docs.google.com/presentation/d/1d9vr3jMhRY1ceHiKuWwPbF1X4R5g_oyU/edit#slide=id.p1) for details about our project.
 
 **Initial Analysis Images**:
-  * [Image 1]:
-    * **Description**:
+  * Correlation Analysis:
+    * **Description**: To determine the real reason for the delay, we utilised correlation analysis on 21x21 columns.
+  
+![Correlation Analysis](/proof_of_concept_designs/presentation_resources/images/Correlation_Analysis1.png?raw=true)
 
 **Interactive Components**:
 * **Flight Data Form**:
@@ -532,6 +534,7 @@ _____
 * Bootstap was used for incorporating pre-built mobile-responsive components into the dashboard;
 
 **Wireframe(s)**:
+
 ![alt text](proof_of_concept_designs/wireframe(s)/rowan/rowan_flight_delays_wireframe.png)
 _____
 
@@ -587,7 +590,13 @@ _____
 
 <a name="badges"></a>
 ### Badges
-N/A
+![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
+![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white)
+![scikit-learn](https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white)
+![Jupyter Notebook](https://img.shields.io/badge/jupyter-%23FA0F00.svg?style=for-the-badge&logo=jupyter&logoColor=white)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![Tableau](https://img.shields.io/badge/Tableau-E97627?style=for-the-badge&logo=Tableau&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
 _____
 
 <a name="license"></a>
