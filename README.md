@@ -26,6 +26,7 @@ _____
 * [Questions](#questions)
 * [Badges](#badges)
 * [License](#license)
+* [Communication Protocols](#communication)
 
 _____
 
@@ -41,8 +42,6 @@ _____
 **Data Sources**: 
 * **Flight Data**: https://www.transtats.bts.gov/ONTIME/
   * **Description**: This is the flight data source that we are using for training and testing our machine learning model.
-* **Weather Data**: https://openweathermap.org/forecast5
-  * **Description**: This is the weather forecast data sources that we are using for training and testing our machine learning model. We are using the "5-Day Weather Forecast" API for the weather data since it is the only free API provided by [OpenWeather](https://openweathermap.org/price).
 
 **Questions to Answer**:
 * What are the primary reasons for flight delays?
@@ -51,96 +50,14 @@ _____
 * What is the probability of a flight delay on a certain day of the week?
 
 **Description of the Data Exploration Phase of the Project**:
-* [Coming Soon]
+* Our data exploration began with an entirely different abstract as we worked with ticket master data to make a machine learning model that would predict the price or 'fair value' of tickets leading up to an event. Unfortunately, the free API only provided a price range of all the tickets available as opposed to the actual price of individual tickets and, therefore, did not provide enough data to derive meaningful insights from a machine learning model using that dataset. Fortunately, the team was working in parallel to perform exploratory data analysis on a flight delays dataset. With the team now fully committed to the flight delays dataset, a few flight delays-related datasets were combined to provide for more features, including the reasoning behind the flight delays. With meaningful data now at our fingertips, we created [4 visuals](https://public.tableau.com/app/profile/rowan.backhouse/viz/Aircraftdashboard/FlightDelays?publish=yes) using 4 different chart types. 
 
 **Description of the Analysis Phase of the Project**:
-* [Coming Soon]
+* We analyzed the dataset from January to May, which includes information for up to 307,490 various domestic flights in the US in 2022 and the reasoning behind their cancellations, diversions, or delays. 
+- Per the analysis, ~ 40% of the flights scheduled were delayed and the maximum number of hours that the flights were delayed was up to 34 hours from the scheduled flight's departure time.
+- The standard deviation of the delay during arrival and departure was ~ 1 hour.
 
-<a name="web-app-link"></a>
-**Web Application Link**: [Coming Soon]
-
-**Screenshots**: [Coming Soon]
-
-**GitHub Project Board Link**: https://github.com/users/Mohammadbinshahid/projects/2
-
-**(Google Slides) Presentation Link**: https://docs.google.com/presentation/d/1d9vr3jMhRY1ceHiKuWwPbF1X4R5g_oyU/edit#slide=id.p1
-
-_____
-
-<a name="team-roles-and-contributions"></a>
-### Team, Roles, and Contributions
-
-* **[Allen Eapen Alex](https://github.com/AllenAx91)**:
-  * **Role**: Exploratory Data Analyst, Machine Learning Engineer, UX/UI Designer, Presenter
-  * **(Projected) Tasks**:
-    * Performed an exploratory data analysis on the flight dataset and exported charts;
-    * Created a PySpark mock-up of the machine learning model for local testing;
-    * Contributed to designing the UX/UI for the dashboard by creating a wireframe for the dashboard and/or modifying the client-side code;
-    * Contributed to crafting the presentation;
-* **[Avinash Mehra](https://github.com/WhySoCodius)**:
-  * **Role**: Exploratory Data Analyst, Database Engineer, UX/UI Designer, Presenter
-  * **(Projected) Tasks**: 
-    * Performed an exploratory data analysis on the flight dataset and exported charts;
-    * Created the SQL database schema for the flight data;
-    * Contributed to designing the UX/UI for the dashboard by creating a wireframe for the dashboard and/or modifying the client-side code;
-    * Contributed to crafting the presentation;
-    * Lead presenter;
-* **[Jaspreet Khela](https://github.com/JaspreetKhela)**:
-  * **Role**: Project Manager/Technical Lead, Full-Stack Web Application Developer, Machine Learning Engineer, Database Engineer, UX/UI Designer, Presenter
-  * **(Projected) Tasks**:
-    * Created GitHub project board with issues;
-    * Created the the machine learning model;
-    * Contributed to designing the UX/UI for the dashboard by creating a wireframe for the dashboard and/or modifying the client-side code;
-    * Use Bootstrap components to mock-up the dashboard based on a wireframe;
-    * Created the full-stack web application running the machine learning model using Spark for JavaScript;
-    * Contributed to crafting the presentation;
-* **[Mohammad Shahid](https://github.com/Mohammadbinshahid)**:
-  * **Role**: Repository Maintainer, Exploratory Data Analyst, UX/UI Designer, Presenter
-  * **(Projected) Tasks**:
-    * Created the GitHub repository and branches;
-    * Performed an exploratory data analysis on the flight dataset and exported charts;
-    * Contributed to designing the UX/UI for the dashboard by creating a wireframe for the dashboard and/or modifying the client-side code;
-    * Contributed to crafting the presentation;
-* **[Rowan Backhouse](https://github.com/roborowanb)**:
-  * **Role**: Exploratory Data Analyst, UX/UI Designer, Presenter
-  * **(Projected) Tasks**:
-    * Performed an exploratory data analysis on the TicketMaster dataset;
-    * Assisted with the creation of the SQL database schema for the flight and weather data;
-    * Created the wireframe for the website;
-    * Contributed to designing the UX/UI for the dashboard by creating a wireframe for the dashboard and/or modifying the client-side code;
-    * Contributed to crafting the presentation;
-    
-_____
-
-<a name="github"></a>
-### GitHub
-**Communication Protocols**:
-* **Tools**: Communication for this project was primarily done through Slack and Zoom calls.
-  * Zoom calls were scheduled for:
-    * Tuesdays and Thursdays from 7:00 PM to 9:00 PM
-    * Mondays at 7:00 PM
-    * Adhoc working sessions at coordinated times
-* **Project Board**: A GitHub project board was created to document progress on tasks primarily using issues.
-* **Stuck Agreement**: If any developer was stuck on a problem for more than 3 hours, he was required to seek assistance from the project's other developers.
-* **Conflict Resolution**: Since there are five developers working on this project, a two-thirds majority is required in votes to make major changes to the application (i.e. to make major changes to the application's architecture, content, styling, etc). 
-
-**Branches**:
-* **Main Branch**
-  * Contains code necessary to perform exploratory analysis;
-  * Contains code necessary to complete the machine learning portion of the project;
-* **Team Members' Branches**: 
-  * AllenEapenAlex
-  * AvinashMehra
-  * JaspreetKhela
-  * MohammadShahid
-  * RowanBackhouse
-* **Feature Branches**:
-  * feature/rowan/interactive_data_tool(s)
-  * feature/mohammed/interactive_data_tool(s)
-  * feature/allen/pyspark_machine_learning_model
-  * feature/avinash/analysis_diagrams
-  * feature/jaspreet/web_app
-
+![Catplot_ARR_DELAY](/proof_of_concept_designs/presentation_resources/images/Catplot_ARR_DELAY.png)
 **Technologies**:
 This is a full-stack web application that primarily uses a Node.js with Express.js server platform, MySQL database, and Handebars.js templating engine. 
 
@@ -153,6 +70,9 @@ This is a full-stack web application that primarily uses a Node.js with Express.
     * **Description**: Pandas was used for creating, modifying, and analyzing datasets in DataFrames.
   * **Matplotlib**:
     * **Description**: Matplotlib was used for plotting analyzed data contained in arrays and DataFrames.
+
+* **Data Science**:
+  * Machine Learning Algorithm: Classification Regression Machine Learning Model based on the [Levenberg-Marquart algorithm](https://journalofbigdata.springeropen.com/articles/10.1186/s40537-020-00380-z).
 
 * **Primary Front-End**:
   * **HTML**:
@@ -200,6 +120,83 @@ This is a full-stack web application that primarily uses a Node.js with Express.
   * **Description**: This folder contains ultility functions.
 * **views**:
   * **Description**: This folder contains HTML code that will be displayed to the end user.
+
+<a name="web-app-link"></a>
+**Web Application Link**: [Coming Soon]
+
+**Screenshots**: [Coming Soon]
+
+**GitHub Project Board Link**: https://github.com/users/Mohammadbinshahid/projects/2
+
+**(Google Slides) Presentation Link**: https://docs.google.com/presentation/d/1d9vr3jMhRY1ceHiKuWwPbF1X4R5g_oyU/edit?usp=sharing&ouid=103862841931365976162&rtpof=true&sd=true
+
+_____
+
+<a name="team-roles-and-contributions"></a>
+### Team, Roles, and Contributions
+
+* **[Allen Eapen Alex](https://github.com/AllenAx91)**:
+  * **Role**: Exploratory Data Analyst, Machine Learning Engineer, UX/UI Designer, Presenter
+  * **(Projected) Tasks**:
+    * Performed an exploratory data analysis on the flight dataset and exported charts;
+    * Created a Python mock-up of the machine learning model for local testing;
+    * Created the SQL database schema for the flight data, all airports, cancellation reason, all carriers;
+    * Contributed to designing the UX/UI for the dashboard by creating a wireframe for the dashboard and/or modifying the client-side code;
+    * Contributed to crafting the presentation;
+* **[Avinash Mehra](https://github.com/WhySoCodius)**:
+  * **Role**: Exploratory Data Analyst, Database Engineer, UX/UI Designer, Presenter
+  * **(Projected) Tasks**: 
+    * Performed an exploratory data analysis on the flight dataset and exported charts;
+    * Created the SQL database schema for the flight data, all airports, cancellation reason, all carriers;
+    * Contributed to designing the UX/UI for the dashboard by creating a wireframe for the dashboard and/or modifying the client-side code;
+    * Contributed to crafting the presentation;
+    * Lead presenter;
+* **[Jaspreet Khela](https://github.com/JaspreetKhela)**:
+  * **Role**: Project Manager/Technical Lead, Full-Stack Web Application Developer, Machine Learning Engineer, Database Engineer, UX/UI Designer, Presenter
+  * **(Projected) Tasks**:
+    * Created GitHub project board with issues;
+    * Created the the machine learning model;
+    * Contributed to designing the UX/UI for the dashboard by creating a wireframe for the dashboard and/or modifying the client-side code;
+    * Use Bootstrap components to mock-up the dashboard based on a wireframe;
+    * Created the full-stack web application running the machine learning model using Spark for JavaScript;
+    * Contributed to crafting the presentation;
+* **[Mohammad Shahid](https://github.com/Mohammadbinshahid)**:
+  * **Role**: Repository Maintainer, Exploratory Data Analyst, UX/UI Designer, Presenter
+  * **(Projected) Tasks**:
+    * Created the GitHub repository and branches;
+    * Performed an exploratory data analysis on the flight dataset and exported charts;
+    * Contributed to designing the UX/UI for the dashboard by creating a wireframe for the dashboard and/or modifying the client-side code;
+    * Contributed to crafting the presentation;
+* **[Rowan Backhouse](https://github.com/roborowanb)**:
+  * **Role**: Exploratory Data Analyst, UX/UI Designer, Presenter
+  * **(Projected) Tasks**:
+    * Performed an exploratory data analysis on the TicketMaster dataset;
+    * Assisted with the creation of the SQL database schema for the flight and weather data;
+    * Created the wireframe for the website;
+    * Contributed to designing the UX/UI for the dashboard by creating a wireframe for the dashboard and/or modifying the client-side code;
+    * Contributed to crafting the presentation;
+    
+_____
+
+<a name="github"></a>
+### GitHub
+
+**Branches**:
+* **Main Branch**
+  * Contains code necessary to perform exploratory analysis;
+  * Contains code necessary to complete the machine learning portion of the project;
+* **Team Members' Branches**: 
+  * AllenEapenAlex
+  * AvinashMehra
+  * JaspreetKhela
+  * MohammadShahid
+  * RowanBackhouse
+* **Feature Branches**:
+  * feature/rowan/interactive_data_tools
+  * feature/mohammed/interactive_data_tools
+  * feature/allen/pyspark_machine_learning_models
+  * feature/avinash/analysis_diagrams
+  * feature/jaspreet/web_app
 _____
 
 <a name="database"></a>
@@ -209,7 +206,7 @@ _____
 
 **Description**: The database contains the user, flight, and weather data tables.
 
-**Raw Data**: [allmonths_fight_data.csv](https://github.com/Mohammadbinshahid/Team4_Capstone_Project/blob/main/proof_of_concept_designs/data/allmonths_flight_data.csv)
+**Raw Data**: [AllMonths_RAW.csv](https://github.com/Mohammadbinshahid/Team4_Capstone_Project/blob/main/proof_of_concept_designs/data/outdated/monthly_data/AllMonths_RAW.csv)
 
 **Structure/Schema/Entity Relationship Diagrams**:
 _____
@@ -268,20 +265,65 @@ _____
     * user_id int FK >- User.id
     * post_id int FK >- Post.id
 
-**Connection with Machine Learning Model**: The supervised classificaiton regression machine learning model will update the flight_delayed_prediction target field in the aforementioned table(s) to determine whether or not a flight is predicted to be delayed or cancelled.
+**Connection with Machine Learning Model**: The supervised classificaiton regression machine learning model will update the ARR_DELAY target field in the aforementioned table(s) to determine whether or not a flight is predicted to be delayed or cancelled.
 
 **Database Features**:
-* Database stores static data for use during the project as specificed in the allmonths_fight_data.csv data file;
-* Database interfaces with the project in some format;
-  * For proof-of-concept purposes, we created a PostgreSQL database that is hosted on AWS which interfaces with pgAdmin locally:
+* Our database stores static data for use during the project as specificed in the [AllMonths_RAW.csv](https://github.com/Mohammadbinshahid/Team4_Capstone_Project/blob/main/proof_of_concept_designs/data/outdated/monthly_data/AllMonths_RAW.csv) data file;
+* Our database interfaces with the project in some format;
+  * For proof-of-concept purposes, we created a PostgreSQL database that interfaces with pgAdmin locally:
   * For our deployed application, we will be using a MySQL database that is hosted on Heroku and uses Sequelize as the Object Relational Mapper to perform CRUD operations on the database.
 * Includes at least two tables;
-  * The database includes the ten tables specified in the schemas above.
-* Includes at least one join using the database language (not including any joins in Pandas)
+  * Our database includes the ten tables specified in the schemas above.
+* Our database includes at least one join statement using the database language (not including any joins in Pandas)
+  * The SQL Query used for creating the aforementioned primary tables and __*joining*__ three tables can be found here: [Queries.sql](https://github.com/Mohammadbinshahid/Team4_Capstone_Project/blob/main/proof_of_concept_designs/database_design/Queries.sql)
   * We are joining the flight data with its related tables using the following join statements:
-    * [Coming Soon]
+  ```
+		-- JOINING ALL AIRPORTS WITH FILGHT DATA 
+		-- TO IDENTIFY AIRPORT NAME BASED ON AIRORT CODE
+		SELECT Flight_Data.ORIGIN,
+		all_airports.code, all_airports.description
+		FROM Flight_Data
+		INNER JOIN all_airports
+		ON Flight_Data.ORIGIN = all_airports.code;
+
+		-- JOINING FILGHT DATA  WITH CANCELLATION REASON
+		-- TO IDENTIFY WEATHER DESCRIPTION  BASED ON CANCELLATION CODE
+		SELECT Flight_Data.CANCELLATION_CODE,
+		cancellation_reason.code, cancellation_reason.description
+		FROM Flight_Data
+		INNER JOIN cancellation_reason
+		ON Flight_Data.CANCELLATION_CODE = cancellation_reason.code;
+
+		-- JOINING FILGHT DATA WITH CARRIER DATA 
+		-- TO IDENTIFY AIRLINE NAME BASED ON CARRIER CODE
+		SELECT Flight_Data.OP_UNIQUE_CARRIER,
+		all_carriers.code, all_carriers.description
+		FROM Flight_Data
+		INNER JOIN all_carriers
+		ON Flight_Data.OP_UNIQUE_CARRIER = all_carriers.code;
+  ```
+![DB_Join](https://github.com/Mohammadbinshahid/Team4_Capstone_Project/blob/main/proof_of_concept_designs/database_design/SQL_Join_Image.png)
+
+**Image 3**: Outcome of Join.
+
 * Includes at least one connection string (using SQLAlchemy or PyMongo):
-  * Our connection string is: ``` ```
+  * Our MySQL database is controlled by the Sequelize Object Relational Mapper which is written in JavaScript. Consequently, the connection string for our production database is: 
+```
+// Import the sequelize npm package
+const Sequelize = require('sequelize');
+
+// Create a connection to our database
+const sequelize = process.env.JAWSDB_URL
+  ? new Sequelize(process.env.JAWSDB_URL)
+  : new Sequelize(process.env.DB_NAME, process.env.DB_USER, process.env.DB_PW, {
+      host: 'localhost',
+      dialect: 'mysql',
+      port: 3306
+    });
+    
+// Export sequelize
+module.exports = sequelize;
+```
 
 _____
 
@@ -292,67 +334,7 @@ _____
 
 **Description**: This web application uses the Supervised Classification Regression Machine Learning Model that is implemented in Python for testing and JavaScript for deployment since the flight_delayed_prediction target variable stores binary predictions (i.e. the flight is either "delayed" or "not_delayed"). This flight delay prediction model is based on the deep learning and [Levenberg-Marquart algorithm](https://journalofbigdata.springeropen.com/articles/10.1186/s40537-020-00380-z).
 
-**Features**:
-* **Flight Data Features**: These are the primary features that were extracted from the original flight data DataFrame.
-  * The following features are those that the passenger and airline know well in advance; thus, these are the primary parameters used for predicting whether or not a flight will be delayed:
-    * carrier_code
-      * **Description**: This is the airline's identification code.
-      * **Rationale**:
-    * date(MM/DD/YYYY)
-      * **Description**: This is the date of departure of the flight.
-      * **Rationale**:
-    * flight_number
-      * **Description**: This is the flight number of the plane.
-      * **Rationale**:
-    * destination_airport
-      * **Description**: This is the destination airport of the flight.
-      * **Rationale**:
-  * The following features were combined into a single "Outcome" column to yield a "delayed" or "not_delayed" value for a particular flight:
-    * scheduled_departure_time
-      * **Description**: This is the time of departure of the flight.
-      * **Rationale**:
-    * actual_departure_time
-      * **Description**: This is the actual departure time of the flight.
-      * **Rationale**:
-    * scheduled_elapsed_time_minutes
-      * **Description**: This is the projected elapsed time of the flight.
-      * **Rationale**:
-    * actual_elapsed_time_minutes
-      * **Description**: This is the actual elapsed time of the flight.
-      * **Rationale**:
-    * departure_delay_minutes
-      * **Description**: This is the time delay of the flight from its scheduled departure time.
-      * **Rationale**:
-    * wheel-off_time
-      * **Description**: This is the time of flight when the airplane is in the air.
-      * **Rationale**:
-    * taxi-out_time_minutes
-      * **Description**: This is the taxi-out time.
-      * **Rationale**:
-    * delay_carrier_minutes
-      * **Description**: This is the time delay caused by the carrier.
-      * **Rationale**:
-    * delay_weather_minutes
-      * **Description**: This is the time delay caused by bad weather.
-      * **Rationale**:
-    * delay_national_aviation_system_minutes
-      * **Description**: This is the time delay caused by national aviation system.
-      * **Rationale**:
-    * delay_security_minutes
-      * **Description**: This is the time delay caused by security measures.
-      * **Rationale**:
-    * delay_late_aircrafts_arrival_minutes
-      * **Description**: This is the time delay cause by late aircraft arrivals.
-      * **Rationale**:
-
-* **Weather Data Features**:
-  * [Coming Soon]
-
-**Targets**:
-* flight_delayed_prediction
-  * **Description**: This is the classification outcome variable; its values are either "0" for "delayed" or "1" for "not_delayed".
-
-**Preliminary Data Preprocessing**:
+**Data Preprocessing**:
 To preprocess the data for use in the machine learning model, we completed the following steps:
 1. We imported the raw data from the aforementioned datasets and APIs.
 2. We joined DataFrames and retained the desired columns from the DataFrames.
@@ -360,10 +342,99 @@ To preprocess the data for use in the machine learning model, we completed the f
 4. We converted the date column to DateTime datatype.
 5. 70% of the data in the DataFrame was used for training the machine learning model; the remaining data was used for testing the model.
 
+**Features**:
+* **Flight Data Features**: These are the primary features that were extracted from the original flight data DataFrame.
+  * The following features are those that a passenger and an airline know well in advance; thus, these are the primary parameters used for predicting whether or not a flight will be delayed:	     
+    * YEAR
+      * **Description**: Year(s) with data pertaining to Flight arrival and departure delays.
+      * **Rationale**:	At the moment, we only have data from 2022 with room to expand to years prior to the selected year.
+    * MONTH
+      * **Description**: Months with data pertaining to Flight arrival and departure delays.
+      * **Rationale**:	Flight data for the Months Jan - Jun, with room to expand the data with more months. The Month can be associated with the season and typical weather at that time.
+    * DAY_OF_WEEK
+      * **Description**: Day of the week with data pertaining to Flight arrival and departure delays.
+      * **Rationale**: The day of the week could indicate how busy the airport is. 
+    * ORIGIN
+      * **Description**: This is the flight's origin [IATA airport code](https://en.wikipedia.org/wiki/IATA_airport_code#:~:text=An%20IATA%20airport%20code%2C%20also,Air%20Transport%20Association%20(IATA).).
+      * **Rationale**: Flight delays can be attributed to the operational efficiency of the origin airport.
+    * DEST
+      * **Description**: This is the destination airport of the flight.
+      * **Rationale**: Flight delays can be attributed to the operational efficiency of the destination airport.
+    * OP_UNIQUE_CARRIER
+      * **Description**: This is the airline's identification code.
+      * **Rationale**: Airline identifier which could indicate airline-wise flight delay pattern. 
+    * CRS_DEP_TIME
+      * **Description**: This is the scheduled departure time of the flight.
+      * **Rationale**: This feature can be dropped in future iterations based on the acceptance criteria of the Machine learning model.
+    * CRS_ELAPSED_TIME
+      * **Description**: This is the scheduled flight time.
+      * **Rationale**: This feature can be dropped in future iterations based on the acceptance criteria of the Machine learning model.
+    * CRS_ARR_TIME
+      * **Description**: This is the scheduled arrival time of the flight.
+      * **Rationale**: This feature can be dropped in future iterations based on the acceptance criteria of the Machine learning model.
+  * These are the remaining features:
+    * TAIL_NUM
+      * **Description**: This is the aircrafts's identification code.
+      * **Rationale**: This could potentially be associated with the age of the aircraft on there after the time required for maintenance prior to departure.
+    * OP_CARRIER_FL_NUM
+      * **Description**: This is the flight number of the plane for a certain route.
+      * **Rationale**: Flight numbers can be associated with the time of the day. This feature can be dropped in future iterations based on the acceptance criteria of the Machine learning model.
+    * DEP_TIME
+      * **Description**: This is the actual departure time of the flight.
+      * **Rationale**: This feature can be dropped in future iterations based on the acceptance criteria of the Machine learning model.
+    * DEP_DELAY
+      * **Description**: This is the departure delay time of the flight.
+      * **Rationale**: At the moment, we are predicting only arrival delays. Future iterations will show Machine Learning models for both arrival and departure delays. 
+    * DEP_DEL15
+      * **Description**: This is the departure delay indicator of the flight, 15 minutes or more.
+      * **Rationale**: This feature can be dropped in future iterations based on the acceptance criteria of the Machine learning model.
+    * TAXI_OUT
+      * **Description**: The taxi time of the flight from departure from the gate to wheels off.
+      * **Rationale**: This feature can indicate the delays caused due to the distance from gate to the take-off runway.
+    * WHEELS_OFF
+      * **Description**: The time when the aircraft wheels are off the runway.
+      * **Rationale**: This feature can indicate the delays based on the actual take-off time since taxi-out.
+    * WHEELS_ON
+      * **Description**: The time when the aircraft wheels are on the runway / touch-down of aircraft.
+      * **Rationale**: This feature can indicate the delays caused due to the distance from gate to the arrival runway.
+    * TAXI_IN
+      * **Description**: The time when the aircraft has arrived at the destination airport gate.
+      * **Rationale**: This feature can indicate the delays based on the actual arrival time since wheels-on.
+    * ARR_TIME
+      * **Description**: This is the actual arrival time of the flight.
+      * **Rationale**: This feature can be dropped in future iterations based on the acceptance criteria of the Machine learning model.
+    * ARR_DEL15
+      * **Description**: This is the arival delay indicator of the flight, 15 minutes or more.
+      * **Rationale**: This feature can be dropped in future iterations based on the acceptance criteria of the Machine learning model.
+    * CANCELLED
+      * **Description**: Cancelled filghts in binary.
+      * **Rationale**: This feature can be dropped in future iterations based on the acceptance criteria of the Machine learning model.
+    * ACTUAL_ELAPSED_TIME
+      * **Description**: This is the actual flight time.
+      * **Rationale**: This feature can be dropped in future iterations based on the acceptance criteria of the Machine learning model.
+    * AIR_TIME
+      * **Description**: Time between wheel off and wheel on
+      * **Rationale**: This feature could show differences in air time based on the day and how it could affect on-time arrival and departures.
+    * DISTANCE
+      * **Description**: The distance between airports in miles
+      * **Rationale**: This feature can show how distances can be an attributed to delays.
+
+**Targets**: The first phase of our models have been trained only to indicate arrival delays. The next phase would involve improving the arrival delay predicting model and will attempt to predict departure delays. 
+
+* ARR_DELAY
+  * **Description**: This is the classification outcome variable; its values are:
+	  * Early: > 30 mins
+	  * Early: < 30 mins
+	  * Late: < 30 mins
+	  * Late: < 5 hours
+	  * Late: > 5 hours
+
 **Key Libraries and Frameworks**:
 * PySpark
 * Spark for JavaScript
 * scikit-learn
+
+**Code**: For the priliminary machine learning model [click here](https://github.com/Mohammadbinshahid/Team4_Capstone_Project/blob/main/proof_of_concept_designs/Machine_learning/ML.ipynb). This file is for presenting the model without a web-app. The final code will be incorporated into the web-app as indicated in the Sample JavaScript section which is yet to be finalized. 
 
 **Sample JavaScript Spark and scikit-learn Code**:
 ```
@@ -410,11 +481,21 @@ console.log(sklearn.metrics.accuracy_score(y_test, y_pred));
 
 ```
 
+**Model Training Progress**:
+  * [Coming Soon]
+
+**Model Accuracy Score**:
+  * [Coming Soon]
+
 **Machine Learning Model Benefits**:
-* [Coming Soon]
+* The classification model provides a user-friendly (binary) outcome that allows both airlines and customers to make quick and informed decisions;
+* The supervised nature of our machine learning model allows it to process training datasets more quickly than if the model was unsupervised (where the model would have to find categorical patterns on its own, thus increasing the use of the server's processing resources); and
+* The current accuracy is at 71% with room for improvement.
 
 **Machine Learning Model Limitations**:
-* [Coming Soon]
+* The machine learning model only provides binary outcomes, so airlines and customers do not know by how long a flight may be delayed;
+* The supervised nature of our machine learning model may miss out on other important data correlations amongst the data fields; and
+* Running the machine learning model is time consuming and therefore the data set was limited to 10,000 rows in this phase of development, which may reduce the accuracy of the model.
 
 _____
 
@@ -423,16 +504,27 @@ _____
 
 **Story Board**: Please refer to our [Google Slides Presentation](https://docs.google.com/presentation/d/1d9vr3jMhRY1ceHiKuWwPbF1X4R5g_oyU/edit#slide=id.p1) for details about our project.
 
+**Initial Analysis Images**:
+  * Correlation Analysis:
+    * **Description**: To determine the real reason for the delay, we utilised correlation analysis on 21x21 columns.
+  
+![Correlation Analysis](/proof_of_concept_designs/presentation_resources/images/Correlation_Analysis1.png?raw=true)
+
 **Interactive Components**:
 * **Flight Data Form**:
-  * **Description**:
-  * **Rationale**:
+  * **Description**: A user can input known flight data to recieve a prediction as to whether or not his or her flight is delayed.
+  * **Rationale**: This allows a user to decide well in advance whether or not he or she should rebook his or her flight at a later date.
 * **Historical Flight Data Diagrams**:
-  * **Description**:
-  * **Rationale**:
-* **Community Foru**:
-  * **Description**:
-  * **Rationale**:
+  * **Description**: A user can view interactive Tableau charts to better understand which data features most contribute to flight delays.
+  * **Rationale**: This allows a user to make better decisions when booking flights in an effort to minimize flight delays.
+* **Raw Data Table**:
+  * **Description**: A user can view the raw historical flight data in a table format for performing their own exploratory data analysis using filters.
+  * **Rationale**: This allows a user to find tailored answers to his or her search queries that are not obtainable from the Tableau charts alone. 
+* **Community Forum**:
+  * **Description**: A user can discuss flight delay-related things with other users.
+  * **Rationale**: This allows users to share informal flight delay insights that are not obtainable from the dataset.
+
+**Machine Learning Output Data and Images**:
 
 **Tools**:
 * Balsamiq was used for wireframing;
@@ -441,8 +533,9 @@ _____
 * JavaScript was used for adding functionality to the dashboard;
 * Bootstap was used for incorporating pre-built mobile-responsive components into the dashboard;
 
-**Wireframe(s)**: [Coming Soon]
+**Wireframe(s)**:
 
+![alt text](proof_of_concept_designs/wireframe(s)/rowan/rowan_flight_delays_wireframe.png)
 _____
 
 <a name="installation"></a>
@@ -497,9 +590,29 @@ _____
 
 <a name="badges"></a>
 ### Badges
-N/A
+![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
+![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white)
+![scikit-learn](https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white)
+![Jupyter Notebook](https://img.shields.io/badge/jupyter-%23FA0F00.svg?style=for-the-badge&logo=jupyter&logoColor=white)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![Tableau](https://img.shields.io/badge/Tableau-E97627?style=for-the-badge&logo=Tableau&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
 _____
 
 <a name="license"></a>
 ### License
 MIT License
+
+_____
+<a name="communication"></a>
+### Communication Protocols
+
+**Communication Protocols**:
+* **Tools**: Communication for this project was primarily done through Slack and Zoom calls.
+  * Zoom calls were scheduled for:
+    * Tuesdays and Thursdays from 7:00 PM to 9:00 PM
+    * Mondays at 7:00 PM
+    * Adhoc working sessions at coordinated times
+* **Project Board**: A GitHub project board was created to document progress on tasks primarily using issues.
+* **Stuck Agreement**: If any developer was stuck on a problem for more than 3 hours, he was required to seek assistance from the project's other developers.
+* **Conflict Resolution**: Since there are five developers working on this project, a two-thirds majority is required in votes to make major changes to the application (i.e. to make major changes to the application's architecture, content, styling, etc)
