@@ -1,25 +1,42 @@
 # Team 4 Capstone Project: Flight Delay Predictions
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
-![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white)
-![scikit-learn](https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white)
-![Jupyter Notebook](https://img.shields.io/badge/jupyter-%23FA0F00.svg?style=for-the-badge&logo=jupyter&logoColor=white)
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+### Data Engineering, Analytics, and Science
 ![Tableau](https://img.shields.io/badge/Tableau-E97627?style=for-the-badge&logo=Tableau&logoColor=white)
+![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
+![Jupyter Notebook](https://img.shields.io/badge/jupyter-%23FA0F00.svg?style=for-the-badge&logo=jupyter&logoColor=white)
+![Numpy](https://img.shields.io/badge/Numpy-777BB4?style=for-the-badge&logo=numpy&logoColor=white)
+![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white)
+![Matplotlib](![Matplotlib](https://img.shields.io/badge/Matplotlib-%23ffffff.svg?style=for-the-badge&logo=Matplotlib&logoColor=black)
+![scikit-learn](https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white)
+![Spark](https://img.shields.io/badge/Apache_Spark-FFFFFF?style=for-the-badge&logo=apachespark&logoColor=#E35A16)
+
+### Front-End Web Development
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
+![Handlebars.js]()
+
+### Back-End Web Development
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
+![Express.js](https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white)
+![Sequelize ORM](https://img.shields.io/badge/Sequelize-52B0E7?style=for-the-badge&logo=Sequelize&logoColor=white)
+![Jest](https://img.shields.io/badge/Jest-C21325?style=for-the-badge&logo=jest&logoColor=white)
+![Spark](https://img.shields.io/badge/Apache_Spark-FFFFFF?style=for-the-badge&logo=apachespark&logoColor=#E35A16)
+![scikit-learn](https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white)
+![Heroku](https://img.shields.io/badge/Heroku-430098?style=for-the-badge&logo=heroku&logoColor=white)
+_____
+
+![matthew-smith-OiiThC8Wf68-unsplash](https://user-images.githubusercontent.com/80941606/192616390-4d16df7c-e264-4b9c-b3b6-62e97ff4d5c8.jpg)
+
+_____
 
 <a name="description"></a>
 ### Description
 Hello! This is a flight delay predictor full-stack web application that allows users to determine whether or not their upcoming flight (within the week) will be delayed or cancelled using a multitude of features (i.e. independent variables that specified in the [Machine Learning Model](#machine-learning-model) section below). The main features are those that are listed on a plane ticket such as a flight's date, origin, destination, airline carrier, departure time, estimated time, and arrival time. 
 
 The purpose of this web application is to allow both airlines and customers to better predict whether or not a flight will be delayed or cancelled days in advance in an effort to minimize disruptions to flight and people's schedules, thus saving them time and resources that would normally be used for air travel preparations.
-
-_____
-
-![matthew-smith-OiiThC8Wf68-unsplash](https://user-images.githubusercontent.com/80941606/192616390-4d16df7c-e264-4b9c-b3b6-62e97ff4d5c8.jpg)
-
-_____
 
 ## Table of Contents
 * [Presentation](#presentation)
@@ -44,9 +61,9 @@ _____
 
 **Selected Topic**: Flight Delay Predictor
 
-**Rationale/Business Case**: The purpose of this web application is to allow both airlines and customers to better predict whether or not a flight will be delayed or cancelled days in advance in an effort to minimize disruptions to flight and people's schedules, thus saving them time and resources that would normally be used for air travel preparations. Specifically,
-* Airlines can reschedule flights well in advance so that air travel preparation resources are only deployed when the flight is (almost) guaranteed to takeoff on time and flight terminals can be free of passengers when flights are projected to be delayed or cancelled; consequently, airlines save money by not prematurely deploying resources when flights have a high probability of being delayed and customer satisfaction increases due to advance notices of flight delays and cancellations.
-* Passengers can finalize their schedules well in advance knowing that their flight is (almost) guaranteed to takeoff on time; consequently, passengers' satisfaction with the airline increases and demand for airlines' customer services decreases since flight delays and cancellations are practically non-existent. This both increases the airline's reputation and decreases its service costs, the saving from which can be passed off to passengers.
+**Rationale/Business Case**: The purpose of this web application is to allow both airlines and customers to better **predict whether or not a flight will be delayed or cancelled days in advance** in an effort to **minimize disruptions** to flight and people's schedules, thus **saving them time and resources** that would normally be used for air travel preparations. Specifically,
+* **Airlines** can reschedule flights well in advance so that air travel preparation resources are only deployed when the flight is (almost) guaranteed to takeoff on time and flight terminals can be free of passengers when flights are projected to be delayed or cancelled; consequently, airlines **save money by not prematurely deploying resources when flights have a high probability of being delayed and customer satisfaction increases due to advance notices of flight delays and cancellations**.
+* **Passengers** can finalize their schedules well in advance knowing that their flight is (almost) guaranteed to takeoff on time; consequently, **passengers' satisfaction with the airline increases and demand for airlines' customer services decreases** since flight delays and cancellations are practically non-existent. This both **increases the airline's reputation and decreases its service costs, the saving from which can be passed off to passengers**.
 
 **Data Sources**: 
 * **Flight Data**: https://www.transtats.bts.gov/ONTIME/
@@ -101,6 +118,10 @@ This is a full-stack web application that primarily uses a Node.js with Express.
     * **Description**: MySQL was used as the SQL database.
   * **Sequelize ORM**:
     * **Description**: Sequelize was used as the Object Relational Mapper used to interface with the SQL database.
+  * **bcrypt**:
+    * **Description**: Bcrypt was used to hash passwords.
+  * **dotenv**:
+    * **Description**: Dotenv is a zero-dependency module that was used to load environment variables from a .env file into process.env. 
   * **Spark**:
     * **Description**: Spark was used as the library used for running machine learning models.
   * **scikit-learn**:
