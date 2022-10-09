@@ -532,11 +532,11 @@ _____
 <a name="Dashboard"></a>
 ### Dashboard
 
-**Story Board**: Please refer to our [Google Slides Presentation](https://docs.google.com/presentation/d/1d9vr3jMhRY1ceHiKuWwPbF1X4R5g_oyU/edit#slide=id.p1) for details about our project.
+**Story Board**: Please refer to our [Google Slides Presentation](https://docs.google.com/presentation/d/1d9vr3jMhRY1ceHiKuWwPbF1X4R5g_oyU/edit?usp=sharing&ouid=103862841931365976162&rtpof=true&sd=true) for details about our project.
 
 **Initial Analysis Images**:
-  * Correlation Analysis:
-    * **Description**: To determine the real reason for the delay, we utilised correlation analysis on 21x21 columns.
+  * **Correlation Analysis**:
+    * **Description**: To determine the primary factors for flight delays and cancellations, we utilised correlation analysis on the flight features listed in the [Machine Learning Model Specifications](#machine-learning-model) section above.
   
 ![Correlation Analysis](/proof_of_concept_designs/presentation_resources/images/Correlation_Analysis1.png?raw=true)
 
