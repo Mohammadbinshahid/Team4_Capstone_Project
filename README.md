@@ -87,7 +87,7 @@ _____
 **Technologies**:
 This is a full-stack web application that primarily uses a Node.js with Express.js server platform, MySQL database, and Handebars.js templating engine. 
 
-* **Data Analysis**:
+* **Data Engineering, Analysis, Science Technologies**:
   * **Tableau**:
     * **Description**: Tableau was primarily used for exploratory data analysis and displaying interactive charts on the dashboard.
   * **Python**:
@@ -100,11 +100,12 @@ This is a full-stack web application that primarily uses a Node.js with Express.
     * **Description**: Pandas was used for creating, modifying, and analyzing datasets in DataFrames.
   * **Matplotlib**:
     * **Description**: Matplotlib was used for plotting analyzed data contained in arrays and DataFrames.
-
-* **Data Science**:
-  * Machine Learning Algorithm: Classification Regression Machine Learning Model based on the [Levenberg-Marquart algorithm](https://journalofbigdata.springeropen.com/articles/10.1186/s40537-020-00380-z).
-
-* **Primary Front-End**:
+  * **Spark**:
+    * **Description**: Spark was used as the library used for running machine learning models.
+  * **scikit-learn**:
+    * **Description**: scikit-learn was used as a Python library used for creating and testing machine learning models.
+  * **Machine Learning Algorithm**: Classification Regression Machine Learning Model based on the [Levenberg-Marquart algorithm](https://journalofbigdata.springeropen.com/articles/10.1186/s40537-020-00380-z).
+* **Primary Front-End Technologies**:
   * **HTML**:
     * **Description**: HTML was used to create the webpage's structure.
   * **CSS**:
@@ -113,7 +114,7 @@ This is a full-stack web application that primarily uses a Node.js with Express.
     * **Description**: JavaScript was used to create the webpage's functionality.
   * **Handbars.js**:
     * **Description**: Handlebar.js was used as a templating engine for dynamically modifying and serving (static) HTML code.
-* **Primary Back-End**:
+* **Primary Back-End Technologies**:
   * **Node.js**:
     * **Description**: Node.js is was used as the back-end platform from which the other back-end techologies were imported.
   * **Express.js**:
@@ -154,6 +155,8 @@ This is a full-stack web application that primarily uses a Node.js with Express.
   * **Description**: This folder contains ultility functions.
 * **views**:
   * **Description**: This folder contains HTML code that will be displayed to the end user.
+* **proof_of_concept_designs**:
+  * **Description**: This folder contains the proof-of-concept work for this web application. 
 
 <a name="web-app-link"></a>
 **Web Application Link**: [Coming Soon]
