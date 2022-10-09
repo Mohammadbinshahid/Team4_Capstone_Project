@@ -88,6 +88,10 @@ _____
 This is a full-stack web application that primarily uses a Node.js with Express.js server platform, MySQL database, and Handebars.js templating engine. 
 
 * **Data Analysis**:
+  * **Tableau**:
+    * **Description**: Tableau was primarily used for exploratory data analysis and displaying interactive charts on the dashboard.
+  * **Python**:
+    * **Description**: Python was used for all of the data engineering and analysis components of this project.
   * **Jupyter Notebook**:
     * **Description**: Jupyter Notebook was used to run the Exploratory Data Analysis code.
   * **Numpy**:
