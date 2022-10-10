@@ -76,3 +76,199 @@ label {
     margin-left: auto;
     margin-right: auto;
 }
+
+/* __________ */
+/* OpenWeather API Styling */
+/* __________ */
+
+/* Background color styling */
+.color {
+    background-color: azure;
+}
+
+/* Current and forecasted weather display column styling */
+#display-column {      
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Unorderd list styling */
+ul {
+    list-style-type: square;
+}
+
+/* Current weather container styling */
+#current-weather {
+    border-style: solid;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+/* Current weather's icon container styling */
+#current-weather-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lemonchiffon;
+    border-top: solid;
+    border-left: solid;
+    border-bottom: solid;
+}
+
+/* Current weather information styling */
+#current-weather-info {
+    padding-top: 10px;
+    background-color: lemonchiffon;
+    border-style: solid;
+}
+
+/* Low UV Index styling */
+.green {
+    color: lightgreen;
+}
+
+/* Moderate UV Index styling */
+.yellow {
+    color: lightyellow;
+}
+
+/* High UV Index styling */
+.red {
+    color: orangered;
+}
+
+/* Forecasted weather container's styling */
+#forecasted-weather {
+    border-style: solid;
+    border-radius: 15px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+/* First day's forecast information styling */
+#first-day-forecast {
+    border-style: solid;
+    margin-bottom: 10px;
+    padding-top: 15px;
+    background-color: lemonchiffon;
+}
+
+/* Second day's forecast information styling */
+#second-day-forecast {
+    border-style: solid;
+    margin-bottom: 10px;
+    padding-top: 15px;
+    background-color: lemonchiffon;
+}
+
+/* Third day's forecast information styling */
+#third-day-forecast {
+    border-style: solid;
+    margin-bottom: 10px;
+    padding-top: 15px;
+    background-color: lemonchiffon;
+}
+
+/* Forth day's forecast information styling */
+#forth-day-forecast {
+    border-style: solid;
+    margin-bottom: 10px;
+    padding-top: 15px;
+    background-color: lemonchiffon;
+}
+
+/* Fifth day's forecast information styling */
+#fifth-day-forecast {
+    border-style: solid;
+    margin-bottom: 10px;
+    padding-top: 15px;
+    background-color: lemonchiffon;
+}
+
+/* Sixth day's forecast information styling */
+#sixth-day-forecast {
+    border-style: solid;
+    margin-bottom: 10px;
+    padding-top: 15px;
+    background-color: lemonchiffon;
+}
+
+/* First day's date styling */
+#first-day-date {
+    text-align: center;
+}
+
+/* First day's forecasted weather icon styling */
+#first-day-icon {
+    display: flex;
+    justify-content: center;
+}
+
+/* Second day's date styling */
+#second-day-date {
+    text-align: center;
+}
+
+/* Second day's forecasted weather icon styling */
+#second-day-icon {
+    display: flex;
+    justify-content: center;
+}
+
+/* Third day's date styling */
+#third-day-date {
+    text-align: center;
+}
+
+/* Third day's forecasted weather icon styling */
+#third-day-icon {
+    display: flex;
+    justify-content: center;
+}
+
+/* Forth day's date styling */
+#forth-day-date {
+    text-align: center;
+}
+
+/* Forth day's forecasted weather icon styling */
+#forth-day-icon {
+    display: flex;
+    justify-content: center;
+}
+
+/* Fifth day's date styling */
+#fifth-day-date {
+    text-align: center;
+}
+
+/* Fifth day's forecasted weather icon styling */
+#fifth-day-icon {
+    display: flex;
+    justify-content: center;
+}
+
+/* Sixth day's date styling */
+#sixth-day-date {
+    text-align: center;
+}
+
+/* Sixth day's forecasted weather icon styling */
+#sixth-day-icon {
+    display: flex;
+    justify-content: center;
+}
+
+/* If the device's screen size width is less than or equal to 768px, then apply these styling settings */
+@media screen and (max-width: 768px) {
+    /* Changing the current weather icon's border properties */
+    #current-weather-icon {       
+        border-style: none;
+        border-top: solid;
+        border-left: solid;
+        border-right: solid;
+    }
+}
