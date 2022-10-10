@@ -65,7 +65,7 @@ function updateFilters() {
   let filterId = changedelement.attr("id");
 
   // If a filter value was entered then add that filterId and value to the filters list; otherwise, clear that filter from the filters object
-  if (elementvalue) {
+  if ((filterId !== "WEATHER-CITY") && (elementvalue)) {
     filters[filterId] = elementvalue;
     console.log(filters);
   }
@@ -165,7 +165,7 @@ buildTable(tableData);
 // _____
 
 // Getting the search form DOM elements
-var citySearch = document.getElementById("CITY");
+var citySearch = document.getElementById("WEATHER-CITY");
 
 // Getting the current weather DOM elements
 var selectedCity = document.getElementById("current-city");
