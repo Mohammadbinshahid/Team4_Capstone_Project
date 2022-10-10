@@ -202,7 +202,7 @@
                 <p class="lead">The purpose of this web application is to allow both airlines and customers to better predict whether or not a flight will be delayed or cancelled days in advance in an effort to minimize disruptions to flight and people's schedules, thus saving them time and resources that would normally be used for air travel preparations.</p>
                 <div class="d-grid gap-2 d-md-flex justify-content-md-start">
                   <a role="button" class="btn btn-primary btn-lg px-4 me-md-2" href="#predict-fight-delay-form">Let Me Try It!</a>
-                  <a role="button" class="btn btn-outline-secondary btn-lg px-4" href="#">Contact Us</a>
+                  <a role="button" class="btn btn-outline-secondary btn-lg px-4 disabled" href="#">Contact Us</a>
                 </div>
               </div>
             </div>
@@ -221,7 +221,7 @@
             <div class="col">
               <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('./assets/media/images/jonathan-sebastiao-qzJHFajnLCE-unsplash.jpg'); background-size: 500px; background-position: center;">
                 <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1 feature">
-                  <h2 id="predict-fight-delay-form">Predict flight delays</h2>
+                  <h2>Predict flight delays</h2>
                   <!-- <ul class="d-flex list-unstyled mt-auto">
                     <li class="me-auto">
                       <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
@@ -282,7 +282,7 @@
             </div>
           </div>
 
-          <header class="section-header">                   
+          <header id="predict-fight-delay-form" class="section-header">                   
             <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
               <br>
               <h1 class="display-4 fw-normal">Flight Delay Predictor Form</h1>
@@ -296,7 +296,7 @@
             <div class="form-group row">
               <label for="DATE" class="col-sm-2 col-form-label">Date of Flight</label>
               <div class="col-sm-10">
-                <input type="date" class="form-control" id="DATE" placeholder="">
+                <input type="date" class="form-control" id="DATE" value="2022-01-01">
               </div>
             </div>
 
@@ -336,7 +336,7 @@
             <div class="form-group row">
               <label for="FLIGHT-DEPARTURE" class="col-sm-2 col-form-label">Flight Departure Time</label>
               <div class="col-sm-10">
-                <input type="time" class="form-control" id="FLIGHT-DEPARTURE" placeholder="AA">
+                <input type="time" class="form-control" id="FLIGHT-DEPARTURE" value="09:00">
               </div>
             </div>
 
@@ -346,7 +346,7 @@
             <div class="form-group row">
               <label for="FLIGHT-TIME" class="col-sm-2 col-form-label">Flight Time</label>
               <div class="col-sm-10">
-                <input type="time" class="form-control" id="FLIGHT-TIME" placeholder="AA">
+                <input type="time" class="form-control" id="FLIGHT-TIME" value="09:00">
               </div>
             </div>
 
@@ -356,7 +356,7 @@
             <div class="form-group row">
               <label for="FLIGHT-ARRIVAL" class="col-sm-2 col-form-label">Flight Arrival Time</label>
               <div class="col-sm-10">
-                <input type="time" class="form-control" id="FLIGHT-ARRIVAL" placeholder="AA">
+                <input type="time" class="form-control" id="FLIGHT-ARRIVAL" value="09:00">
               </div>
             </div>
 
@@ -365,10 +365,15 @@
             <!-- Submit button -->
             <div class="form-group row button-holder1">
               <div class="col-sm-10 button-holder2">
-                <button id="check-flight-delay-status" type="submit" class="btn btn-primary">Check</button>
+                <button id="check-flight-delay-status" type="submit" class="btn btn-primary" onclick="buttonClick()">Check</button>
               </div>
-            </div>
+            </div>            
           </form>
+
+          <div id="prediction">
+            <p id="flight-information"></p>
+            <p id="prediction-text">[Flight Prediction with Display Here]</p>
+          </div>
 
           <header class="section-header">                   
             <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
@@ -591,7 +596,7 @@
           
               <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
                 <h1 class="display-4 fw-normal">Want more data and features?</h1>
-                <p class="fs-5 text-muted">Check out our higher-tier dashboard features and associated prices!</p>
+                <p class="fs-5">Check out our higher-tier dashboard features and associated prices!</p>
               </div>
             </header>
           

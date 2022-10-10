@@ -31,13 +31,14 @@ h2 {
 .section-header {
     margin-top: 50px;
     margin-bottom: 50px;
-    background-color: floralwhite;
+    color: white;
+    background-color:royalblue;
     border-radius: 15px;
 }
 
 form {
     padding: 2%;
-    background-color:rgb(186, 240, 186);
+    background-color:azure;
     border-radius: 15px;
 }
 
@@ -54,6 +55,21 @@ label {
 .button-holder2 {
     text-align: center;
 }
+
+#prediction {
+    margin: 2%;
+    padding: 2%;
+    font-size: xx-large;
+    text-align: center;
+    background-color:lemonchiffon;
+    border-radius: 15px;
+}
+
+/* #flight-information {
+} */
+
+/* #prediction-text {
+} */
 
 .tableauPlaceholder{
     width:max-content;
