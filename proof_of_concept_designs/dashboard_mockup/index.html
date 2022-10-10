@@ -292,6 +292,16 @@
 
           <!-- Flight delay predictor form -->
           <form>
+            <!-- Origin airport code input field -->
+            <div class="form-group row">
+              <label for="CITY" class="col-sm-2 col-form-label">Where are you flying to?</label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control" id="CITY" placeholder="Toronto">
+              </div>
+            </div>
+
+            <br>
+
             <!-- Date of fight input field -->
             <div class="form-group row">
               <label for="DATE" class="col-sm-2 col-form-label">Date of Flight</label>
@@ -374,6 +384,109 @@
             <p id="flight-information"></p>
             <p id="prediction-text">[Flight Prediction with Display Here]</p>
           </div>
+
+          <!-- Weather Forecast -->
+          <!-- Container for the current and forecasted weather information -->
+          <!-- class="col-lg-9 col-md-12" was removed -->
+          <div id="display-column"> 
+            <!-- Container for the current weather -->
+            <div id="current-weather" class="row color rounded">
+                <h3>Current Weather At Your Destination</h3>
+
+                <br></br>
+
+                <!-- Container for the current weather's icon -->
+                <div id="current-weather-icon" class="col-lg-6 col-md-12 rounded-left">
+                    [Current Weather Icon]
+                </div>
+
+                <!-- Container for the current weather information -->
+                <div id="current-weather-info" class="col-lg-6 col-md-12 rounded-right">
+                    <ul>
+                        <h3 id="current-city">[Selected City]</h3>
+                        <li><div id="current-date">[Current Date]</div></li>
+                        <li><div id="current-temperature">[Selected City's Current Temperature]</div></li>
+                        <li><div id="current-wind">[Selected City's Current Wind]</div></li>
+                        <li><div id="current-humidity">[Selected City's Current Humidity]</div></li>
+                        <li><div id="current-uv-index">[Selected City's Current UV Index]</div></li>
+                    </ul>
+                </div>
+            </div>
+
+            <br>
+
+            <!-- Container for the forecasted weather -->
+            <div id="forecasted-weather" class="row color rounded">
+                <h3>Forecasted Weather At Your Destination</h3>
+
+                <br></br>
+
+                <!-- Container for the first day's forecasted weather -->
+                <div id="first-day-forecast" class="col-lg-5 col-md-12 rounded">
+                    <ul>
+                        <h5 id="first-day-date">[First Day's Forecasted Date and Time]</h5>
+                        <div id="first-day-icon">[First Day's Forecasted Icon]</div>
+                        <li><div id="first-day-temperature">[First Day's Forecasted Temperature]</div></li>
+                        <li><div id="first-day-wind">[First Day's Forecasted Wind]</div></li>
+                        <li><div id="first-day-humidity">[First Day's Forecasted Humidity]</div></li>
+                    </ul>
+                </div>
+
+                <!-- Container for the second day's forecasted weather -->
+                <div id="second-day-forecast" class="col-lg-5 col-md-12 rounded">
+                    <ul>
+                        <h5 id="second-day-date">[Second Day's Forecasted Date and Time]</h5>
+                        <div id="second-day-icon">[Second Day's Forecasted Icon]</div>
+                        <li><div id="second-day-temperature">[Second Day's Forecasted Temperature]</div></li>
+                        <li><div id="second-day-wind">[Second Day's Forecasted Wind]</div></li>
+                        <li><div id="second-day-humidity">[Second Day's Forecasted Humidity]</div></li>
+                    </ul>
+                </div>
+
+                <!-- Container for the third day's forecasted weather -->
+                <div id="third-day-forecast" class="col-lg-5 col-md-12 rounded">
+                    <ul>
+                        <h5 id="third-day-date">[Third Day's Forecasted Date and Time]</h5>
+                        <div id="third-day-icon">[Third Day's Forecasted Icon]</div>
+                        <li><div id="third-day-temperature">[Third Day's Forecasted Temperature]</div></li>
+                        <li><div id="third-day-wind">[Third Day's Forecasted Wind]</div></li>
+                        <li><div id="third-day-humidity">[Third Day's Forecasted Humidity]</div></li>
+                    </ul>
+                </div>
+
+                <!-- Container for the forth day's forecasted weather -->
+                <div id="forth-day-forecast" class="col-lg-5 col-md-12 rounded">
+                    <ul>
+                        <h5 id="forth-day-date">[Forth Day's Forecasted Date and Time]</h5>
+                        <div id="forth-day-icon">[Forth Day's Forecasted Icon]</div>
+                        <li><div id="forth-day-temperature">[Forth Day's Forecasted Temperature]</div></li>
+                        <li><div id="forth-day-wind">[Forth Day's Forecasted Wind]</div></li>
+                        <li><div id="forth-day-humidity">[Forth Day's Forecasted Humidity]</div></li>
+                    </ul>
+                </div>
+
+                <!-- Container for the fifth day's forecasted weather -->
+                <div id="fifth-day-forecast" class="col-lg-5 col-md-12 rounded">
+                    <ul>
+                        <h5 id="fifth-day-date">[Fifth Day's Forecasted Date and Time]</h5>
+                        <div id="fifth-day-icon">[Fifth Day's Forecasted Icon]</div>
+                        <li><div id="fifth-day-temperature">[Fifth Day's Forecasted Temperature]</div></li>
+                        <li><div id="fifth-day-wind">[Fifth Day's Forecasted Wind]</div></li>
+                        <li><div id="fifth-day-humidity">[Fifth Day's Forecasted Humidity]</div></li>
+                    </ul>
+                </div>
+
+                <!-- Container for the sixth day's forecasted weather -->
+                <div id="sixth-day-forecast" class="col-lg-5 col-md-12 rounded">
+                    <ul>
+                        <h5 id="sixth-day-date">[Sixth Day's Forecasted Date and Time]</h5>
+                        <div id="sixth-day-icon">[Sixth Day's Forecasted Icon]</div>
+                        <li><div id="sixth-day-temperature">[Sixth Day's Forecasted Temperature]</div></li>
+                        <li><div id="sixth-day-wind">[Sixth Day's Forecasted Wind]</div></li>
+                        <li><div id="sixth-day-humidity">[Sixth Day's Forecasted Humidity]</div></li>
+                    </ul>
+                </div>                
+            </div>
 
           <header class="section-header">                   
             <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
@@ -761,6 +874,9 @@
 
     <script src="https://cdn.jsdelivr.net/npm/feather-icons@4.28.0/dist/feather.min.js" integrity="sha384-uO3SXW5IuS1ZpFPKugNNWqTZRRglnUJK6UAZ/gxOX80nxEkN9NcGZTftn6RzhGWE" crossorigin="anonymous"></script><script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js" integrity="sha384-zNy6FEbO50N+Cg5wap8IKA4M/ZnLJgzc6w2NqACZaK0u0FXfOWRRJOnQtpZun8ha" crossorigin="anonymous"></script><script src="./assets/js/dashboard.js"></script>
   
+    <!-- Loading the Luxon script -->
+    <script src="https://cdn.jsdelivr.net/npm/luxon@1.27.0/build/global/luxon.min.js"></script>
+
     <!-- d3.js script allows the library to "listen" in on our code or react to user input -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
 
