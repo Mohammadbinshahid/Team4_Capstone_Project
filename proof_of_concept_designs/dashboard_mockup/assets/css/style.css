@@ -1,0 +1,62 @@
+.disabled {
+    pointer-events: none;
+    cursor: default;
+}
+
+.navbar {
+    position: sticky;
+}
+
+#hero-section {
+    width: max-content;
+    border-radius: 0px 0px 25px 25px;
+    background-color:floralwhite;
+}
+
+.hero-content {
+    padding: 4%;
+}
+
+.feature {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    padding: 25% 0%;
+    text-align: center;
+}
+
+.section-header {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-color: floralwhite;
+    border-radius: 15px;
+}
+
+form {
+    padding: 2%;
+    background-color:rgb(186, 240, 186);
+    border-radius: 15px;
+}
+
+label {
+    font-weight: bold;
+}
+
+.button-holder1 {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50px;
+}
+
+.button-holder2 {
+    text-align: center;
+}
+
+.tableauPlaceholder{
+    width:max-content;
+    margin-left: auto;
+    margin-right: auto;
+}

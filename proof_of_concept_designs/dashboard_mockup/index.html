@@ -13,9 +13,10 @@
 
     <!-- <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet"> -->
 
-    <!-- CSS only -->
+    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     
+    <!-- Custom dashboard template styling -->
     <style>
       .bd-placeholder-img {
         font-size: 1.125rem;
@@ -69,25 +70,39 @@
       }
     </style>
 
-    <!-- Custom styles for this template -->
+    <!-- Bootstrap dashboard template styling -->
     <link href="./assets/css/dashboard.css" rel="stylesheet">
+
+    <!-- Bootstrap hero section template styling -->
+    <link href="./assets/css/heroes.css" rel="stylesheet">
+
+    <!-- Developer-defined custom styles for this template -->
+    <link href="./assets/css/style.css" rel="stylesheet">
   </head>
 
-  <body>
-    
+  <body>    
+    <!-- Navbar -->
     <header class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
-      <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3 fs-6" href="#">Company name</a>
+      <!-- Company -->
+      <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3 fs-6" href="#">Flights R Us Inc.</a>
+      
+      <!-- Mobile-responsive menu expand/collapse button -->
       <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <input class="form-control form-control-dark w-100 rounded-0 border-0" type="text" placeholder="Search" aria-label="Search">
+      
+      <!-- Search bar -->
+      <input class="form-control form-control-dark w-100 rounded-0 border-0" type="text" placeholder="Search (Disabled)" aria-label="Search" disabled>
       <div class="navbar-nav">
+
+        <!-- Sign out button -->
         <div class="nav-item text-nowrap">
           <a class="nav-link px-3" href="#">Sign out</a>
         </div>
       </div>
     </header>
 
+    <!-- Sidebar -->
     <div class="container-fluid">
       <div class="row">
         <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
@@ -100,31 +115,31 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">
+                <a class="nav-link disabled" href="#">
                   <span data-feather="file" class="align-text-bottom"></span>
                   Orders
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">
+                <a class="nav-link disabled" href="#">
                   <span data-feather="shopping-cart" class="align-text-bottom"></span>
                   Products
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">
+                <a class="nav-link disabled" href="#">
                   <span data-feather="users" class="align-text-bottom"></span>
                   Customers
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">
+                <a class="nav-link disabled" href="#">
                   <span data-feather="bar-chart-2" class="align-text-bottom"></span>
                   Reports
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">
+                <a class="nav-link disabled" href="#">
                   <span data-feather="layers" class="align-text-bottom"></span>
                   Integrations
                 </a>
@@ -133,31 +148,31 @@
 
             <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted text-uppercase">
               <span>Saved reports</span>
-              <a class="link-secondary" href="#" aria-label="Add a new report">
+              <a class="link-secondary disabled" href="#" aria-label="Add a new report">
                 <span data-feather="plus-circle" class="align-text-bottom"></span>
               </a>
             </h6>
             <ul class="nav flex-column mb-2">
               <li class="nav-item">
-                <a class="nav-link" href="#">
+                <a class="nav-link disabled" href="#">
                   <span data-feather="file-text" class="align-text-bottom"></span>
                   Current month
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">
+                <a class="nav-link disabled" href="#">
                   <span data-feather="file-text" class="align-text-bottom"></span>
                   Last quarter
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">
+                <a class="nav-link disabled" href="#">
                   <span data-feather="file-text" class="align-text-bottom"></span>
                   Social engagement
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">
+                <a class="nav-link disabled" href="#">
                   <span data-feather="file-text" class="align-text-bottom"></span>
                   Year-end sale
                 </a>
@@ -166,37 +181,276 @@
           </div>
         </nav>
 
+        <!-- Dashboard section -->
         <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+          <!-- Hero section -->
+          <div id="hero-section" class="container col-xxl-8 px-4 py-5">
+            <div class="row flex-lg-row-reverse align-items-center g-5 py-5 hero-content">
+              <div class="col-10 col-sm-8 col-lg-6">
+                <div class="col">
+                  <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg">
+                    <video id="user-experience-and-interface-education-and-work-card-video-or-image" class="card-img-top" poster="./assets/images/card-images/nicholas-green-nPz8akkUmDI-unsplash.jpg" autoplay loop muted>
+                      <source src="./assets/media/videos/pexels-airplane-flying-full-hd.mp4" type="video/mp4">
+                      Your browser does not support the video tag.
+                    </video>
+                  </div>
+                </div>
+                <!-- <img src="./assets/media/images/bootstrap-themes.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy"> -->
+              </div>
+              <div class="col-lg-6">
+                <h1 class="display-5 fw-bold lh-1 mb-3">Predict Flight Delays!</h1>
+                <p class="lead">The purpose of this web application is to allow both airlines and customers to better predict whether or not a flight will be delayed or cancelled days in advance in an effort to minimize disruptions to flight and people's schedules, thus saving them time and resources that would normally be used for air travel preparations.</p>
+                <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                  <a role="button" class="btn btn-primary btn-lg px-4 me-md-2" href="#predict-fight-delay-form">Let Me Try It!</a>
+                  <a role="button" class="btn btn-outline-secondary btn-lg px-4" href="#">Contact Us</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <header class="section-header">                   
+            <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+              <br>
+              <h1 class="display-4 fw-normal">Free-Tier Features</h1>
+              <!-- <p class="fs-5 text-muted"></p> -->
+            </div>
+          </header>
+
+          <!-- Features section -->
+          <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+            <div class="col">
+              <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('./assets/media/images/jonathan-sebastiao-qzJHFajnLCE-unsplash.jpg'); background-size: 500px; background-position: center;">
+                <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1 feature">
+                  <h2 id="predict-fight-delay-form">Predict flight delays</h2>
+                  <!-- <ul class="d-flex list-unstyled mt-auto">
+                    <li class="me-auto">
+                      <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
+                    </li>
+                    <li class="d-flex align-items-center me-3">
+                      <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"/></svg>
+                      <small>Earth</small>
+                    </li>
+                    <li class="d-flex align-items-center">
+                      <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"/></svg>
+                      <small>3d</small>
+                    </li>
+                  </ul> -->
+                </div>
+              </div>
+            </div>
+      
+            <div class="col">
+              <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('./assets/media/images/nicholas-cappello-Wb63zqJ5gnE-unsplash.jpg'); background-size: 600px; background-position: center;">
+                <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1 feature">
+                  <h2>View interactive flight data charts</h2>
+                  <!-- <ul class="d-flex list-unstyled mt-auto">
+                    <li class="me-auto">
+                      <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
+                    </li>
+                    <li class="d-flex align-items-center me-3">
+                      <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"/></svg>
+                      <small>Pakistan</small>
+                    </li>
+                    <li class="d-flex align-items-center">
+                      <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"/></svg>
+                      <small>4d</small>
+                    </li>
+                  </ul> -->
+                </div>
+              </div>
+            </div>
+      
+            <div class="col">
+              <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('./assets/media/images/ben-neale-EC_GhFRGTAY-unsplash.jpg'); background-size: 500px; background-position: top;">
+                <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1 feature">
+                  <h2>View raw flight data</h2>
+                  <!-- <ul class="d-flex list-unstyled mt-auto">
+                    <li class="me-auto">
+                      <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
+                    </li>
+                    <li class="d-flex align-items-center me-3">
+                      <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"/></svg>
+                      <small>California</small>
+                    </li>
+                    <li class="d-flex align-items-center">
+                      <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"/></svg>
+                      <small>5d</small>
+                    </li>
+                  </ul> -->
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <header class="section-header">                   
+            <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+              <br>
+              <h1 class="display-4 fw-normal">Flight Delay Predictor Form</h1>
+              <!-- <p class="fs-5 text-muted"></p> -->
+            </div>
+          </header>
+
+          <!-- Flight delay predictor form -->
+          <form>
+            <!-- Date of fight input field -->
+            <div class="form-group row">
+              <label for="DATE" class="col-sm-2 col-form-label">Date of Flight</label>
+              <div class="col-sm-10">
+                <input type="date" class="form-control" id="DATE" placeholder="">
+              </div>
+            </div>
+
+            <br>
+
+            <!-- Origin airport code input field -->
+            <div class="form-group row">
+              <label for="ORIGIN" class="col-sm-2 col-form-label">Origin Airport IATA Code</label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control" id="ORIGIN" placeholder="YYZ">
+              </div>
+            </div>
+
+            <br>
+
+            <!-- Destination airport code input field -->
+            <div class="form-group row">
+              <label for="DEST" class="col-sm-2 col-form-label">Destination Airport IATA Code</label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control" id="DEST" placeholder="JFK">
+              </div>
+            </div>
+
+            <br>
+
+            <!-- Airline code input field -->
+            <div class="form-group row">
+              <label for="OP_UNIQUE_CARRIER" class="col-sm-2 col-form-label">Destination Airport Code</label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control" id="OP_UNIQUE_CARRIER" placeholder="AA">
+              </div>
+            </div>
+
+            <br>
+
+            <!-- Departure time input field -->
+            <div class="form-group row">
+              <label for="FLIGHT-DEPARTURE" class="col-sm-2 col-form-label">Flight Departure Time</label>
+              <div class="col-sm-10">
+                <input type="time" class="form-control" id="FLIGHT-DEPARTURE" placeholder="AA">
+              </div>
+            </div>
+
+            <br>
+
+            <!-- Flight time input field -->
+            <div class="form-group row">
+              <label for="FLIGHT-TIME" class="col-sm-2 col-form-label">Flight Time</label>
+              <div class="col-sm-10">
+                <input type="time" class="form-control" id="FLIGHT-TIME" placeholder="AA">
+              </div>
+            </div>
+
+            <br>
+
+            <!-- Arrival time input field -->
+            <div class="form-group row">
+              <label for="FLIGHT-ARRIVAL" class="col-sm-2 col-form-label">Flight Arrival Time</label>
+              <div class="col-sm-10">
+                <input type="time" class="form-control" id="FLIGHT-ARRIVAL" placeholder="AA">
+              </div>
+            </div>
+
+            <br>
+
+            <!-- Submit button -->
+            <div class="form-group row button-holder1">
+              <div class="col-sm-10 button-holder2">
+                <button id="check-flight-delay-status" type="submit" class="btn btn-primary">Check</button>
+              </div>
+            </div>
+          </form>
+
+          <header class="section-header">                   
+            <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+              <br>
+              <h1 class="display-4 fw-normal"> Interactive Charts</h1>
+              <!-- <p class="fs-5 text-muted"></p> -->
+            </div>
+          </header>
+
+          <!-- Tableau charts -->
+          <div class='tableauPlaceholder' id='viz1665383785618' style='position: relative;'><noscript><a href='#'><img alt='Flight Delays ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ai&#47;Aircraftdashboard&#47;FlightDelays&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='Aircraftdashboard&#47;FlightDelays' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ai&#47;Aircraftdashboard&#47;FlightDelays&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1665383785618');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='1016px';vizElement.style.height='991px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+
+          <header class="section-header">                   
+            <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+              <br>
+              <h1 class="display-4 fw-normal">Additional Interactive Charts</h1>
+              <!-- <p class="fs-5 text-muted"></p> -->
+            </div>
+          </header>
+
           <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-            <h1 class="h2">Dashboard</h1>
+            <h1 class="h2">Your Past Flight Delay Predictions [Coming Soon]</h1>
             <div class="btn-toolbar mb-2 mb-md-0">
               <div class="btn-group me-2">
-                <button type="button" class="btn btn-sm btn-outline-secondary">Share</button>
-                <button type="button" class="btn btn-sm btn-outline-secondary">Export</button>
+                <button type="button" class="btn btn-sm btn-outline-secondary" disabled>Share</button>
+                <button type="button" class="btn btn-sm btn-outline-secondary" disabled>Export</button>
               </div>
-              <button type="button" class="btn btn-sm btn-outline-secondary dropdown-toggle">
+              <button type="button" class="btn btn-sm btn-outline-secondary dropdown-toggle" disabled>
                 <span data-feather="calendar" class="align-text-bottom"></span>
                 This week
               </button>
             </div>
           </div>
 
+          <!-- Chart -->
           <canvas class="my-4 w-100" id="myChart" width="900" height="380"></canvas>
 
-          <h2>Section title</h2>
+          <header class="section-header">                   
+            <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+              <br>
+              <h1 class="display-4 fw-normal">Recent Historical Flight Data</h1>
+              <!-- <p class="fs-5 text-muted"></p> -->
+            </div>
+          </header>
+
           <div class="table-responsive">
             <table class="table table-striped table-sm">
               <thead>
                 <tr>
-                  <th scope="col">#</th>
-                  <th scope="col">Header</th>
-                  <th scope="col">Header</th>
-                  <th scope="col">Header</th>
-                  <th scope="col">Header</th>
+                  <!-- <th scope="col">#</th> -->
+                  <th scope="col">YEAR</th>
+                  <th scope="col">MONTH</th>
+                  <th scope="col">DAY_OF_WEEK</th>
+                  <th scope="col">FL_DATE</th>
+                  <th scope="col">OP_UNIQUE_CARRIER</th>
+                  <th scope="col">TAIL_NUM</th>
+                  <th scope="col">OP_CARRIER_FL_NUM</th>
+                  <th scope="col">ORIGIN</th>
+                  <th scope="col">DEST</th>
+                  <th scope="col">CRS_DEP_TIME</th>
+                  <th scope="col">DEP_TIME</th>
+                  <th scope="col">DEP_DELAY</th>
+                  <th scope="col">DEP_DEL15</th>
+                  <th scope="col">DEP_TIME_BLK</th>
+                  <th scope="col">TAXI_OUT</th>
+                  <th scope="col">WHEELS_OFF</th>
+                  <th scope="col">WHEELS_ON</th>
+                  <th scope="col">TAXI_IN</th>
+                  <th scope="col">CRS_ARR_TIME</th>
+                  <th scope="col">ARR_TIME</th>
+                  <th scope="col">ARR_DELAY</th>
+                  <th scope="col">ARR_DEL15</th>
+                  <th scope="col">ARR_TIME_BLK</th>
+                  <th scope="col">CANCELLED</th>
+                  <th scope="col">CRS_ELAPSED_TIME</th>
+                  <th scope="col">ACTUAL_ELAPSED_TIME</th>
+                  <th scope="col">AIR_TIME</th>
+                  <th scope="col">DISTANCE</th>
                 </tr>
               </thead>
               <tbody>
-                <tr>
+                <!-- <tr>
                   <td>1,001</td>
                   <td>random</td>
                   <td>data</td>
@@ -307,14 +561,193 @@
                   <td>tabular</td>
                   <td>information</td>
                   <td>text</td>
-                </tr>
+                </tr> -->
               </tbody>
             </table>
+          </div>
+
+          <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+            <symbol id="check" viewBox="0 0 16 16">
+              <title>Check</title>
+              <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+            </symbol>
+          </svg>
+          
+          <div class="container py-3">
+            <header class="section-header">
+              <!-- <div class="d-flex flex-column flex-md-row align-items-center pb-3 mb-4 border-bottom">
+                <a href="/" class="d-flex align-items-center text-dark text-decoration-none">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="32" class="me-2" viewBox="0 0 118 94" role="img"><title>Bootstrap</title><path fill-rule="evenodd" clip-rule="evenodd" d="M24.509 0c-6.733 0-11.715 5.893-11.492 12.284.214 6.14-.064 14.092-2.066 20.577C8.943 39.365 5.547 43.485 0 44.014v5.972c5.547.529 8.943 4.649 10.951 11.153 2.002 6.485 2.28 14.437 2.066 20.577C12.794 88.106 17.776 94 24.51 94H93.5c6.733 0 11.714-5.893 11.491-12.284-.214-6.14.064-14.092 2.066-20.577 2.009-6.504 5.396-10.624 10.943-11.153v-5.972c-5.547-.529-8.934-4.649-10.943-11.153-2.002-6.484-2.28-14.437-2.066-20.577C105.214 5.894 100.233 0 93.5 0H24.508zM80 57.863C80 66.663 73.436 72 62.543 72H44a2 2 0 01-2-2V24a2 2 0 012-2h18.437c9.083 0 15.044 4.92 15.044 12.474 0 5.302-4.01 10.049-9.119 10.88v.277C75.317 46.394 80 51.21 80 57.863zM60.521 28.34H49.948v14.934h8.905c6.884 0 10.68-2.772 10.68-7.727 0-4.643-3.264-7.207-9.012-7.207zM49.948 49.2v16.458H60.91c7.167 0 10.964-2.876 10.964-8.281 0-5.406-3.903-8.178-11.425-8.178H49.948z" fill="currentColor"></path></svg>
+                  <span class="fs-4">Pricing example</span>
+                </a>
+          
+                <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto">
+                  <a class="me-3 py-2 text-dark text-decoration-none" href="#">Features</a>
+                  <a class="me-3 py-2 text-dark text-decoration-none" href="#">Enterprise</a>
+                  <a class="me-3 py-2 text-dark text-decoration-none" href="#">Support</a>
+                  <a class="py-2 text-dark text-decoration-none" href="#">Pricing</a>
+                </nav>
+              </div> -->
+          
+              <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+                <h1 class="display-4 fw-normal">Want more data and features?</h1>
+                <p class="fs-5 text-muted">Check out our higher-tier dashboard features and associated prices!</p>
+              </div>
+            </header>
+          
+            <main>
+              <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+                <div class="col">
+                  <div class="card mb-4 rounded-3 shadow-sm">
+                    <div class="card-header py-3">
+                      <h4 class="my-0 fw-normal">Free</h4>
+                    </div>
+                    <div class="card-body">
+                      <h1 class="card-title pricing-card-title">$0<small class="text-muted fw-light">/mo</small></h1>
+                      <ul class="list-unstyled mt-3 mb-4">
+                        <li>10 users included</li>
+                        <li>2 GB of storage</li>
+                        <li>Email support</li>
+                        <li>Help center access</li>
+                      </ul>
+                      <button type="button" class="w-100 btn btn-lg btn-outline-primary">Sign up for free</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card mb-4 rounded-3 shadow-sm">
+                    <div class="card-header py-3">
+                      <h4 class="my-0 fw-normal">Pro</h4>
+                    </div>
+                    <div class="card-body">
+                      <h1 class="card-title pricing-card-title">$15<small class="text-muted fw-light">/mo</small></h1>
+                      <ul class="list-unstyled mt-3 mb-4">
+                        <li>20 users included</li>
+                        <li>10 GB of storage</li>
+                        <li>Priority email support</li>
+                        <li>Help center access</li>
+                      </ul>
+                      <button type="button" class="w-100 btn btn-lg btn-primary">Get started</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card mb-4 rounded-3 shadow-sm border-primary">
+                    <div class="card-header py-3 text-bg-primary border-primary">
+                      <h4 class="my-0 fw-normal">Enterprise</h4>
+                    </div>
+                    <div class="card-body">
+                      <h1 class="card-title pricing-card-title">$29<small class="text-muted fw-light">/mo</small></h1>
+                      <ul class="list-unstyled mt-3 mb-4">
+                        <li>30 users included</li>
+                        <li>15 GB of storage</li>
+                        <li>Phone and email support</li>
+                        <li>Help center access</li>
+                      </ul>
+                      <button type="button" class="w-100 btn btn-lg btn-primary">Contact us</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          
+              <h3 class="display-6 text-center mb-4">Compare plans</h3>
+          
+              <div class="table-responsive">
+                <table class="table text-center">
+                  <thead>
+                    <tr>
+                      <th style="width: 34%;"></th>
+                      <th style="width: 22%;">Free</th>
+                      <th style="width: 22%;">Pro</th>
+                      <th style="width: 22%;">Enterprise</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row" class="text-start">Public</th>
+                      <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
+                      <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
+                      <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
+                    </tr>
+                    <tr>
+                      <th scope="row" class="text-start">Private</th>
+                      <td></td>
+                      <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
+                      <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
+                    </tr>
+                  </tbody>
+          
+                  <tbody>
+                    <tr>
+                      <th scope="row" class="text-start">Permissions</th>
+                      <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
+                      <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
+                      <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
+                    </tr>
+                    <tr>
+                      <th scope="row" class="text-start">Sharing</th>
+                      <td></td>
+                      <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
+                      <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
+                    </tr>
+                    <tr>
+                      <th scope="row" class="text-start">Unlimited members</th>
+                      <td></td>
+                      <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
+                      <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
+                    </tr>
+                    <tr>
+                      <th scope="row" class="text-start">Extra security</th>
+                      <td></td>
+                      <td></td>
+                      <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </main>
+          
+            <footer class="pt-4 my-md-5 pt-md-5 border-top">
+              <div class="row">
+                <div class="col-12 col-md">
+                  <img class="mb-2" src="../assets/brand/bootstrap-logo.svg" alt="" width="24" height="19">
+                  <small class="d-block mb-3 text-muted">&copy; 2017–2022</small>
+                </div>
+                <div class="col-6 col-md">
+                  <h5>Features</h5>
+                  <ul class="list-unstyled text-small">
+                    <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Cool stuff</a></li>
+                    <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Random feature</a></li>
+                    <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Team feature</a></li>
+                    <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Stuff for developers</a></li>
+                    <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Another one</a></li>
+                    <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Last time</a></li>
+                  </ul>
+                </div>
+                <div class="col-6 col-md">
+                  <h5>Resources</h5>
+                  <ul class="list-unstyled text-small">
+                    <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Resource</a></li>
+                    <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Resource name</a></li>
+                    <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Another resource</a></li>
+                    <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Final resource</a></li>
+                  </ul>
+                </div>
+                <div class="col-6 col-md">
+                  <h5>About</h5>
+                  <ul class="list-unstyled text-small">
+                    <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Team</a></li>
+                    <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Locations</a></li>
+                    <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Privacy</a></li>
+                    <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Terms</a></li>
+                  </ul>
+                </div>
+              </div>
+            </footer>
           </div>
         </main>
       </div>
     </div>
-
 
     <!-- <script src="../assets/dist/js/bootstrap.bundle.min.js"></script> -->
 
@@ -322,5 +755,14 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/feather-icons@4.28.0/dist/feather.min.js" integrity="sha384-uO3SXW5IuS1ZpFPKugNNWqTZRRglnUJK6UAZ/gxOX80nxEkN9NcGZTftn6RzhGWE" crossorigin="anonymous"></script><script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js" integrity="sha384-zNy6FEbO50N+Cg5wap8IKA4M/ZnLJgzc6w2NqACZaK0u0FXfOWRRJOnQtpZun8ha" crossorigin="anonymous"></script><script src="./assets/js/dashboard.js"></script>
+  
+    <!-- d3.js script allows the library to "listen" in on our code or react to user input -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
+
+    <!-- data.js script contains the array of data objects -->
+    <!-- <script src="./assets/data/AllMonths_RAW_Short.js"></script> -->
+
+    <script src="./assets/js/script.js"></script>
+
   </body>
 </html>
