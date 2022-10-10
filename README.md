@@ -161,7 +161,7 @@ This is a full-stack web application that primarily uses a Node.js with Express.
 <a name="web-app-link"></a>
 **Web Application Link**: [Coming Soon]
 
-**Screenshots**: [Coming Soon]
+**Screenshots**: Please refer to the [Dashboard Specifications](#dashboard) section.
 
 **GitHub Project Board Link**: https://github.com/users/Mohammadbinshahid/projects/2
 
@@ -573,6 +573,10 @@ _____
 **Wireframe(s)**:
 
 ![alt text](proof_of_concept_designs/wireframe(s)/rowan/rowan_flight_delays_wireframe.png)
+
+**Screenshots**:
+![screencapture-file-Users-jaspreetkhela-My-Drive-SCS-Data-Analytics-Boot-Camp-Course-Work-Boot-Camp-Module-20-Final-Project-Module-20-First-Segment-Project-Deliverable-Team4-Capstone-Project-proof-of-concept-designs-dashboard-mockup-index-ht](https://user-images.githubusercontent.com/80941606/194967605-011b6cbe-639b-40a0-9bdf-7db0ced1a4e5.png)
+
 _____
 
 <a name="installation"></a>
