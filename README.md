@@ -537,6 +537,7 @@ console.log(sklearn.metrics.accuracy_score(y_test, y_pred));
  * [Coming Soon]
 
 **Machine Learning Model Benefits**:
+* PySpark's LogisticRegression is simple and easy to implement with good training efficiency
 * The classification model provides a user-friendly (binary) outcome that allows both airlines and customers to make quick and informed decisions;
 * The supervised nature of our machine learning model allows it to process training datasets more quickly than if the model was unsupervised (where the model would have to find categorical patterns on its own, thus increasing the use of the server's processing resources); and
 * The current accuracy is at 71% with room for improvement.
@@ -545,6 +546,8 @@ console.log(sklearn.metrics.accuracy_score(y_test, y_pred));
 * The machine learning model only provides binary outcomes, so airlines and customers do not know by how long a flight may be delayed;
 * The supervised nature of our machine learning model may miss out on other important data correlations amongst the data fields; and
 * Running the machine learning model is time consuming and therefore the data set was limited to 10,000 rows in this phase of development, which may reduce the accuracy of the model.
+
+For More info on the Model: [spark.apache](https://spark.apache.org/docs/latest/ml-classification-regression.html)
 
 _____
 
