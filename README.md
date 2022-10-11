@@ -528,19 +528,18 @@ console.log(sklearn.metrics.accuracy_score(y_test, y_pred));
 ```
 
 **Model Training Progress**:
-  * [Coming Soon]
-
-**Model Accuracy Score and Confusion Matrix**:
-  * [Coming Soon]
-
-**Statistical Analysis Description**:
- * [Coming Soon]
+  * Currently, we have a functional stand-alone .ipynb file with a machine learning model based on Sklearn's LogisticRegression. 
+  * Out final model will use PySpark's LogisticRegression which will be integrated with the front end.
+   
+**Model Accuracy Score**:
+ * The current accuracy is at 69% with room for improvement.
+  ![]()
 
 **Machine Learning Model Benefits**:
 * PySpark's LogisticRegression is simple and easy to implement with good training efficiency
 * The classification model provides a user-friendly (binary) outcome that allows both airlines and customers to make quick and informed decisions;
-* The supervised nature of our machine learning model allows it to process training datasets more quickly than if the model was unsupervised (where the model would have to find categorical patterns on its own, thus increasing the use of the server's processing resources); and
-* The current accuracy is at 71% with room for improvement.
+* The supervised nature of our machine learning model allows it to process training datasets more quickly than if the model was unsupervised (where the model would have to find categorical patterns on its own, thus increasing the use of the server's processing resources)
+* 
 
 **Machine Learning Model Limitations**:
 * The machine learning model only provides binary outcomes, so airlines and customers do not know by how long a flight may be delayed;
