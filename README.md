@@ -533,7 +533,7 @@ console.log(sklearn.metrics.accuracy_score(y_test, y_pred));
    
 **Model Accuracy Score**:
  * The current accuracy is at 69% with room for improvement.
-  ![]()
+  ![](https://github.com/Mohammadbinshahid/Team4_Capstone_Project/blob/main/proof_of_concept_designs/Machine_learning/WIP/Score.png)
 
 **Machine Learning Model Benefits**:
 * PySpark's LogisticRegression is simple and easy to implement with good training efficiency
