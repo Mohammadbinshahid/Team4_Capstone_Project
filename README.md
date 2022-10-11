@@ -158,6 +158,15 @@ This is a full-stack web application that primarily uses a Node.js with Express.
 * **proof_of_concept_designs**:
   * **Description**: This folder contains the proof-of-concept work for this web application. 
 
+**Result of analysis**:
+* [Coming Soon]  
+
+**Recommendation for future analysis**:
+* [Coming Soon] 
+
+**Anything the team would have done differently**:
+* [Coming Soon] 
+ 
 <a name="web-app-link"></a>
 **Web Application Link**: [Coming Soon]
 
@@ -521,8 +530,11 @@ console.log(sklearn.metrics.accuracy_score(y_test, y_pred));
 **Model Training Progress**:
   * [Coming Soon]
 
-**Model Accuracy Score**:
+**Model Accuracy Score and Confusion Matrix**:
   * [Coming Soon]
+
+**Statistical Analysis Description**:
+ * [Coming Soon]
 
 **Machine Learning Model Benefits**:
 * The classification model provides a user-friendly (binary) outcome that allows both airlines and customers to make quick and informed decisions;
