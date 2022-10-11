@@ -577,6 +577,11 @@ _____
 
 **Machine Learning Output Data and Images**:
 
+![](https://github.com/Mohammadbinshahid/Team4_Capstone_Project/blob/main/proof_of_concept_designs/Machine_learning/WIP/Screen%20Shot%202022-10-11%20at%206.32.38%20PM.png)
+![](https://github.com/Mohammadbinshahid/Team4_Capstone_Project/blob/main/proof_of_concept_designs/Machine_learning/WIP/Screen%20Shot%202022-10-11%20at%206.32.45%20PM.png)
+
+**Image:** Outcome of prediciton from Sklearn's Logistic Regression Model
+
 **Tools**:
 * Balsamiq was used for wireframing;
 * HTML was used for structuring the webpage and displaying dashboard;
