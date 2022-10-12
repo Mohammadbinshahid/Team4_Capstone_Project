@@ -159,13 +159,15 @@ This is a full-stack web application that primarily uses a Node.js with Express.
   * **Description**: This folder contains the proof-of-concept work for this web application. 
 
 **Result of analysis**:
-* [Coming Soon]  
+* We gained insights on flight delays and how each aspect affects the overall flight delay through our exploratory data analysis on Jupyter Notebook and visual analysis using Tableau, which helped us determine the inputs for the machine learning model.
 
-**Recommendation for future analysis**:
-* [Coming Soon] 
+**Recommendation for future analysis and development**:
+* Improve accuracy by adding upon our dataset and machine learning model.
+* Add more functionality to the Dashboard to make it more dynamic and user friendly for the users.
+* Convert the website to a progressive Web Application so that users can use both **Online and Offline**.
 
 **Anything the team would have done differently**:
-* [Coming Soon] 
+* Use Data over the years to detemine how the time of the year and holidays impact the flight delays. 
 
 **GitHub Pages Link [using the Front-End Code]**: https://mohammadbinshahid.github.io/Team4_Capstone_Project/
  
