@@ -1,3 +1,8 @@
+// __________
+// 
+// Flight Delays Data Script
+// __________
+
 // _____
 
 // Variables and constants
@@ -27,7 +32,7 @@ const tableColumns = ['YEAR', 'MONTH', 'DAY_OF_WEEK', 'FL_DATE', 'OP_UNIQUE_CARR
 // Get table reference
 var tbody = d3.select("tbody");
 
-// 1. Create a variable to keep track of all the filters as an object
+// Create a variable to keep track of all the table filters as an object
 var filters = {};
 
 // _____
@@ -44,6 +49,7 @@ function buildTable(data) {
     // Append a row to the table body
     let row = tbody.append("tr");
 
+    // Create cell for the current row and populate it with data
     for (j = 0; j < tableColumns.length; j++){
         column = tableColumns[j];
         let cell = row.append("td");
@@ -53,12 +59,12 @@ function buildTable(data) {
   }
 }
 
-// Use this function to update the filters
+// Define a function for updating the filters
 function updateFilters() {
   // Save the element that was changed as a variable
   let changedelement = d3.select(this);
 
-  //Save the value that was changed as a variable
+  // Save the value that was changed as a variable
   let elementvalue = changedelement.property("value");
   
   // Save the id of the filter that was changed as a variable
@@ -79,11 +85,10 @@ function updateFilters() {
   
 // Use this function to filter the table when data is entered
 function filterTable() {
-
   //Set the filtered data to the tableData
   let filteredData = structuredClone(tableData);
 
-  // Loop through all of the filters and keep any data that matches the filter values in the variable created in Step 8
+  // Loop through all of the filters and keep any data that matches the filter values in the filters object
   for (const [key, value] of Object.entries(filters)) {
     for (i = 0; i < 100; i++){
         if (filteredData[key][i]){        
@@ -97,11 +102,13 @@ function filterTable() {
     }
   }
 
-  // Finally, rebuild the table using the filtered data
+  // Rebuild the table using the filtered data
   buildTable(filteredData);
 }
 
+// Define a function for handling the form submission button
 function buttonClick() {
+    // Define variables for storing the data from the form
     var dateOfFlight = dateOfFlightElement.value;
     var flightOrigin = flightOriginElement.value;
     var flightDestination = flightDestinationElement.value;
@@ -110,11 +117,13 @@ function buttonClick() {
     var flightDuration = flightDurationElement.value;
     var flightArrival = flightArrivalElement.value;
 
+    // Output the data from the form to the user
     flightInformation.innerHTML = "<b>Your Flight Information</b>: Your are flying on " + dateOfFlight + " from " + flightOrigin + " to " + flightDestination + " on " + flightAirline + " at " + flightDeparture + " for " + flightDuration + " minutes " + " until " + flightArrival + ".";
 
+    // Provide the user with a prediction of whether or not their flight is delayed
     flightPrediction.innerHTML = "Your flight is predicted to be DELAYED.";
 
-    // Retrieve search value
+    // Retrieve the destination city value so that the weather forecast for that city can be displayed
     var searchValue = citySearch.value;
 
     // Fetching the first batch of data from an OpenWeatherMap API endpoint for the current weather to determine if a valid city was searched for
@@ -371,7 +380,3 @@ function fetchWeatherData(city) {
         sixthDayHumidity.innerHTML = "Humidity %".bold() + ": " + data.list[39].main.humidity;
     })
 }
-
-// _____
-// Event Listeners
-// _____
