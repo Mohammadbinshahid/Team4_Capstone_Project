@@ -167,10 +167,10 @@ This is a full-stack web application that primarily uses a Node.js with Express.
 **Anything the team would have done differently**:
 * [Coming Soon] 
 
-**GitHub Pages Link [using the Front-End Code]: https://mohammadbinshahid.github.io/Team4_Capstone_Project
+**GitHub Pages Link [using the Front-End Code]**: https://mohammadbinshahid.github.io/Team4_Capstone_Project/
  
 <a name="web-app-link"></a>
-**Web Application Link [using the Full-Stack Code]**: [Coming Soon]
+**Web Application Link [using the Full-Stack Code]**: https://flights-r-us.herokuapp.com/
 
 **Screenshots**: Please refer to the [Dashboard Specifications](#dashboard) section.
 
