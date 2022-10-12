@@ -1,0 +1,478 @@
+/* Disable anchor tags */
+.disabled {
+    pointer-events: none;
+    cursor: default;
+}
+
+/* main {
+    background-color:lightyellow;
+} */
+
+/* First- and third-level styling */
+h1, h3 {
+    text-align: center;
+}
+
+/* Second-level header styling */
+h2 {
+    padding: 25% 0%;
+    text-align: center;
+}
+
+/* Style the navbar */
+.navbar {
+    position: sticky;
+}
+
+/* __________ */
+/* Hero section styling */
+/* __________ */
+
+#hero-section {
+    width: 100%;
+    border-radius: 0px 0px 25px 25px;
+    background-color:lightyellow;
+}
+
+/* Hero section styling for mobile devices */
+#hero-section-mobile {
+    text-align: center;
+    border-radius: 0px 0px 25px 25px;
+    background-color:lightyellow;
+}
+
+.hero-content {
+    padding: 4%;
+}
+
+.lead {
+    font-size: x-large;
+}
+/* __________ */
+
+/* __________ */
+/* Feature section styling */
+/* __________ */
+
+.feature {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Feature image styling */
+.feature-image {
+    /* Add the blur effect */
+    /* filter: blur(4px);
+    -webkit-filter: blur(4px); */
+
+    /* Full height */
+    /* height: 100%; */
+
+    /* Center and scale the image nicely */
+    /* background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; */
+}
+
+/* Feature text styling */
+.feature-text {
+    margin: 15%;
+    padding: 5px;
+    color: white;
+    font-weight: bold;
+    border: 3px solid #f1f1f1;
+    border-radius: 15px;
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0, 0.7); /* Black w/opacity/see-through */
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 80%;
+    text-align: center; */
+}
+/* __________ */
+
+/* Section header styling */
+.section-header {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    color: white;
+    background-color:royalblue;
+    border-radius: 15px;
+}
+
+/* __________ */
+/* Form styling */
+form {
+    padding: 2%;
+    background-color:azure;
+    border-radius: 15px;
+}
+
+/* Form label styling */
+label {
+    font-size: large;;
+    font-weight: bold;
+}
+
+/* Form check button's parent div styling */
+.button-holder1 {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50px;
+}
+
+/* Form check button's child div styling */
+.button-holder2 {
+    text-align: center;
+}
+
+/* Prediction text styling */
+#prediction {
+    margin: 2%;
+    padding: 2%;
+    font-size: xx-large;
+    text-align: center;
+    background-color:floralwhite;
+    border-radius: 15px;
+}
+/* __________ */
+
+/* #flight-information {
+} */
+
+/* #prediction-text {
+} */
+
+/* Tableau contianer styling */
+.tableauPlaceholder{
+    width:max-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* __________ */
+/* OpenWeather API-related styling */
+/* __________ */
+
+/* Background color styling */
+.color {
+    background-color: azure;
+}
+
+/* Current and forecasted weather display column styling */
+#display-column {      
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 15px;
+}
+
+/* Unorderd list styling */
+ul {
+    list-style-type: square;
+}
+
+/* Current weather container styling */
+#current-weather {
+    border-style: solid;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+/* Current weather's icon container styling */
+#current-weather-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: floralwhite;
+    border-top: solid;
+    border-left: solid;
+    border-bottom: solid;
+}
+
+/* Current weather information styling */
+#current-weather-info {
+    padding-top: 10px;
+    background-color: floralwhite;
+    border-style: solid;
+}
+
+/* Low UV Index styling */
+.green {
+    color: lightgreen;
+}
+
+/* Moderate UV Index styling */
+.yellow {
+    color: lightyellow;
+}
+
+/* High UV Index styling */
+.red {
+    color: orangered;
+}
+
+/* Forecasted weather container's styling */
+#forecasted-weather {
+    border-style: solid;
+    border-radius: 15px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+/* First day's forecast information styling */
+#first-day-forecast {
+    border-style: solid;
+    margin-bottom: 10px;
+    padding-top: 15px;
+    background-color: floralwhite;
+}
+
+/* Second day's forecast information styling */
+#second-day-forecast {
+    border-style: solid;
+    margin-bottom: 10px;
+    padding-top: 15px;
+    background-color: floralwhite;
+}
+
+/* Third day's forecast information styling */
+#third-day-forecast {
+    border-style: solid;
+    margin-bottom: 10px;
+    padding-top: 15px;
+    background-color: floralwhite;
+}
+
+/* Forth day's forecast information styling */
+#forth-day-forecast {
+    border-style: solid;
+    margin-bottom: 10px;
+    padding-top: 15px;
+    background-color: floralwhite;
+}
+
+/* Fifth day's forecast information styling */
+#fifth-day-forecast {
+    border-style: solid;
+    margin-bottom: 10px;
+    padding-top: 15px;
+    background-color: floralwhite;
+}
+
+/* Sixth day's forecast information styling */
+#sixth-day-forecast {
+    border-style: solid;
+    margin-bottom: 10px;
+    padding-top: 15px;
+    background-color: floralwhite;
+}
+
+/* First day's date styling */
+#first-day-date {
+    text-align: center;
+}
+
+/* First day's forecasted weather icon styling */
+#first-day-icon {
+    display: flex;
+    justify-content: center;
+}
+
+/* Second day's date styling */
+#second-day-date {
+    text-align: center;
+}
+
+/* Second day's forecasted weather icon styling */
+#second-day-icon {
+    display: flex;
+    justify-content: center;
+}
+
+/* Third day's date styling */
+#third-day-date {
+    text-align: center;
+}
+
+/* Third day's forecasted weather icon styling */
+#third-day-icon {
+    display: flex;
+    justify-content: center;
+}
+
+/* Forth day's date styling */
+#forth-day-date {
+    text-align: center;
+}
+
+/* Forth day's forecasted weather icon styling */
+#forth-day-icon {
+    display: flex;
+    justify-content: center;
+}
+
+/* Fifth day's date styling */
+#fifth-day-date {
+    text-align: center;
+}
+
+/* Fifth day's forecasted weather icon styling */
+#fifth-day-icon {
+    display: flex;
+    justify-content: center;
+}
+
+/* Sixth day's date styling */
+#sixth-day-date {
+    text-align: center;
+}
+
+/* Sixth day's forecasted weather icon styling */
+#sixth-day-icon {
+    display: flex;
+    justify-content: center;
+}
+/* __________ */
+
+/* EDA charts styling */
+.eda-chart {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* __________ */
+/* Media queries */
+/* __________ */
+
+/* If the device's screen size width is less than or equal to 768px, then apply these styling settings */
+@media screen and (max-width: 768px) {
+    /* Changing the current weather icon's border properties */
+    #current-weather-icon {       
+        border-style: none;
+        border-top: solid;
+        border-left: solid;
+        border-right: solid;
+    }
+}
+
+@media (max-width: 850px) {
+   #hero-section {
+       display: none;
+   }
+}
+
+@media (min-width: 850px) {
+    #hero-section-mobile {
+        display: none;
+    }
+}
+
+/* __________ */
+/* Post styling */
+/* __________ */
+
+.post-list {
+margin: 0;
+padding: 0;
+}
+
+textarea, input {
+padding: .5%;
+border-radius: 5px;
+border: 1px solid #ccc;
+}
+
+textarea:focus, input:focus {
+outline: none;
+border: 1px solid #3486eb;
+}
+
+textarea {
+min-width: 40%;
+min-height: 100px;
+}
+
+.btn-no-style {
+background: none;
+border: none;
+padding: 0;
+cursor: pointer;
+text-decoration: none;
+color: #225ca3;
+font-size: 100%;
+font-weight: bold;
+transition: color .1s;
+margin-left: 16px;
+}
+
+.btn-no-style:hover {
+background: none;
+color: #3486eb;
+}
+
+.delete-post-btn {
+background-color: #d41414;
+}
+
+.delete-post-btn:hover {
+background-color: #ff643d;
+}
+
+.post {
+margin-bottom: 2%;
+line-height: 150%;
+}
+
+.post .title span {
+font-style: italic;
+font-size: 90%;
+color: #7d7d7d;
+}
+
+.edit-link {
+display: block;
+margin: -1.5% 0 2% 0;
+}
+
+.upvote-btn {
+background-color: #197d0f;
+transition: background-color .1s;
+}
+
+.upvote-btn:hover {
+background-color: #1f9c13;
+}
+
+.comment-form {
+margin-bottom: 5%;
+}
+
+.comment {
+padding: 1%;
+margin-bottom: 1%;
+}
+
+.comment:nth-child(odd) {
+background-color: #fff5eb;
+}
+
+.comment .meta {
+font-size: 90%;
+margin-bottom: .5%;
+opacity: .6;
+}
+
+.new-post-form input {
+width: 300px;
+}
+
+.edit-post-form {
+margin-bottom: 5%;
+}
