@@ -166,9 +166,11 @@ This is a full-stack web application that primarily uses a Node.js with Express.
 
 **Anything the team would have done differently**:
 * [Coming Soon] 
+
+**GitHub Pages Link [using the Front-End Code]: https://mohammadbinshahid.github.io/Team4_Capstone_Project
  
 <a name="web-app-link"></a>
-**Web Application Link**: [Coming Soon]
+**Web Application Link [using the Full-Stack Code]**: [Coming Soon]
 
 **Screenshots**: Please refer to the [Dashboard Specifications](#dashboard) section.
 
@@ -182,45 +184,39 @@ _____
 ### Team, Roles, and Contributions
 
 * **[Allen Eapen Alex](https://github.com/AllenAx91)**:
-  * **Role**: Exploratory Data Analyst, Machine Learning Engineer, UX/UI Designer, Presenter
+  * **Role**: Data Analyst, Machine Learning Engineer, and Presenter
   * **(Projected) Tasks**:
     * Performed an exploratory data analysis on the flight dataset and exported charts;
-    * Created a Python mock-up of the machine learning model for local testing;
-    * Created the SQL database schema for the flight data, all airports, cancellation reason, all carriers;
-    * Contributed to designing the UX/UI for the dashboard by creating a wireframe for the dashboard and/or modifying the client-side code;
-    * Contributed to crafting the presentation;
+    * Created a Python mock-up of the machine learning model for local testing; and
+    * Contributed to crafting the presentation.
 * **[Avinash Mehra](https://github.com/WhySoCodius)**:
-  * **Role**: Exploratory Data Analyst, Database Engineer, UX/UI Designer, Presenter
+  * **Role**: Data Analyst, Database Designer, and Presenter
   * **(Projected) Tasks**: 
     * Performed an exploratory data analysis on the flight dataset and exported charts;
     * Created the SQL database schema for the flight data, all airports, cancellation reason, all carriers;
-    * Contributed to designing the UX/UI for the dashboard by creating a wireframe for the dashboard and/or modifying the client-side code;
-    * Contributed to crafting the presentation;
-    * Lead presenter;
+    * Contributed to crafting the presentation; and
+    * Lead presenter.
 * **[Jaspreet Khela](https://github.com/JaspreetKhela)**:
-  * **Role**: Project Manager/Technical Lead, Full-Stack Web Application Developer, Machine Learning Engineer, Database Engineer, UX/UI Designer, Presenter
+  * **Role**: Technical Project Manager, Full-Stack Web Application Developer, Machine Learning Engineer, Database Engineer, UX/UI Designer, and Presenter
   * **(Projected) Tasks**:
-    * Created GitHub project board with issues;
-    * Created the the machine learning model;
-    * Contributed to designing the UX/UI for the dashboard by creating a wireframe for the dashboard and/or modifying the client-side code;
-    * Use Bootstrap components to mock-up the dashboard based on a wireframe;
-    * Created the full-stack web application running the machine learning model using Spark for JavaScript;
-    * Contributed to crafting the presentation;
+    * Created GitHub project board with issues [still in progress];
+    * Created a proof-of-concept version of the machine learning model for use in the web application;
+    * Contributed to designing the UX/UI for the dashboard using the dashboard's wireframe design by creating and modifying the web application's client-side code;
+    * Created the full-stack web application running the machine learning model using Spark for JavaScript and scikit-learn; and
+    * Contributed to crafting the presentation.
 * **[Mohammad Shahid](https://github.com/Mohammadbinshahid)**:
-  * **Role**: Repository Maintainer, Exploratory Data Analyst, UX/UI Designer, Presenter
+  * **Role**: Repository Maintainer, Exploratory Data Analyst, and Presenter
   * **(Projected) Tasks**:
     * Created the GitHub repository and branches;
-    * Performed an exploratory data analysis on the flight dataset and exported charts;
-    * Contributed to designing the UX/UI for the dashboard by creating a wireframe for the dashboard and/or modifying the client-side code;
-    * Contributed to crafting the presentation;
+    * Performed an exploratory data analysis on the flight dataset and exported charts; and
+    * Contributed to crafting the presentation.
 * **[Rowan Backhouse](https://github.com/roborowanb)**:
-  * **Role**: Exploratory Data Analyst, UX/UI Designer, Presenter
+  * **Role**: Data Analyst, UX/UI Designer, and Presenter
   * **(Projected) Tasks**:
-    * Performed an exploratory data analysis on the TicketMaster dataset;
-    * Assisted with the creation of the SQL database schema for the flight and weather data;
-    * Created the wireframe for the website;
-    * Contributed to designing the UX/UI for the dashboard by creating a wireframe for the dashboard and/or modifying the client-side code;
-    * Contributed to crafting the presentation;
+    * Performed exploratory data analysis on the TicketMaster dataset;
+    * Performed analysis on the flight delays dataset and exported charts using Tableau, which were used as interactive components on the dashboard;
+    * Created the wireframe for the website; and
+    * Contributed to crafting the presentation.
     
 _____
 
@@ -390,7 +386,7 @@ To preprocess the data for use in the machine learning model, we completed the f
 
 **Features**:
 * **Flight Data Features**: These are the primary features that were extracted from the original flight data DataFrame.
-  * The following features are those that a passenger and an airline know well in advance; thus, these are the primary parameters used for predicting whether or not a flight will be delayed:	     
+  * **The following features are those that a passenger and an airline know well in advance; thus, these are the primary parameters used for predicting whether or not a flight will be delayed**:	     
     * YEAR
       * **Description**: Year(s) with data pertaining to Flight arrival and departure delays.
       * **Rationale**:	At the moment, we only have data from 2022 with room to expand to years prior to the selected year.
@@ -418,7 +414,7 @@ To preprocess the data for use in the machine learning model, we completed the f
     * CRS_ARR_TIME
       * **Description**: This is the scheduled arrival time of the flight.
       * **Rationale**: This feature can be dropped in future iterations based on the acceptance criteria of the Machine learning model.
-  * These are the remaining features:
+  * **These are the remaining features that were considered to improve the accuracy score of the machine learning model but were not implemented since their values are not known in advance by the user**:
     * TAIL_NUM
       * **Description**: This is the aircrafts's identification code.
       * **Rationale**: This could potentially be associated with the age of the aircraft on there after the time required for maintenance prior to departure.
@@ -576,6 +572,7 @@ _____
   * **Rationale**: This allows users to share informal flight delay insights that are not obtainable from the dataset.
 
 **Machine Learning Output Data and Images**:
+* [Coming Soon]
 
 ![](https://github.com/Mohammadbinshahid/Team4_Capstone_Project/blob/main/proof_of_concept_designs/Machine_learning/WIP/Screen%20Shot%202022-10-11%20at%206.32.38%20PM.png)
 ![](https://github.com/Mohammadbinshahid/Team4_Capstone_Project/blob/main/proof_of_concept_designs/Machine_learning/WIP/Screen%20Shot%202022-10-11%20at%206.32.45%20PM.png)
