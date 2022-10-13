@@ -38,8 +38,28 @@ Hello! This is a flight delay predictor full-stack web application that allows u
 
 The purpose of this web application is to allow both airlines and customers to better predict whether or not a flight will be delayed or cancelled days in advance in an effort to minimize disruptions to flight and people's schedules, thus saving them time and resources that would normally be used for air travel preparations.
 
+_____
+
+**GitHub Pages Link [using the Front-End Code]**: https://mohammadbinshahid.github.io/Team4_Capstone_Project/
+ 
+<a name="web-app-link"></a>
+**Web Application Link [using the Full-Stack Code]**: https://flights-r-us.herokuapp.com/
+* Please note that this application still has bugs and styling issues that need to be fixed.
+
+**Screenshots**: Please refer to the [Dashboard Specifications](#dashboard) section.
+
+**GitHub Project Board Link**: https://github.com/users/Mohammadbinshahid/projects/2
+
+**(Google Slides) Presentation Link**: https://docs.google.com/presentation/d/1d9vr3jMhRY1ceHiKuWwPbF1X4R5g_oyU/edit?usp=sharing&ouid=103862841931365976162&rtpof=true&sd=true
+
+_____
+
+![screencapture-mohammadbinshahid-github-io-Team4-Capstone-Project-2022-10-12-23_11_51](https://user-images.githubusercontent.com/80941606/195491132-6e877227-54c9-403d-8755-9a65d0d5555e.png)
+
+_____
+
 ## Table of Contents
-* [Presentation](#presentation)
+* [General Information](#info)
 * [Team, Roles, and Contributions](#team-roles-and-contributions)
 * [GitHub Repository Specifications](#github)
 * [Database Specifications](#database)
@@ -56,8 +76,8 @@ The purpose of this web application is to allow both airlines and customers to b
 
 _____
 
-<a name="presentation"></a>
-### Presentation
+<a name="info"></a>
+### General Information
 
 **Selected Topic**: Flight Delay Predictor
 
@@ -148,7 +168,7 @@ This is a full-stack web application that primarily uses a Node.js with Express.
 * **model**:
   * **Description**: This folder contains the SQL database's schema.
 * **public**:
-  * **Description**: This folder contains the assets that will be used on the front-end (i.e. HTML, CSS, JavaScript, etc. code).
+  * **Description**: This folder contains the assets that will be used on the front-end (i.e. CSS, JavaScript, etc. code).
 * **seeds**:
   * **Description**: This folder contains the code that populates the SQL database.
 * **utils**:
@@ -167,19 +187,7 @@ This is a full-stack web application that primarily uses a Node.js with Express.
 * Convert the website to a progressive Web Application so that users can use both **Online and Offline**.
 
 **Anything the team would have done differently**:
-* Use Data over the years to detemine how the time of the year and holidays impact the flight delays. 
-
-**GitHub Pages Link [using the Front-End Code]**: https://mohammadbinshahid.github.io/Team4_Capstone_Project/
- 
-<a name="web-app-link"></a>
-**Web Application Link [using the Full-Stack Code]**: https://flights-r-us.herokuapp.com/
-* Please note that this application still has bugs and styling issues.
-
-**Screenshots**: Please refer to the [Dashboard Specifications](#dashboard) section.
-
-**GitHub Project Board Link**: https://github.com/users/Mohammadbinshahid/projects/2
-
-**(Google Slides) Presentation Link**: https://docs.google.com/presentation/d/1d9vr3jMhRY1ceHiKuWwPbF1X4R5g_oyU/edit?usp=sharing&ouid=103862841931365976162&rtpof=true&sd=true
+* Use Data over the years to detemine how the time of the year and holidays impact the flight delays.
 
 _____
 
