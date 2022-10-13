@@ -46,8 +46,6 @@ _____
 **Web Application Link [using the Full-Stack Code]**: https://flights-r-us.herokuapp.com/
 * Please note that this application still has bugs and styling issues that need to be fixed.
 
-**Screenshots**: Please refer to the [Dashboard Specifications](#dashboard) section.
-
 **GitHub Project Board Link**: https://github.com/users/Mohammadbinshahid/projects/2
 
 **(Google Slides) Presentation Link**: https://docs.google.com/presentation/d/1d9vr3jMhRY1ceHiKuWwPbF1X4R5g_oyU/edit?usp=sharing&ouid=103862841931365976162&rtpof=true&sd=true
@@ -597,11 +595,12 @@ _____
 * JavaScript was used for adding functionality to the dashboard;
 * Bootstap was used for incorporating pre-built mobile-responsive components into the dashboard;
 
-**Wireframe(s)**:
+**Wireframe**:
 
 ![alt text](proof_of_concept_designs/wireframe(s)/rowan/rowan_flight_delays_wireframe.png)
 
-**Screenshots**:
+**Version 1 Screenshot**:
+
 ![screencapture-file-Users-jaspreetkhela-My-Drive-SCS-Data-Analytics-Boot-Camp-Course-Work-Boot-Camp-Module-20-Final-Project-Module-20-First-Segment-Project-Deliverable-Team4-Capstone-Project-proof-of-concept-designs-dashboard-mockup-index-ht](https://user-images.githubusercontent.com/80941606/194967605-011b6cbe-639b-40a0-9bdf-7db0ced1a4e5.png)
 
 _____
