@@ -173,6 +173,7 @@ This is a full-stack web application that primarily uses a Node.js with Express.
  
 <a name="web-app-link"></a>
 **Web Application Link [using the Full-Stack Code]**: https://flights-r-us.herokuapp.com/
+* Please note that this application still has bugs and styling issues.
 
 **Screenshots**: Please refer to the [Dashboard Specifications](#dashboard) section.
 
@@ -602,7 +603,11 @@ _____
 No installation is required. Please visit the [deployment link](#web-app-link).
 
 For developers who wish to run the application locally, please follow these steps:
-* [Coming Soon]
+* Install node.js locally;
+* Clone the main branch of this repository and upload the code to your GitHub account;
+* Create a Heroku account and deploy the application from the main branch of the cloned repository on your GitHub account;
+* Turn on automatic deploys from the main branch on Heroku; and
+* Modify and/or test the code locally, push it to your repository's main branch, and then refresh your Heroku web application to see updates to the application.
 
 _____
 
@@ -622,6 +627,8 @@ The web application has the following features:
 * Weather widgets that provide the current weather conditions and a 5-day forecast.
 
 For future development, we hope to add the following features:
+* Expand the dataset;
+* Incorporate more features into the machine learning model;
 * Convert the website to a Progressive Web Application so that users can use our application - both online and offline - like a native application on their mobile device;
 * Create Android and iOS applications that expand our native application's capabilities (by leveraging mobile devices' native APIs);
 * [Coming Soon]
