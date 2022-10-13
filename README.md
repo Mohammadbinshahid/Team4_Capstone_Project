@@ -535,7 +535,11 @@ console.log(sklearn.metrics.accuracy_score(y_test, y_pred));
 ```
 
 **Statistical analysis**:
-  *
+
+ * Considering the scope of the project and time constraints, we settled for the initial statistics derived from the EDA phase of the project. The results of which are as detailed below: \
+  ![](https://github.com/Mohammadbinshahid/Team4_Capstone_Project/blob/main/proof_of_concept_designs/Machine_learning/WIP/eda_stats.png)
+ * However, the next phase will involve a broader analysis where we plan on deriving a classification report such as the one from imblearn.metrics (shown below). 
+  ![](https://github.com/Mohammadbinshahid/Team4_Capstone_Project/blob/main/proof_of_concept_designs/Machine_learning/WIP/EXAMPLE_classification_report.png)
    
 **Model Accuracy Score**:
  * The current accuracy is at 69% with room for improvement.
