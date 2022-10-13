@@ -387,10 +387,12 @@ _____
 
 **Data Preprocessing**:
 To preprocess the data for use in the machine learning model, we completed the following steps:
-1. We imported the raw data from the aforementioned datasets and APIs.
+1. We imported the raw data from the aforementioned datasets.
 2. We joined DataFrames and retained the desired columns from the DataFrames.
 3. We removed records with null values from the DataFrame.
 4. We converted the date column to DateTime datatype.
+5. The target, 'DEP_DELAY' column, was converted to categorical data type in-lieu of continuous
+6. Columns with object datatypes were one-hot encoded to numerical types. The original columns with object datatypes were dropped.
 5. 70% of the data in the DataFrame was used for training the machine learning model; the remaining data was used for testing the model.
 
 **Features**:
@@ -532,9 +534,8 @@ console.log(sklearn.metrics.accuracy_score(y_test, y_pred));
 
 ```
 
-**Model Training Progress**:
-  * Currently, we have a functional stand-alone .ipynb file with a machine learning model based on Sklearn's LogisticRegression. 
-  * Out final model will use PySpark's LogisticRegression which will be integrated with the front end.
+**Statistical analysis**:
+  *
    
 **Model Accuracy Score**:
  * The current accuracy is at 69% with room for improvement.
@@ -544,7 +545,6 @@ console.log(sklearn.metrics.accuracy_score(y_test, y_pred));
 * PySpark's LogisticRegression is simple and easy to implement with good training efficiency
 * The classification model provides a user-friendly (binary) outcome that allows both airlines and customers to make quick and informed decisions;
 * The supervised nature of our machine learning model allows it to process training datasets more quickly than if the model was unsupervised (where the model would have to find categorical patterns on its own, thus increasing the use of the server's processing resources)
-* 
 
 **Machine Learning Model Limitations**:
 * The machine learning model only provides binary outcomes, so airlines and customers do not know by how long a flight may be delayed;
