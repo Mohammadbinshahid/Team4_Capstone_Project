@@ -66,13 +66,13 @@
     </style>
 
     {{!-- <!-- Bootstrap dashboard template styling --> --}}
-    <link href="../../assets/css/dashboard.css" rel="stylesheet">
+    <link href="assets/css/dashboard.css" rel="stylesheet">
 
     {{!-- <!-- Bootstrap hero section template styling --> --}}
-    <link href="../../assets/css/heroes.css" rel="stylesheet">
+    <link href="assets/css/heroes.css" rel="stylesheet">
 
     {{!-- <!-- Developer-defined custom styling --> --}}
-    <link href="../../assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -192,13 +192,13 @@
               <div id="hero-video" class="col-10 col-sm-8 col-lg-6">
                 <div class="col">
                   <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg">
-                    <video id="user-experience-and-interface-education-and-work-card-video-or-image" class="card-img-top" poster="../../assets/images/card-images/nicholas-green-nPz8akkUmDI-unsplash.jpg" autoplay loop muted>
-                      <source src="../../assets/media/videos/pexels-airplane-flying-full-hd.mp4" type="video/mp4">
+                    <video id="user-experience-and-interface-education-and-work-card-video-or-image" class="card-img-top" poster="assets/images/card-images/nicholas-green-nPz8akkUmDI-unsplash.jpg" autoplay loop muted>
+                      <source src="assets/media/videos/pexels-airplane-flying-full-hd.mp4" type="video/mp4">
                       Your browser does not support the video tag.
                     </video>
                   </div>
                 </div>
-                {{!-- <!-- <img src="../../assets/media/images/bootstrap-themes.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy"> --> --}}
+                {{!-- <!-- <img src="assets/media/images/bootstrap-themes.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy"> --> --}}
               </div>
 
               {{!-- <!-- Introduction text --> --}}
@@ -605,7 +605,7 @@
             {{!-- <!-- Flight delay dataset variables correlations chart --> --}}
             <h3>Flight Delay Dataset Variables Correlations</h3>
             <br>
-            <img class="eda-chart" src="../../assets/media/images/charts/Correlation_Analysis.png" alt="">
+            <img class="eda-chart" src="assets/media/images/charts/Correlation_Analysis.png" alt="">
             <br><br>
             
             <hr>
@@ -613,7 +613,7 @@
             {{!-- <!-- Flight arrival delays time distribution in minutes chart --> --}}
             <h3>Flight Arrival Delays Time Distribution in Minutes</h3>
             <br>
-            <img class="eda-chart" src="../../assets/media/images/charts/Distribution_of_arrival_delays.png" alt="">
+            <img class="eda-chart" src="assets/media/images/charts/Distribution_of_arrival_delays.png" alt="">
             <br><br>
             
             <hr>
@@ -621,7 +621,7 @@
             {{!-- <!-- Flight departure delays time distribution in minutes chart --> --}}
             <h3>Flight Departure Delays Time Distribution in Minutes</h3>
             <br>
-            <img class="eda-chart" src="../../assets/media/images/charts/Distribution_of_distribution_delays.png" alt="">
+            <img class="eda-chart" src="assets/media/images/charts/Distribution_of_distribution_delays.png" alt="">
             <br><br>
 
             <hr>
@@ -629,7 +629,7 @@
             {{!-- <!-- Flight arrival delays by airline in minutes chart --> --}}
             <h3>Flight Arrival Delays by Airline in Minutes</h3>
             <br>
-            <img class="eda-chart" src="../../assets/media/images/charts/Catplot_ARR_DELAY.png" alt="">
+            <img class="eda-chart" src="assets/media/images/charts/Catplot_ARR_DELAY.png" alt="">
             <br><br>
             
             <hr>
@@ -637,7 +637,7 @@
             {{!-- <!-- Flight departure delays by airline in minutes chart --> --}}
             <h3>Flight Departure Delays by Airline in Minutes</h3>
             <br>
-            <img class="eda-chart" src="../../assets/media/images/charts/Catplot_DEP_DELAY.png" alt="">
+            <img class="eda-chart" src="assets/media/images/charts/Catplot_DEP_DELAY.png" alt="">
             <br><br>
           </div>
 
@@ -954,6 +954,26 @@
             </div>           
           </div>
 
+          {{!-- <!-- Post section header --> --}}
+          <header class="section-header">                   
+            <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+              <br>
+              <h1 class="display-4 fw-normal">Community Posts</h1>
+              {{!-- <!-- <p class="fs-5 text-muted"></p> --> --}}
+            </div>
+          </header>
+
+          <br>
+
+          {{!-- <!-- Section description --> --}}
+          <h3>Let us know what you think!</h3>
+
+          <br><br>
+
+          {{{ body }}}
+
+          <br>
+
           {{!-- <!-- Webpage footer --> --}}
           <footer class="pt-4 my-md-5 pt-md-5 border-top">
             <div class="row">
@@ -994,9 +1014,7 @@
           </footer>
         </main>
       </div>
-    </div>
-
-    {{{ body }}}  
+    </div>  
   </div>
 
   {{!-- <!-- <script src="../assets/dist/js/bootstrap.bundle.min.js"></script> --> --}}
@@ -1004,7 +1022,7 @@
   {{!-- <!-- Bootstrap JavaScript Bundle with Popper --> --}}
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 
-  <script src="https://cdn.jsdelivr.net/npm/feather-icons@4.28.0/dist/feather.min.js" integrity="sha384-uO3SXW5IuS1ZpFPKugNNWqTZRRglnUJK6UAZ/gxOX80nxEkN9NcGZTftn6RzhGWE" crossorigin="anonymous"></script><script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js" integrity="sha384-zNy6FEbO50N+Cg5wap8IKA4M/ZnLJgzc6w2NqACZaK0u0FXfOWRRJOnQtpZun8ha" crossorigin="anonymous"></script><script src="../../assets/js/dashboard.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/feather-icons@4.28.0/dist/feather.min.js" integrity="sha384-uO3SXW5IuS1ZpFPKugNNWqTZRRglnUJK6UAZ/gxOX80nxEkN9NcGZTftn6RzhGWE" crossorigin="anonymous"></script><script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js" integrity="sha384-zNy6FEbO50N+Cg5wap8IKA4M/ZnLJgzc6w2NqACZaK0u0FXfOWRRJOnQtpZun8ha" crossorigin="anonymous"></script><script src="assets/js/dashboard.js"></script>
 
   {{!-- <!-- Loading the Luxon script to display weather forecast time --> --}}
   <script src="https://cdn.jsdelivr.net/npm/luxon@1.27.0/build/global/luxon.min.js"></script>
@@ -1013,10 +1031,10 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
 
   {{!-- <!-- data.js script contains the array of data objects --> --}}
-  {{!-- <!-- <script src="../../assets/data/AllMonths_RAW_Short.js"></script> --> --}}
+  {{!-- <!-- <script src="assets/data/AllMonths_RAW_Short.js"></script> --> --}}
 
   {{!-- <!-- Script for custom functionality --> --}}
-  <script src="../../assets/js/script.js"></script> 
+  <script src="assets/js/script.js"></script> 
   
   {{!-- Load the logout script if the user us logged in --}}
   {{#if loggedIn}}
