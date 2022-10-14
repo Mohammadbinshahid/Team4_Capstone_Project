@@ -71,6 +71,7 @@ _____
 * [Questions](#questions)
 * [License](#license)
 * [Communication Protocols](#communication)
+* [Project Reflection](#reflection)
 
 _____
 
@@ -683,3 +684,33 @@ _____
 * **Project Board**: A GitHub project board was created to document progress on tasks primarily using issues.
 * **Stuck Agreement**: If any developer was stuck on a problem for more than 3 hours, he was required to seek assistance from the project's other developers.
 * **Conflict Resolution**: Since there are five developers working on this project, a two-thirds majority is required in votes to make major changes to the application (i.e. to make major changes to the application's architecture, content, styling, etc)
+_____
+
+<a name="reflection"></a>
+### Project Reflection
+
+**Summary of Project**:
+
+**Self Assessments**:
+* **Allen Eapen Alex**:
+  * [Coming Soon]
+* **Avinash Mehra**:
+  * [Coming Soon]
+* **Jaspreet Khela**:
+  * [Coming Soon]
+* **Mohammad Shahid**:
+  * [Coming Soon]
+* **Rowan Backhouse**:
+  * [Coming Soon]
+
+**Team Assessments**:
+* **Allen Eapen Alex**:
+  * [Coming Soon]
+* **Avinash Mehra**:
+  * [Coming Soon]
+* **Jaspreet Khela**:
+  * [Coming Soon]
+* **Mohammad Shahid**:
+  * [Coming Soon]
+* **Rowan Backhouse**:
+  * [Coming Soon]
