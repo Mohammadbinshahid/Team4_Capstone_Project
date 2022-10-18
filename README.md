@@ -690,10 +690,10 @@ _____
 ### Project Reflection
 
 **Summary of Project**:
-
+The team that I was a member of created a flight delay predictor full-stack web application that allows users to determine whether their upcoming flight (within the week) will be delayed or canceled using a multitude of features in our logistic regression machine learning model. The main features are those that are listed on a plane ticket such as a flight's date, origin, destination, airline carrier, departure time, estimated time, and arrival time. The model had a 69% accuracy score. The purpose of this web application is to allow both airlines and customers to better predict whether a flight will be delayed or canceled days in advance in an effort to minimize disruptions to flight and people's schedules, thus saving them time and resources that would normally be used for air travel preparations. Throughout the project, we discovered that delays mostly occur on weekends, at coastal airports, with a select few airlines, and for less than thirty minutes. Additionally, delays are more prevalent with airliner departures as opposed to arrivals.
 **Self Assessments**:
 * **Allen Eapen Alex**:
-  * [Coming Soon]
+  * My primary role involved working on the Machine learning element of the web-app in addition to contributing to those stated under Team, Roles, and Contributions section of the Readme. For future cohorts, it may prove benificial to group students well before the final module. In doing so, team members would be better prepared by the time the final projects starts. 		
 * **Avinash Mehra**:
   * [Coming Soon]
 * **Jaspreet Khela**:
@@ -705,7 +705,7 @@ _____
 
 **Team Assessments**:
 * **Allen Eapen Alex**:
-  * [Coming Soon]
+  * We were fortunate that all of us in our team were well co-ordinated and individually had a huge influence on all aspects of the project. One of the biggest challenges was the integration of the various parts of the project into a web-app which we managed to do with a lot of time spent on it.
 * **Avinash Mehra**:
   * [Coming Soon]
 * **Jaspreet Khela**:
